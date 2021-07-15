@@ -41,3 +41,9 @@ VALUES
 ('Bellerophon','Demigod','Poseidon','Eurynome','Spear','Lycia'),
 ('Callisto','Human','Lycaon','Nonacris','Became Ursa Major (Bear)','Arcadia'),
 ('Danae','Human','Acrisius','Eurydice','N/A','Island of Seriphus');
+
+ALTER TABLE heroes
+    ADD original BIT;
+
+UPDATE heroes
+    SET original = 1;
