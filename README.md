@@ -19,12 +19,12 @@ https://github.com/assembler-school/php-mvc-pattern-basics.git
 
 - [Main objectives](#main-objectives)
 - [Investigation](#investigation)
-  - [* __What is an architecture pattern?__](#-what-is-an-architecture-pattern)
-  - [* __What is the MVC pattern?__](#-what-is-the-mvc-pattern)
-  - [* __Draw a scheme where you understand that the MVC pattern is clearly showcased.__](#-draw-a-scheme-where-you-understand-that-the-mvc-pattern-is-clearly-showcased)
-  - [* __Explain in which cases you would use this pattern.__](#-explain-in-which-cases-you-would-use-this-pattern)
-  - [* __Describe step by step what happens in this pattern from when you create a Request until a Response is returned (you can give more than one example if you consider it necessary).__](#-describe-step-by-step-what-happens-in-this-pattern-from-when-you-create-a-request-until-a-response-is-returned-you-can-give-more-than-one-example-if-you-consider-it-necessary)
-  - [* __What advantages do you think this pattern has to use?__](#-what-advantages-do-you-think-this-pattern-has-to-use)
+  - [What is an architecture pattern?](#-what-is-an-architecture-pattern)
+  - [What is the MVC pattern?](#-what-is-the-mvc-pattern)
+  - [Draw a scheme where you understand that the MVC pattern is clearly showcased.](#-draw-a-scheme-where-you-understand-that-the-mvc-pattern-is-clearly-showcased)
+  - [Explain in which cases you would use this pattern.](#-explain-in-which-cases-you-would-use-this-pattern)
+  - [Describe step by step what happens in this pattern from when you create a Request until a Response is returned (you can give more than one example if you consider it necessary).](#-describe-step-by-step-what-happens-in-this-pattern-from-when-you-create-a-request-until-a-response-is-returned-you-can-give-more-than-one-example-if-you-consider-it-necessary)
+  - [What advantages do you think this pattern has to use?](#-what-advantages-do-you-think-this-pattern-has-to-use)
 
 ## Main objectives
 
@@ -75,4 +75,4 @@ https://github.com/assembler-school/php-mvc-pattern-basics.git
   - Can be used with any existing programming language (or almost).
 
 ## Author <!-- omit in toc -->
-Jordi Arnau Esteban - [Jordi Arnau](https://github.com/JordixArnau)
+Jordi Arnau Esteban - [Github profile](https://github.com/JordixArnau)
