@@ -13,8 +13,10 @@ require_once MODELS . "employeeModel.php";
 /**
  * This function calls the corresponding model function and includes the corresponding view
  */
-function getAllEmployees()
+function getAllEmployees($id)
 {
+
+
     //
 }
 
@@ -33,3 +35,6 @@ function error($errorMsg)
 {
     require_once VIEWS . "/error/error.php";
 }
+
+
+// recibe las peticiones del model + las views (html)
