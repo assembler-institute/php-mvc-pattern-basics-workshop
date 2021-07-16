@@ -10,10 +10,10 @@ include_once "config/constants.php";
 // In the event that the controller passed by URL does not exist, you must show the error view.
 
 
-require_once("./libs/database.php");
-require_once("./libs/view.php");
-require_once("./libs/controller.php");
-require_once("./libs/model.php");
-require_once("./libs/app.php");
+require_once("libs/database.php");
+require_once("libs/view.php");
+require_once("libs/controller.php");
+require_once("libs/model.php");
+require_once("libs/app.php");
 
 $app = new App();
