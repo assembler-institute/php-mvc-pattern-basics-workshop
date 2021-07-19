@@ -1,0 +1,16 @@
+table {
+  border-collapse: collapse;
+}
+
+tbody tr:hover {
+  background-color: rgba(128, 128, 128, 0.03);
+  cursor: pointer;
+}
+
+.short-form {
+  width: 250px;
+}
+
+.long-form {
+  width: 500px;
+}
