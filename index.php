@@ -8,3 +8,12 @@ include_once "config/constants.php";
 
 // TODO Implement the logic to include the controller passed by the URL dynamically
 // In the event that the controller passed by URL does not exist, you must show the error view.
+
+
+require_once("libs/database.php");
+require_once("libs/view.php");
+require_once("libs/controller.php");
+require_once("libs/model.php");
+require_once("libs/app.php");
+
+$app = new App();

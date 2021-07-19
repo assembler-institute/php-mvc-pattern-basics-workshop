@@ -1,7 +1,12 @@
 <?php
 
-function get(){
+function get()
+{
 }
 
-function getById($id){
+function getById($id)
+{
 }
+
+
+/// peticiones a la base de datos
