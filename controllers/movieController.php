@@ -30,7 +30,9 @@ function getAllMovies()
  */
 function getMovie($request)
 {
-    $movie = getMovieById($request["id"]);
+    if (isset($request["id"])) {
+        $movie = getMovieById($request["id"]);
+    }
     require_once VIEWS . "/movie/movie.php";
 }
 

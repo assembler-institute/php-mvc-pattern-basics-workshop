@@ -21,10 +21,10 @@
                 <th>ID</th>
                 <th>FIRST NAME</th>
                 <th>LAST NAME</th>
-                <th>AGE</th>
                 <th>GENDER</th>
+                <th>AGE</th>
                 <?php
-                echo " <th><a class='btn btn-warning addBtn' href='?controller=employee&action=getEmployee&id=" . $employee[0] . "'>Add</a></th>";
+                echo " <th><a class='btn btn-warning addBtn' href='?controller=employee&action=getEmployee'>Add</a></th>";
                 ?>
             </tr>
         </thead>

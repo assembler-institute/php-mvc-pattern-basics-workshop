@@ -19,7 +19,7 @@
                 <th>NAME</th>
                 <th>RELEASED</th>
                 <th>RUNNING TIME</th>
-                <th><?php echo "<a class='btn btn-warning addBtn' href='?controller=movie&action=getMovie&id=" . $movie[0] . "'>ADD</a>" ?>
+                <th><?php echo "<a class='btn btn-warning addBtn' href='?controller=movie&action=getMovie'>ADD</a>" ?>
                 </th>
             </tr>
         </thead>

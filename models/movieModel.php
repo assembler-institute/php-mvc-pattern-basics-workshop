@@ -30,7 +30,7 @@ function newMovie($request)
     try {
         $dbConst = mysqli_connect(DB_HOST, USER_NAME, DB_PASSWORD, DB_NAME);
         $newMovie = mysqli_query($dbConst, "SELECT * FROM movies WHERE movie_name = '$request[movie_name]', released_year = '$request[released_year]', runtime = '$request[runtime]'");
-        if (mysqli_num_rows($newMovie) > 0) {
+        if ($newMovie) {
             return "Movie already exists";
         } else {
             mysqli_query(

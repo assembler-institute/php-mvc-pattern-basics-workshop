@@ -30,7 +30,7 @@ function newEmployee($request)
     try {
         $dbConst = mysqli_connect(DB_HOST, USER_NAME, DB_PASSWORD, DB_NAME);
         $newEmployee = mysqli_query($dbConst, "SELECT * FROM employees WHERE first_name = '$request[first_name]', last_name = '$request[last_name]' , gender = '$request[gender]', age = '$request[age]'");
-        if (mysqli_num_rows($newEmployee) > 0) {
+        if ($newEmployee) {
             return "Employee already exists";
         } else {
             mysqli_query(

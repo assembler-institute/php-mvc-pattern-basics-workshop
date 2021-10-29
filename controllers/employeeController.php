@@ -25,7 +25,12 @@ function getAllEmployees()
  */
 function getEmployee($request)
 {
-    $employee = getEmployeeById($request["id"]);
+    if (isset($request["id"])) {
+
+        $employee = getEmployeeById($request["id"]);
+    } else {
+        $employee = null;
+    }
     require_once VIEWS . "/employee/employee.php";
 }
 
