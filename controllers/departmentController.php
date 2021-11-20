@@ -1,6 +1,6 @@
 <?php
 
-require_once(MODELS . "/employeeModel.php");
+require_once(MODELS . "/departmentModel.php");
 
 if (!isset($_REQUEST["action"])) return error("No action has been specified");
 
@@ -13,7 +13,7 @@ call_user_func($action, $_REQUEST);
 
 /* ~~~ CONTROLLER FUNCTIONS ~~~ */
 
-function getAllEmployees()
+function getAllDepartments()
 {
 	$response = get();
 
@@ -22,7 +22,7 @@ function getAllEmployees()
 	var_dump($response["data"]);
 }
 
-function getEmployee($request)
+function getDepartment($request)
 {
 	if (!isset($request["id"])) return error("ID not specified");
 

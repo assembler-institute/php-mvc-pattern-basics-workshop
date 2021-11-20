@@ -1,10 +1,23 @@
 <?php
 
-// This is the entry point of your application, all your application must be executed in
-// the "index.php", in such a way that you must include the controller passed by the URL
-// dynamically so that it ends up including the view.
+require_once("./config/constants.php");
+require_once("./config/db.php");
 
-include_once "config/constants.php";
+if (isset($_GET["controller"])) {
+	$controllerName = $_GET["controller"];
+	$controllerPath = getControllerPath($controllerName);
 
-// TODO Implement the logic to include the controller passed by the URL dynamically
-// In the event that the controller passed by URL does not exist, you must show the error view.
+	if (file_exists($controllerPath)) {
+		require_once($controllerPath);
+	} else {
+		echo "Controller not found";
+	}
+} else {
+	require_once VIEWS . "main/main.php";
+	echo "OK";
+}
+
+function getControllerPath(string $controllerName)
+{
+	return CONTROLLERS . $controllerName . "Controller.php";
+}
