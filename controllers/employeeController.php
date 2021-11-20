@@ -1,6 +1,7 @@
 <?php
 
 require_once MODELS . "employeeModel.php";
+echo "si existe";
 
 //OBTAIN THE ACCION PASSED IN THE URL AND EXECUTE IT AS A FUNCTION
 
