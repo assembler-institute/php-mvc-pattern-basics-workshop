@@ -365,3 +365,5 @@ This will be the file that shows all the records of the database.
 ## Resources
 
 - [Readme example](https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a)
+
+https://www.youtube.com/watch?v=e1oMBaWjye8

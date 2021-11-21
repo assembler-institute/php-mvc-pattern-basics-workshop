@@ -1,22 +1,38 @@
 <?php
 
 require_once MODELS . "employeeModel.php";
-echo "si existe";
 
-//OBTAIN THE ACCION PASSED IN THE URL AND EXECUTE IT AS A FUNCTION
+$action = "";
 
-//Keep in mind that the function to be executed has to be one of the ones declared in this controller
-// TODO Implement the logic
+if(isset($_GET["action"]))
+{
+    $action = $_GET["action"];
+}
 
+if(function_exists($action))
+{
+    echo "The function does exist";
+    call_user_func($action);
+} else
+{
+    // echo "no existe function";
+    error("The function does not exist");
+}
 
-/* ~~~ CONTROLLER FUNCTIONS ~~~ */
 
 /**
  * This function calls the corresponding model function and includes the corresponding view
  */
 function getAllEmployees()
 {
-    //
+    // echo "We are inside the function getAllEmployees";
+    $employees = get();
+
+    if(isset($employees)) {
+        require_once VIEWS . "/employee/employeeDashboard.php";
+    } else {
+        error("There is problem with database");
+    }
 }
 
 /**
@@ -24,7 +40,12 @@ function getAllEmployees()
  */
 function getEmployee($request)
 {
-    //
+    $action = $request["action"];
+    $employee = null;
+    if (isset($request["id"])) {
+        $employee = getById($request["id"]);
+    }
+    require_once VIEWS . "/employee/employee.php";
 }
 
 /**
