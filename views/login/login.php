@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,12 +25,19 @@
                 <input type="text" class="form-control" id="username"  name="username"  autocomplete="current-name">
             </div>
             <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email"  name="email"  autocomplete="current-name">
+            </div>
+            <div class="mb-3">
                 <label for="password" class="form-label">Password:</label>
                 <input type="password" class="form-control" id="password"  name="password" autocomplete="current-password">
             </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Password:</label>
+                <input type="confirmPassword" class="form-control" id="confirmPassword"  name="confirmPassword" autocomplete="current-password">
+            </div>
             <button type="submit" class="btn-login" value="Submit">Submit</button>
         </form>
-        <p>Click here if you do not have any account <a href="">Register</a></p>
     </div>
 </body>
 </html>

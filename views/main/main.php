@@ -12,7 +12,7 @@
 <body>
 <nav class="nav flex-column">
   <a class="nav-link active" aria-current="page" href="?controller=employee&action=getAllEmployees">Employees</a>
-  <a class="nav-link" href="?controller=travel&action=getAllTravels">Travels</a>
+  <a class="nav-link" href="?controller=salary&action=getAllSalaries">Salaries</a>
 </nav>
 </body>
 

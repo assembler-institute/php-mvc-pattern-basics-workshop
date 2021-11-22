@@ -20,7 +20,7 @@ function get()
 function getById($id){
     $query = conn()->prepare("SELECT id, birth_date, first_name, last_name, gender, hire_date
     FROM employees 
-    WHERE  id = $id");
+    WHERE  id = $id;");
 
     try {
         $query->execute();
@@ -32,7 +32,7 @@ function getById($id){
 }
 
 function delete($id) {
-    $query = conn()->prepare("DELETE FROM employees WHERE  id = ?");
+    $query = conn()->prepare("DELETE FROM employees WHERE  id = ?;");
     $query->bindParam(1, $id);
 
     try {
@@ -44,7 +44,7 @@ function delete($id) {
 }
 
 function create($_post) {
-    $query = conn()->prepare("INSERT INTO employees (birth_date, first_name, last_name, gender, hire_date) VALUES (?, ?, ?, ?, ?)");
+    $query = conn()->prepare("INSERT INTO employees (birth_date, first_name, last_name, gender, hire_date) VALUES (?, ?, ?, ?, ?);");
     $query->bindParam(1, $_post["birthDate"]);
     $query->bindParam(2, $_post["firstName"]);
     $query->bindParam(3, $_post["lastName"]);
@@ -60,12 +60,13 @@ function create($_post) {
 }
 
 function update($_post) {
-    $query = conn()->prepare("UPDATE employees SET birth_date = ?, first_name = ?, last_name = ?, gender = ?, hire_date = ? WHERE id = ?");
-    $query->bindParam(1, $_post["birth_date"]);
-    $query->bindParam(2, $_post["first_name"]);
-    $query->bindParam(3, $_post["last_name"]);
+    $query = conn()->prepare("UPDATE employees SET birth_date = ?, first_name = ?, last_name = ?, gender = ?, hire_date = ? WHERE id = ?;");
+    $query->bindParam(1, $_post["birthDate"]);
+    $query->bindParam(2, $_post["firstName"]);
+    $query->bindParam(3, $_post["lastName"]);
     $query->bindParam(4, $_post["gender"]);
-    $query->bindParam(5, $_post["hire_date"]);
+    $query->bindParam(5, $_post["hireDate"]);
+    $query->bindParam(6, $_post["id"]);
 
     try {
         $query->execute();

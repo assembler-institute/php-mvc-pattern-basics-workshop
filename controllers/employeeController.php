@@ -65,12 +65,12 @@ function deleteEmployee()
 function createEmployee()
 {
     $action = $_GET["action"];
+    require_once VIEWS . "/employee/employee.php";
     // if (isset($_POST)) {
     //      $employee = create($_POST);
     //      header("Location: index.php?controller=employee&action=getAllEmployees");
     // }
     $employee = create($_POST);
-    require_once VIEWS . "/employee/employee.php";
 }
 
 /**
@@ -78,6 +78,7 @@ function createEmployee()
  */
 function updateEmployee() {
     $action = $_GET["action"];
+    var_dump($_POST);
     $employee = update($_POST);
 
     require_once VIEWS . "/employee/employee.php";

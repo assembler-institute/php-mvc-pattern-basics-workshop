@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <meta name="description" content="Web site " />
     <title>Employees</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+    >
 </head>
 
 <body>
@@ -20,6 +25,14 @@
             echo "<form method='post' action='index.php?controller=employee&action=createEmployee'>";
         }
     ?>
+        <input
+                hidden
+                type="text"
+                class="form-control"
+                id="birthDate"
+                name="birthDate"
+                value="<?php if(isset($employee['id']) && $employee['id']) echo $employee['id']; ?>"
+        >
         <div class="col-md-6">
             <label for="birthDate" class="form-label">Birth Date</label>
             <input
@@ -76,7 +89,9 @@
 
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="submit" class="btn btn-secondary"><a href="<?php echo '?controller=employee&action=getAllEmployees'; ?>">Return</a></button>
+            <button type="submit" class="btn btn-secondary">
+                <a href="<?php echo '?controller=employee&action=getAllEmployees'; ?>">Return</a>
+            </button>
         </div>
     </form>
 </main>
