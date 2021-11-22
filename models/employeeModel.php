@@ -42,3 +42,35 @@ function delete($id) {
         return [false, $e];
     }
 }
+
+function create($_post) {
+    $query = conn()->prepare("INSERT INTO employees (birth_date, first_name, last_name, gender, hire_date) VALUES (?, ?, ?, ?, ?)");
+    $query->bindParam(1, $_post["birthDate"]);
+    $query->bindParam(2, $_post["firstName"]);
+    $query->bindParam(3, $_post["lastName"]);
+    $query->bindParam(4, $_post["gender"]);
+    $query->bindParam(5, $_post["hireDate"]);
+
+    try {
+        $query->execute();
+        return [true];
+    } catch (PDOException $e) {
+        return [false, $e];
+    }
+}
+
+function update($_post) {
+    $query = conn()->prepare("UPDATE employees SET birth_date = ?, first_name = ?, last_name = ?, gender = ?, hire_date = ? WHERE id = ?");
+    $query->bindParam(1, $_post["birth_date"]);
+    $query->bindParam(2, $_post["first_name"]);
+    $query->bindParam(3, $_post["last_name"]);
+    $query->bindParam(4, $_post["gender"]);
+    $query->bindParam(5, $_post["hire_date"]);
+
+    try {
+        $query->execute();
+        return [true];
+    } catch (PDOException $e) {
+        return [false, $e];
+    }
+}

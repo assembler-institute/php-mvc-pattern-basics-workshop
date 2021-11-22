@@ -46,6 +46,9 @@ function getEmployee()
     require_once VIEWS . "/employee/employee.php";
 }
 
+/**
+ * This function calls the corresponding model function and includes the corresponding view
+ */
 function deleteEmployee()
 {
     $action = $_GET["action"];
@@ -56,13 +59,30 @@ function deleteEmployee()
     }
 }
 
+/**
+ * This function calls the corresponding model function and includes the corresponding view
+ */
 function createEmployee()
 {
     $action = $_GET["action"];
-    $employee = create();
+    // if (isset($_POST)) {
+    //      $employee = create($_POST);
+    //      header("Location: index.php?controller=employee&action=getAllEmployees");
+    // }
+    $employee = create($_POST);
+    require_once VIEWS . "/employee/employee.php";
+}
+
+/**
+ * This function calls the corresponding model function and includes the corresponding view
+ */
+function updateEmployee() {
+    $action = $_GET["action"];
+    $employee = update($_POST);
 
     require_once VIEWS . "/employee/employee.php";
 }
+
 
 /**
  * This function includes the error view with a message

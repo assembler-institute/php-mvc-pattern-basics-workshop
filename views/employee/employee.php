@@ -12,9 +12,14 @@
 
 <body>
 <main class="main container">
-
     <h1>Employee Details</h1>
-    <form method="post" action="">
+    <?php
+        if(isset($employee["id"])) {
+            echo "<form method='post' action='index.php?controller=employee&action=updateEmployee'>";
+        } else {
+            echo "<form method='post' action='index.php?controller=employee&action=createEmployee'>";
+        }
+    ?>
         <div class="col-md-6">
             <label for="birthDate" class="form-label">Birth Date</label>
             <input
@@ -23,7 +28,7 @@
                 class="form-control"
                 id="birthDate"
                 name="birthDate"
-                value=""
+                value="<?php if(isset($employee['birth_date']) && $employee['birth_date']) echo $employee['birth_date']; ?>"
             >
         </div>
         <div class="col-md-6">
@@ -33,7 +38,7 @@
                 class="form-control"
                 id="lastName"
                 name="lastName"
-                value=""
+                value="<?php if(isset($employee['last_name']) && $employee['last_name']) echo $employee['last_name']; ?>"
             >
         </div>
 
@@ -45,30 +50,35 @@
                 class="form-control"
                 id="firstName"
                 name="firstName"
-                value=""
+                value="<?php if(isset($employee['first_name']) && $employee['first_name']) echo $employee['first_name']; ?>"
             >
         </div>
         <div class="col-md-6">
             <label for="gender" class="form-label">Gender</label>
             <select id="gender" class="form-select" name="gender">
                 <option selected>Choose...</option>
-                <option value="M">Male</option>
-                <option value="F">Female</option>
+                <option value="M" <?php if(isset($employee['gender']) && $employee['gender'] == 'M') echo 'selected'; ?>>Male</option>
+                <option value="F" <?php if(isset($employee['gender']) && $employee['gender'] == 'F') echo 'selected'; ?>>Female</option>
             </select>
         </div>
 
         <div class="col-md-6">
             <label for="hireDate" class="form-label">Hire Date</label>
-            <input required type="text" class="form-control" id="hireDate" name="hireDate" value="">
+            <input
+                required
+                type="text"
+                class="form-control"
+                id="hireDate"
+                name="hireDate"
+                value="<?php if(isset($employee['hire_date']) && $employee['hire_date']) echo $employee['hire_date']; ?>"
+            >
         </div>
 
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="submit" class="btn btn-secondary"><a href="#">Return</a></button>
+            <button type="submit" class="btn btn-secondary"><a href="<?php echo '?controller=employee&action=getAllEmployees'; ?>">Return</a></button>
         </div>
     </form>
 </main>
-
 </body>
-
 </html>

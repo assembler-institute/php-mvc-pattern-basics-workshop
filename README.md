@@ -367,20 +367,3 @@ This will be the file that shows all the records of the database.
 - [Readme example](https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a)
 
 https://www.youtube.com/watch?v=e1oMBaWjye8
-
-    <?php
-        foreach ($employees as $employee) {
-            echo "<tr>";
-            echo "<td>". $employee["id"] . "</td>";
-            echo "<td>". $employee["birth_date"] . "</td>";
-            echo "<td>". $employee["first_name"] . "</td>";
-            echo "<td>". $employee["last_name"] . "</td>";
-            echo "<td>". $employee["gender"] . "</td>";
-            echo "<td>". $employee["hire_date"] . "</td>";
-            echo "<td>
-            <button type='button' class='btn btn-primary'><a href='?controller=employee&action=getEmployee&id=" . $employee["id"] . "'>Edit</a></button>
-            <button type='button' class='btn btn-danger'><a href='?controller=employee&action=deleteEmployee&id=" . $employee["id"] . "'>Delete</a></button>
-            </td>";
-            echo "</tr>";
-        }
-    ?>
