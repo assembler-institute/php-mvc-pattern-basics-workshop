@@ -4,18 +4,16 @@ require_once MODELS . "employeeModel.php";
 
 $action = "";
 
-if(isset($_GET["action"]))
-{
+if (isset($_GET["action"])) {
     $action = $_GET["action"];
 }
 
+
 if(function_exists($action))
 {
-    echo "The function does exist";
-    call_user_func($action);
+    call_user_func($action, $_GET);
 } else
 {
-    // echo "no existe function";
     error("The function does not exist");
 }
 
@@ -38,13 +36,31 @@ function getAllEmployees()
 /**
  * This function calls the corresponding model function and includes the corresponding view
  */
-function getEmployee($request)
+function getEmployee()
 {
-    $action = $request["action"];
+    $action = $_GET["action"];
     $employee = null;
-    if (isset($request["id"])) {
-        $employee = getById($request["id"]);
+    if (isset($_GET["id"])) {
+        $employee = getById($_GET["id"]);
     }
+    require_once VIEWS . "/employee/employee.php";
+}
+
+function deleteEmployee()
+{
+    $action = $_GET["action"];
+    $employee = null;
+    if (isset($_GET["id"])) {
+        $employee = delete($_GET["id"]);
+        header("Location: index.php?controller=employee&action=getAllEmployees");
+    }
+}
+
+function createEmployee()
+{
+    $action = $_GET["action"];
+    $employee = create();
+
     require_once VIEWS . "/employee/employee.php";
 }
 

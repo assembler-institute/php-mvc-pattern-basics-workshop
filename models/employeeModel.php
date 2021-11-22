@@ -4,7 +4,7 @@ require_once("helpers/dbConnection.php");
 
 function get()
 {
-    $query = conn()->prepares("SELECT id, birth_date, first_name, last_name, gender, hire_date
+    $query = conn()->prepare("SELECT id, birth_date, first_name, last_name, gender, hire_date
     FROM employees
     ORDER BY id ASC; ");
 
@@ -18,7 +18,7 @@ function get()
 }
 
 function getById($id){
-    $query = conn()->prepares("SELECT id, birth_date, first_name, last_name, gender, hire_date
+    $query = conn()->prepare("SELECT id, birth_date, first_name, last_name, gender, hire_date
     FROM employees 
     WHERE  id = $id");
 
@@ -32,13 +32,13 @@ function getById($id){
 }
 
 function delete($id) {
-    $query = conn()->prepares("DELETE FROM employees WHERE  id = $id");
+    $query = conn()->prepare("DELETE FROM employees WHERE  id = ?");
     $query->bindParam(1, $id);
 
     try {
         $query->execute();
         return [true];
     } catch (PDOException $e) {
-        return [false, $e->getMessage];
+        return [false, $e];
     }
 }

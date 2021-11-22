@@ -12,38 +12,38 @@
 <body>
 <h1>Employee</h1>
 <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Birth Date</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Gender</th>
-      <th scope="col">Hire Date</th>
-      <th scope="col">Action</th>
-    </tr>
-  </thead>
-  <!-- <tbody>
-    <?php
-        foreach ($employees as $employee) {
-            echo "<tr>";
-            echo "<td>". $employee["id"] . "</td>";
-            echo "<td>". $employee["birth_date"] . "</td>";
-            echo "<td>". $employee["first_name"] . "</td>";
-            echo "<td>". $employee["last_name"] . "</td>";
-            echo "<td>". $employee["gender"] . "</td>";
-            echo "<td>". $employee["hire_date"] . "</td>";
-            echo "<td>
-            <button type='button' class='btn btn-primary'><a href='?controller=employee&action=getEmployee&id=" . $employee["id"] . "'>Edit</a></button>
-            <button type='button' class='btn btn-danger'><a href='?controller=employee&action=deleteEmployee&id=" . $employee["id"] . "'>Delete</a></button>
-            </td>";
-            echo "</tr>";
-        }
-    ?>
-  </tbody> -->
-</table>
-<button type='button' class='btn btn-primary'><a href='?controller=employee&action=createEmployee'>Create</a></button>
-<button type='button' class='btn btn-primary'><a href='./'>Return</a></button>
+        <thead>
+            <tr>
+                <th class="tg-0pky">ID</th>
+                <th class="tg-0pky">Birth Date</th>
+                <th class="tg-0lax">Last Name</th>
+                <th class="tg-0lax">First Name</th>
+                <th class="tg-0lax">Gender</th>
+                <th class="tg-0lax">Hire Date</th>
+                <th class="tg-0lax">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            foreach ($employees as $index => $employee) {
+                echo "<tr>";
+                echo "<td class='tg-0lax'>" . $employee["id"] . "</td>";
+                echo "<td class='tg-0lax'>" . $employee["birth_date"] . "</td>";
+                echo "<td class='tg-0lax'>" . $employee["last_name"] . "</td>";
+                echo "<td class='tg-0lax'>" . $employee["first_name"] . "</td>";
+                echo "<td class='tg-0lax'>" . $employee["gender"] . "</td>";
+                echo "<td class='tg-0lax'>" . $employee["hire_date"] . "</td>";
+                echo "<td colspan='2' class='tg-0lax'>
+                <a class='btn btn-secondary' href='?controller=employee&action=getEmployee&id=" . $employee["id"] . "'>Edit</a>
+                <a class='btn btn-danger' href='?controller=employee&action=deleteEmployee&id=" . $employee["id"] . "'>Delete</a>
+                </td>";
+                echo "</tr>";
+            }
+            ?>
+        </tbody>
+    </table>
+    <a id="home" class="btn btn-primary" href="?controller=employee&action=createEmployee">Create</a>
+    <a id="home" class="btn btn-secondary" href="./">Back</a>
 </body>
 
 </html>
