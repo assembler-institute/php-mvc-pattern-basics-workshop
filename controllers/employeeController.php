@@ -41,7 +41,9 @@ function getAllEmployees()
  */
 function getEmployee($request)
 {
-    //
+  $employee_id = $request['id'];
+  $employee = getById($employee_id);
+  var_dump($employee);
 }
 
 /**
