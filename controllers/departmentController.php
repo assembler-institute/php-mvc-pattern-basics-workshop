@@ -1,41 +1,62 @@
 <?php
 
-require_once(MODELS . "/departmentModel.php");
+require_once MODELS . "/employeeModel.php";
+require_once MODELS . "/departmentModel.php";
 
-if (!isset($_REQUEST["action"])) return error("No action has been specified");
+if (!isset($_REQUEST["action"])) 						return error("No action has been specified");
+if (!function_exists($_REQUEST["action"])) 	return error("Action not found");
 
-$action = $_REQUEST["action"];
-
-if (!function_exists($action)) return error("Action not found");
-
-call_user_func($action, $_REQUEST);
-
+call_user_func($_REQUEST["action"], $_REQUEST);
 
 /* ~~~ CONTROLLER FUNCTIONS ~~~ */
 
 function getAllDepartments()
 {
-	$response = get();
+	$response = getDepartments();
 
-	if ($response["errCode"]) return error($response["errCode"]);
+	if ($response["errorCode"]) return error("DB operation failed.");
 
-	var_dump($response["data"]);
+	require_once VIEWS . "/department/departmentDashboard.php";
 }
 
-function getDepartment($request)
+function getDepartmentForm($request)
+{
+	if (isset($request["id"])) {
+		$responseDept = getDepartment($request["id"]);
+
+		if ($responseDept["errorCode"]) return error("DB operation failed.");
+	}
+
+	$responseEmps = getEmployees();
+
+	if ($responseEmps["errorCode"]) return error("DB operation failed.");
+
+	require_once VIEWS . "/department/department.php";
+}
+
+function deleteDepartmentByID($request)
 {
 	if (!isset($request["id"])) return error("ID not specified");
 
-	$response = getById($request["id"]);
+	$response = deleteDepartment($request["id"]);
 
-	if ($response["errCode"]) return error($response["errCode"]);
+	if ($response["errorCode"]) return error("DB operation failed.");
 
-	var_dump($response["data"]);
+	header("Location: ?controller=department&action=getAllDepartments");
+}
+
+function updateDepartmentByID($request)
+{
+	if (!isset($request["dept_no"])) return error("ID not specified");
+
+	$response = updateDepartment($request);
+
+	if ($response["errorCode"]) return error("DB operation failed. $response[errorCode]");
+
+	header("Location: ?controller=department&action=getAllDepartments");
 }
 
 function error($errorMsg)
 {
-	require_once(VIEWS . "/error/error.php");
-
-	echo $errorMsg;
+	require_once VIEWS . "/error/error.php";
 }

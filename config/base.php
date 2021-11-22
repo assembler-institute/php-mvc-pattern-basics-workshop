@@ -3,15 +3,6 @@
 //BASE PATH -> FOR REFERENCE FILES
 define("BASE_PATH", getcwd());
 
-//BASE URL -> FOR LINK CSS
-$uri = $_SERVER['REQUEST_URI'];
+//BASE URL -> FOR LINK CSS AND SCRIPTS
 
-if (isset($uri) && $uri !== null) {
-	$uri = substr($uri, 1);
-	$uri = explode('/', $uri);
-	$uri = "http://$_SERVER[HTTP_HOST]" . "/" . $uri[0];
-} else {
-	$uri = null;
-}
-
-define("BASE_URL", $uri);
+define("BASE_URL", "http://$_SERVER[HTTP_HOST]/");

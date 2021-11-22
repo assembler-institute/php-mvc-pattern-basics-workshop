@@ -13,12 +13,12 @@ function getDatabaseConnection()
 
 		return [
 			"db" => $db,
-			"errCode" => null
+			"errorCode" => null
 		];
 	} catch (Throwable $e) {
 		return [
 			"db" => null,
-			"errCode" => $e->getCode()
+			"errorCode" => $e->getCode()
 		];
 	}
 }

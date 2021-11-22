@@ -1,0 +1,24 @@
+{
+  "name": "php-mvc-pattern-basics-workshop",
+  "version": "1.0.0",
+  "description": "`#patterns` `#mvc` `#php` `#master-in-software-engineering`",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanadriu/php-mvc-pattern-basics-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanadriu/php-mvc-pattern-basics-workshop/issues"
+  },
+  "homepage": "https://github.com/sanadriu/php-mvc-pattern-basics-workshop#readme"
+}

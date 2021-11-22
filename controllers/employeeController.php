@@ -1,41 +1,51 @@
 <?php
 
-require_once(MODELS . "/employeeModel.php");
+require_once MODELS . "/employeeModel.php";
+require_once MODELS . "/departmentModel.php";
 
-if (!isset($_REQUEST["action"])) return error("No action has been specified");
+if (!isset($_REQUEST["action"])) 						return error("No action has been specified");
+if (!function_exists($_REQUEST["action"])) 	return error("Action not found");
 
-$action = $_REQUEST["action"];
-
-if (!function_exists($action)) return error("Action not found");
-
-call_user_func($action, $_REQUEST);
-
+call_user_func($_REQUEST["action"], $_REQUEST);
 
 /* ~~~ CONTROLLER FUNCTIONS ~~~ */
 
 function getAllEmployees()
 {
-	$response = get();
+	$response = getEmployees();
 
-	if ($response["errCode"]) return error($response["errCode"]);
+	if ($response["errorCode"]) return error("DB operation failed.");
 
-	var_dump($response["data"]);
+	require_once VIEWS . "/employee/employeeDashboard.php";
 }
 
-function getEmployee($request)
+function getEmployeeForm($request)
+{
+	if (isset($request["id"])) {
+		$responseEmp = getEmployee($request["id"]);
+
+		if ($responseEmp["errorCode"]) return error("DB operation failed.");
+	}
+
+	$responseDepts = getDepartments();
+
+	if ($responseDepts["errorCode"]) return error("DB operation failed.");
+
+	require_once VIEWS . "/employee/employee.php";
+}
+
+function deleteEmployeeByID($request)
 {
 	if (!isset($request["id"])) return error("ID not specified");
 
-	$response = getById($request["id"]);
+	$response = deleteEmployee($request["id"]);
 
-	if ($response["errCode"]) return error($response["errCode"]);
+	if ($response["errorCode"]) return error("DB operation failed.");
 
-	var_dump($response["data"]);
+	header("Location: ?controller=employee&action=getAllEmployees");
 }
 
 function error($errorMsg)
 {
-	require_once(VIEWS . "/error/error.php");
-
-	echo $errorMsg;
+	require_once VIEWS . "/error/error.php";
 }

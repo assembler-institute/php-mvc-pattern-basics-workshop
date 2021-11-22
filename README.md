@@ -35,8 +35,7 @@ When you're creating a MVC project from scratch it's very important to follow co
 
 ## 1. Prepare the constants
 
-> In order to call dynamically all the CSS, JS and PHP files, we must configure our project constants that will be accessed during the execution of the application.
-> These files will be located in `./config/`
+> In order to call dynamically all the CSS, JS and PHP files, we must configure our project constants that will be accessed during the execution of the application. These files will be located in `./config/`
 
 ### 1.1. `./config/baseConstants.php`
 
@@ -349,7 +348,7 @@ This will be the file that shows all the records of the database.
                 echo "<td class='tg-0lax'>" . $employee["phone_number"] . "</td>";
                 echo "<td colspan='2' class='tg-0lax'>
                 <a class='btn btn-secondary' href='?controller=employee&action=getEmployee&id=" . $employee["id"] . "'>Edit</a>
-                <a class='btn btn-danger' href='?controller=employee&action=deleteEmployee&id=" . $employee["id"] . "'>Delete</a>
+                <a class='btn btn-danger' href='?controller=employee&action=delete&id=" . $employee["id"] . "'>Delete</a>
                 </td>";
                 echo "</tr>";
             }

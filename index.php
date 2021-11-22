@@ -14,7 +14,6 @@ if (isset($_GET["controller"])) {
 	}
 } else {
 	require_once VIEWS . "main/main.php";
-	echo "OK";
 }
 
 function getControllerPath(string $controllerName)

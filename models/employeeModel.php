@@ -2,20 +2,20 @@
 
 require_once(MODELS . "/helpers/dbConnection.php");
 
-function get()
+function getEmployees()
 {
-	["db" => $db, "errCode" => $errCode] = getDatabaseConnection();
+	["db" => $db, "errorCode" => $errorCode] = getDatabaseConnection();
 
-	if ($errCode) return ["errCode" => $errCode];
+	if ($errorCode) return ["errorCode" => $errorCode];
 
 	try {
-		$query = "SELECT emp_no, first_name, last_name, gender, hire_date, salary, dept_name
+		$query = "SELECT employees.emp_no AS emp_no, first_name, last_name, gender, hire_date, salary, dept_name
 			FROM employees
-			LEFT JOIN salaries 		USING (emp_no)
-			LEFT JOIN dept_emp 		USING (emp_no)
+			LEFT JOIN salaries 		ON employees.emp_no = salaries.emp_no
+			LEFT JOIN dept_emp 		ON employees.emp_no = dept_emp.emp_no
 			LEFT JOIN departments USING (dept_no)
-			WHERE CURRENT_DATE() BETWEEN salaries.from_date AND salaries.to_date
-			AND CURRENT_DATE() BETWEEN dept_emp.from_date AND dept_emp.to_date
+			WHERE salaries.to_date IS NULL
+			AND dept_emp.to_date IS NULL
 		;";
 
 		$stmt = $db->prepare($query);
@@ -24,47 +24,70 @@ function get()
 
 		return [
 			"data" => $data,
-			"errCode" => null,
+			"errorCode" => null,
 		];
 	} catch (Throwable $e) {
-		echo $e->getMessage();
 		return [
 			"data" => null,
-			"errCode" => $e->getCode(),
+			"errorCode" => $e->getCode(),
 		];
 	}
 }
 
-function getById($id)
+function getEmployee($id)
 {
-	["db" => $db, "errCode" => $errCode] = getDatabaseConnection();
+	["db" => $db, "errorCode" => $errorCode] = getDatabaseConnection();
 
-	if ($errCode) return ["errCode" => $errCode];
+	if ($errorCode) return ["errorCode" => $errorCode];
 
 	try {
-		$query = "SELECT first_name, last_name, gender, hire_date, salary, dept_name
+		$query = "SELECT employees.emp_no AS emp_no, first_name, last_name, gender, hire_date, salary, dept_no, dept_name
 			FROM employees
-			LEFT JOIN salaries 		USING (emp_no)
-			LEFT JOIN dept_emp 		USING (emp_no)
+			LEFT JOIN salaries 		ON employees.emp_no = salaries.emp_no
+			LEFT JOIN dept_emp 		ON employees.emp_no = dept_emp.emp_no
 			LEFT JOIN departments USING (dept_no)
-			WHERE CURRENT_DATE() BETWEEN salaries.from_date AND salaries.to_date
-			AND CURRENT_DATE() BETWEEN dept_emp.from_date AND dept_emp.to_date
-			AND emp_no = ?
+			WHERE salaries.to_date IS NULL
+			AND dept_emp.to_date IS NULL
+			AND employees.emp_no = ?
 		;";
 
 		$stmt = $db->prepare($query);
 		$stmt->execute([$id]);
-		$data = $stmt->fetchAll();
+		$data = $stmt->fetch();
 
 		return [
 			"data" => $data,
-			"errCode" => null,
+			"errorCode" => null,
 		];
 	} catch (Throwable $e) {
-		echo $e->getMessage();
 		return [
 			"data" => null,
-			"errCode" => $e->getCode(),
+			"errorCode" => $e->getCode(),
+		];
+	}
+}
+
+function deleteEmployee($id)
+{
+	["db" => $db, "errorCode" => $errorCode] = getDatabaseConnection();
+
+	if ($errorCode) return ["errorCode" => $errorCode];
+
+	try {
+		$query = "DELETE FROM employees WHERE emp_no = ?;";
+
+		$stmt = $db->prepare($query);
+		$stmt->execute([$id]);
+		$data = $stmt->fetch();
+
+		return [
+			"data" => $data,
+			"errorCode" => null,
+		];
+	} catch (Throwable $e) {
+		return [
+			"data" => null,
+			"errorCode" => $e->getCode(),
 		];
 	}
 }
