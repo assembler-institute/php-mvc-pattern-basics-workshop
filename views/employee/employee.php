@@ -29,8 +29,8 @@
                 hidden
                 type="text"
                 class="form-control"
-                id="birthDate"
-                name="birthDate"
+                id="id"
+                name="id"
                 value="<?php if(isset($employee['id']) && $employee['id']) echo $employee['id']; ?>"
         >
         <div class="col-md-6">

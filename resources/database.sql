@@ -19,12 +19,13 @@ CREATE TABLE employees (
 );
 
 CREATE TABLE salaries (
+    id          INT AUTO_INCREMENT NOT NULL,
     emp_id          INT             NOT NULL,
     salary      INT             NOT NULL,
     from_date   DATE            NOT NULL,
     to_date     DATE            ,
     FOREIGN KEY (emp_id) REFERENCES employees (id) ON DELETE CASCADE,
-    PRIMARY KEY (emp_id, from_date)
+    PRIMARY KEY (id, emp_id, from_date)
 ) 
 ; 
 
