@@ -1,6 +1,6 @@
 <?php
 
-require_once("./baseConstants.php");
+require_once("config/baseConstants.php");
 
 //CONTROLLERS
 define("CONTROLLERS", BASE_PATH . '/controllers/');
