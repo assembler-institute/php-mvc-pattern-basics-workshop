@@ -43,7 +43,13 @@ function getEmployee($request)
 {
   $employee_id = $request['id'];
   $employee = getById($employee_id);
-  var_dump($employee);
+  $hobbies = getHobbiesByEmployeeId($employee_id);
+  
+  if (isset($employee)) {
+    require_once VIEWS . "/employee/employeeView.php";
+  } else {
+      error("There is a database error, try again.");
+  }
 }
 
 /**

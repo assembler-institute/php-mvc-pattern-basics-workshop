@@ -8,7 +8,7 @@ Instead making multiple querys , like the one that gets all employess and adding
 ```sql
   SELECT h.name as 'hobbie'
   FROM hobbies h
-  INNER JOIN employees_hobbies eh ON h.id = eh.hobbie_id
+  INNER JOIN employee_hobbies eh ON h.id = eh.hobbie_id
   WHERE employee_id = $id;
 ```
 
