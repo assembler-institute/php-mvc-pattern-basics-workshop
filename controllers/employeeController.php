@@ -47,7 +47,49 @@ function getEmployee($request)
     require_once VIEWS . "/employee/employee.php";
 }
 
+function createEmployee($request)
+{
+    $action = $request["action"];
+    if (sizeof($_POST) > 0) {
+        $employee = create($_POST);
 
+        if ($employee[0]) {
+            header("Location: index.php?controller=employee&action=getAllEmployees");
+        } else {
+            echo $employee[1];
+        }
+    } else {
+        require_once VIEWS . "/employee/employee.php";
+    }
+}
+
+function updateEmployee($request)
+{
+    $action = $request["action"];
+    if (sizeof($_POST) > 0) {
+        $employee = update($_POST);
+
+        if ($employee[0]) {
+            header("Location: index.php?controller=employee&action=getAllEmployees");
+        } else {
+            $employee = $_POST;
+            $error = "The data entered is incorrect, check that there is no other employee with that email.";
+            require_once VIEWS . "/employee/employee.php";
+        }
+    } else {
+        require_once VIEWS . "/employee/employee.php";
+    }
+}
+
+function deleteEmployee($request)
+{
+    $action = $request["action"];
+    $employee = null;
+    if (isset($request["employeeId"])) {
+        $employee = delete($request["employeeId"]);
+        header("Location: index.php?controller=employee&action=getAllEmployees");
+    }
+}
 /**
  * This function includes the error view with a message
  */

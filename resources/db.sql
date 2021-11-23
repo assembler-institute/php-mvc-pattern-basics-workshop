@@ -1,3 +1,7 @@
+DROP DATABASE IF EXISTS mvc_master;
+CREATE DATABASE IF NOT EXISTS mvc_master;
+USE mvc_master;
+
 CREATE TABLE employees (
     employeeId int NOT NULL AUTO_INCREMENT,
     firstName varchar(255) NOT NULL,
