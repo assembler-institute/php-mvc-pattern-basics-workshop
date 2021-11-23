@@ -14,6 +14,8 @@ function getSubjects()
     }
 }
 
+
+
 function getById($id)
 {
     $query = conn()->prepare("SELECT  s.id ,s.subjects_name, a.id, a.title, a.grades, date FROM anotations a INNER JOIN subjects s ON a.subjects_id=s.id WHERE anotations_user_id =$id;");
