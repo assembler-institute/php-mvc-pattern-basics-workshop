@@ -1,8 +1,7 @@
 <?php
-
 $department = $responseDept["data"];
 $employees = 	$responseEmps["data"];
-
+$action = isset($department) ? "updateDepartmentByID" : "createNewDepartment";
 ?>
 
 <!DOCTYPE html>
@@ -23,19 +22,26 @@ $employees = 	$responseEmps["data"];
 	<?php include(BASE_PATH . "/assets/html/header.html") ?>;
 	<main>
 		<div class="container-sm">
-			<h1 class="display-6 m-0 p-0">Department</h1>
+			<div class="d-flex justify-content-between align-items-end">
+				<h1 class="display-6 m-0 p-0">Department</h1>
+				<?php if (isset($department)) : ?>
+					<span class="fw-light">Department #<?= $department["dept_no"] ?></span>
+				<?php endif ?>
+			</div>
 			<hr>
-			<form method="POST" action="?controller=department&action=updateDepartmentByID">
+			<form method="POST" action="?controller=department&action=<?= $action ?>">
 				<input type="hidden" id="dept_no" name="dept_no" value="<?= $department['dept_no'] ?>" />
 				<div class="row">
 					<div class="col-6 my-2">
 						<label class="fw-normal" for="dept_name">Department name</label>
-						<input class="form-control my-2" type="text" id="dept_name" name="dept_name" value="<?= $department['dept_name'] ?>" />
+						<input class="form-control my-2" type="text" id="dept_name" name="dept_name" value="<?= isset($department) ? $department['dept_name'] : null ?>" />
 					</div>
 					<div class="col-6 my-2">
 						<label class="fw-normal" for="manager_no">Manager</label>
 						<select class="form-select my-2" id="manager_no" name="manager_no">
-							<option value="<?= $department['manager_no'] ?>" disabled selected><?= $department['manager_name'] ?></option>
+							<?php if (isset($department)) : ?>
+								<option value="<?= $department['manager_no'] ?>" disabled selected><?= $department['manager_name'] ?></option>
+							<?php endif ?>
 							<?php foreach ($employees as $employee) : ?>
 								<option value="<?= $employee['emp_no'] ?>"><?= $employee['first_name'] . " " . $employee['last_name'] ?></option>
 							<?php endforeach ?>

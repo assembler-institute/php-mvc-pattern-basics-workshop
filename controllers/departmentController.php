@@ -25,6 +25,11 @@ function getDepartmentForm($request)
 		$responseDept = getDepartment($request["id"]);
 
 		if ($responseDept["errorCode"]) return error("DB operation failed.");
+	} else {
+		$responseDept = [
+			"data" => null,
+			"errorCode" => null,
+		];
 	}
 
 	$responseEmps = getEmployees();
@@ -50,6 +55,15 @@ function updateDepartmentByID($request)
 	if (!isset($request["dept_no"])) return error("ID not specified");
 
 	$response = updateDepartment($request);
+
+	if ($response["errorCode"]) return error("DB operation failed. $response[errorCode]");
+
+	header("Location: ?controller=department&action=getAllDepartments");
+}
+
+function createNewDepartment($request)
+{
+	$response = createDepartment($request);
 
 	if ($response["errorCode"]) return error("DB operation failed. $response[errorCode]");
 

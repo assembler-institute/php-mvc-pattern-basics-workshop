@@ -119,17 +119,87 @@ function updateDepartment($request)
 		$stmt->bindParam(":dept_name", 	$request["dept_name"]);
 		$stmt->execute();
 
-		$query = "UPDATE dept_manager SET to_date = CURRENT_DATE WHERE dept_no = :dept_no AND emp_no != :manager_no AND to_date IS NULL;";
+		// CHECK IF A EMPLOYEE SALARY REGISTER EXISTS
+
+		$query = "SELECT dept_no FROM dept_manager WHERE dept_no = :dept_no";
 		$stmt = $db->prepare($query);
 		$stmt->bindParam(":dept_no", 		$request["dept_no"]);
-		$stmt->bindParam(":manager_no", $request["manager_no"]);
+		$stmt->execute();
+		$managerExists = boolval($stmt->rowCount());
+
+		// SET END DATE FOR CURRENT MANAGER IF:
+		// - IT EXISTS
+		// - NEW MANAGER IS DIFERENT
+
+		if ($managerExists) {
+			$query = "UPDATE dept_manager SET to_date = CURRENT_DATE WHERE dept_no = :dept_no AND emp_no != :manager_no AND to_date IS NULL;";
+			$stmt = $db->prepare($query);
+			$stmt->bindParam(":dept_no", 		$request["dept_no"]);
+			$stmt->bindParam(":manager_no", $request["manager_no"]);
+			$stmt->execute();
+			$managerUpdated = boolval($stmt->rowCount());
+		} else {
+			$managerUpdated = false;
+		}
+
+		// INSERT NEW MANAGER IF:
+		// - THERE IS NOT ANY MANAGER YET
+		// - CURRENT MANAGER END DATE HAS BEEN SET
+
+		if ($managerUpdated || !$managerExists) {
+			$query = "INSERT INTO dept_manager (dept_no, emp_no) VALUES (:dept_no, :manager_no);";
+			$stmt = $db->prepare($query);
+			$stmt->bindParam(":dept_no", 		$request["dept_no"]);
+			$stmt->bindParam(":manager_no", $request["manager_no"]);
+			$stmt->execute();
+		}
+
+		$data = $db->commit();
+
+		return [
+			"data" => $data,
+			"errorCode" => null,
+		];
+	} catch (Throwable $e) {
+		$db->rollBack();
+
+		return [
+			"data" => null,
+			"errorCode" => $e->getCode(),
+		];
+	}
+}
+
+function createDepartment($request)
+{
+	["db" => $db, "errorCode" => $errorCode] = getDatabaseConnection();
+
+	if ($errorCode) return ["errorCode" => $errorCode];
+
+	try {
+		$db->beginTransaction();
+
+		$query = "INSERT INTO departments (dept_name) VALUES (:dept_name)";
+		$stmt = $db->prepare($query);
+		$stmt->bindParam(":dept_name", 	$request["dept_name"]);
 		$stmt->execute();
 
-		$query = "INSERT INTO dept_manager (dept_no, emp_no) VALUES (:dept_no, :manager_no);";
+		// GET NEW DEPARTMENT ID
+
+		$query = "SELECT MAX(dept_no) AS id FROM departments";
 		$stmt = $db->prepare($query);
-		$stmt->bindParam(":dept_no", 		$request["dept_no"]);
-		$stmt->bindParam(":manager_no", $request["manager_no"]);
 		$stmt->execute();
+		$id = $stmt->fetch()["id"];
+
+		// SET MANAGER IF EXISTS IN THE REQUEST
+
+		if (isset($request["manager_no"]) && strlen($request["manager_no"])) {
+			$query = "INSERT INTO dept_manager (dept_no, emp_no) VALUES (:dept_no, :manager_no);";
+			$stmt = $db->prepare($query);
+			$stmt->bindParam(":dept_no", 		$id);
+			$stmt->bindParam(":manager_no", $request["manager_no"]);
+			$stmt->execute();
+		}
 
 		$data = $db->commit();
 

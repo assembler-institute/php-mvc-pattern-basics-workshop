@@ -1,8 +1,7 @@
 <?php
-
 $employee = 		$responseEmp["data"];
 $departments = 	$responseDepts["data"];
-
+$action = isset($employee) ? "updateEmployeeByID" : "createNewEmployee";
 ?>
 
 <!DOCTYPE html>
