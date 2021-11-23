@@ -1,0 +1,29 @@
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__title {
+  margin: 5rem auto;
+  font-size: 5rem;
+  color: white;
+}
+
+.main__link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 auto 4rem;
+  width: 30%;
+  padding: 0.5rem;
+  background-color: white;
+  border: 2px solid orange;
+  text-decoration: none;
+  color: orange;
+}
+
+.main__link:hover {
+  background-color: darkorange;
+  border: 2px solid white;
+  color: white;
+}

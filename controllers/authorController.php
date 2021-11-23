@@ -25,7 +25,7 @@ if (function_exists($action)) {
  */
 function getAllAuthors()
 {
-    $authors = get();
+    $authors = getAll();
 
     if (isset($authors)) {
         require_once VIEWS . "/author/authorDashboard.php";
@@ -45,7 +45,7 @@ function getAuthor($request)
     $author = null;
 
     if (isset($request["id"])) {
-        $author = getById($request["id"]);
+        $author = getAuthById($request["id"]);
     }
 
     require_once VIEWS . "author/author.php";
@@ -59,7 +59,7 @@ function createAuthor($request)
         $author = addAuthor($_POST);
 
         if ($author[0]) {
-            header("Location: index.php?controller=author&action=getAllAuthors");
+            getAllAuthors();
         } else {
             echo $author[1];
         }
@@ -73,7 +73,7 @@ function updateAuthor($request)
     $action = $request["action"];
 
     if (sizeof($_POST) > 0) {
-        $author = update($_POST);
+        $author = updateAuth($_POST);
 
         if ($author[0]) {
             header("Location: index.php?controller=author&action=getAllAuthors");
@@ -93,8 +93,8 @@ function deleteAuthor($request)
     $author = null;
 
     if (isset($request["id"])) {
-        $author = delete($request["id"]);
-        header("Location : index.php?controller=author&action=getAllAuthors");
+        deleteAuth($request["id"]);
+        getAllAuthors();
     }
 }
 

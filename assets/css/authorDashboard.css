@@ -1,0 +1,63 @@
+.form__table {
+  margin: 2rem auto;
+  border-radius: 0.4rem;
+}
+
+.table__body:nth-child(even) {
+  background-color: rgb(255, 219, 152);
+}
+
+.table__body:nth-child(odd) {
+  background-color: white;
+}
+
+.form__tabHead {
+  background-color: darkorange;
+  padding: 0.5rem 2rem;
+  border-radius: 0.4rem;
+  border: 1px solid darkorange;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.form__tabCell {
+  /* background-color: white; */
+  padding: 0 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.centredRow {
+  text-align: center;
+}
+
+.form__edit,
+.form__delete {
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  color: white;
+}
+
+.form__delete {
+  background-color: black;
+  border: 1px solid orange;
+}
+
+.form__delete:hover {
+  background-color: orange;
+  border: 1px solid black;
+  color: black;
+}
+
+.form__edit {
+  background-color: green;
+  border: 1px solid white;
+}
+
+.form__edit:hover {
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+}

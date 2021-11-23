@@ -3,7 +3,7 @@
 require_once("helpers/dbConnection.php");
 
 
-function get()
+function getAll()
 {
     $query = conn()->prepare("SELECT id, first_name, last_name, country
     FROM authors;");
@@ -17,7 +17,7 @@ function get()
     }
 }
 
-function getById($id)
+function getAuthById($id)
 {
     $query = conn()->prepare("SELECT id, first_name, last_name, country, language, death_date, death_age
     FROM authors
@@ -54,7 +54,7 @@ function addAuthor($author)
     }
 }
 
-function update($author)
+function updateAuth($author)
 {
     $query = conn()->prepare("UPDATE authors
     SET first_name = ?, last_name = ?, country = ?, language = ?, death_date = ?, death_age = ?
@@ -76,7 +76,7 @@ function update($author)
     }
 }
 
-function delete($id)
+function deleteAuth($id)
 {
     $query = conn()->prepare("DELETE FROM authors
     WHERE id = $id;");

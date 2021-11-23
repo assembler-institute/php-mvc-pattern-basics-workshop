@@ -1,0 +1,29 @@
+.form {
+  margin: auto;
+  width: 25%;
+}
+
+.form__el {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  justify-content: end;
+}
+
+.form__el input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 1.5px solid orange;
+}
+
+.form__el label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.form .main__link {
+  cursor: pointer;
+  margin-top: 1rem;
+  position: relative;
+  left: 17rem;
+}
