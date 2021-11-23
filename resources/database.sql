@@ -82,3 +82,8 @@ VALUES
 (13, 42000, '2012-08-31', NULL),
 (14, 45000, '2009-04-18', NULL),
 (15, 28000, '2015-10-12', NULL);
+
+
+-- Insert value to table users
+INSERT INTO users (username, email, password) VALUES
+('test', 'test@gmail.com', 'test');

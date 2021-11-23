@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: ./");
+    exit;
+}
+
 require_once MODELS . "salaryModel.php";
 
 $action = "";
@@ -23,7 +30,6 @@ if(function_exists($action))
  */
 function getAllSalaries()
 {
-    // echo "We are inside the function getAllEmployees";
     $salaries = get();
 
     if(isset($salaries)) {

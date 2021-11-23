@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: ./");
+    exit;
+}
+
 require_once MODELS . "employeeModel.php";
 
 $action = "";
@@ -78,7 +85,7 @@ function createEmployee()
  */
 function updateEmployee() {
     $action = $_GET["action"];
-    var_dump($_POST);
+    // var_dump($_POST);
     $employee = update($_POST);
 
     require_once VIEWS . "/employee/employee.php";

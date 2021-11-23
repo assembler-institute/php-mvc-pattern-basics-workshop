@@ -20,7 +20,7 @@
         <h1>Account Login</h1>
         <form
             method="POST"
-            action=""
+            action="?controller=login&action=validateLogin"
         >
             <div class="mb-3">
                 <label for="username" class="form-label">Username:</label>
@@ -32,7 +32,7 @@
             </div>
             <button type="submit" class="btn-login" value="Submit">Submit</button>
         </form>
-        <p>Click here if you do not have any account <a href="">Register</a></p>
+        <p>Click here if you do not have any account <a href="#">Register</a></p>
     </div>
 </body>
 </html>
