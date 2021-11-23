@@ -25,18 +25,22 @@ $departments = 	$responseDepts["data"];
 		<div class="container-sm">
 			<h1 class="display-6 m-0 p-0">Employee</h1>
 			<hr>
-			<form method="POST" action="?controller=employee&action=editEmployee">
+			<form method="POST" action="?controller=employee&action=updateEmployeeByID">
 				<input type="hidden" id="emp_no" name="emp_no" value="<?= $employee['emp_no'] ?>" />
 				<div class="row">
-					<div class="col-4 my-2">
-						<label class="fw-normal" for="emp_name">First name</label>
+					<div class="col-3 my-2">
+						<label class="fw-normal" for="first_name">First name</label>
 						<input class="form-control my-2" type="text" id="first_name" name="first_name" value="<?= $employee['first_name'] ?>" />
 					</div>
-					<div class="col-4 my-2">
-						<label class="fw-normal" for="emp_last">Last name</label>
+					<div class="col-3 my-2">
+						<label class="fw-normal" for="last_name">Last name</label>
 						<input class="form-control my-2" type="text" id="last_name" name="last_name" value="<?= $employee['last_name'] ?>" />
 					</div>
-					<div class="col-4 my-2">
+					<div class="col-3 my-2">
+						<label class="fw-normal" for="birth_date">Last name</label>
+						<input class="form-control my-2" type="date" id="birth_date" name="birth_date" value="<?= $employee['birth_date'] ?>" />
+					</div>
+					<div class="col-3 my-2">
 						<label class="fw-normal" for="gender">Gender</label>
 						<select class="form-select my-2" id="gender" name="gender">
 							<option value="<?= $employee['gender'] ?>" disabled><?= $employee['gender'] ?></option>

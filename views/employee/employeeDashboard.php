@@ -25,6 +25,7 @@
 						<th class="fw-normal">First name</th>
 						<th class="fw-normal">Last name</th>
 						<th class="fw-normal">Gender</th>
+						<th class="fw-normal">Birth date</th>
 						<th class="fw-normal">Hire date</th>
 						<th class="fw-normal">Current salary</th>
 						<th class="fw-normal">Current department</th>
@@ -38,6 +39,7 @@
 							<td class="fw-light"><?= $employee['first_name'] ?></td>
 							<td class="fw-light"><?= $employee['last_name'] ?></td>
 							<td class="fw-light"><?= $employee['gender'] ?></td>
+							<td class="fw-light"><?= $employee['birth_date'] ?></td>
 							<td class="fw-light"><?= $employee['hire_date'] ?></td>
 							<td class="fw-light"><?= $employee['salary'] ?></td>
 							<td class="fw-light"><?= $employee['dept_name'] ?></td>

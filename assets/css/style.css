@@ -17,9 +17,19 @@ td {
 }
 
 .section-card {
-	background-color: teal;
+	width: 25rem;
+	height: 40rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 	color: white;
 	text-decoration: none;
+
+	background-color: teal;
+	border-radius: 0.25rem;
 }
 
 .section-card:hover {

@@ -18,10 +18,10 @@
 		<div class="container-fluid">
 			<div class="d-flex justify-content-center align-items-center gap-3 p-3">
 				<a href="?controller=employee&action=getAllEmployees">
-					<div class="section-card rounded-3 p-5 shadow-sm">Employees</div>
+					<div class="section-card display-6">Employees</div>
 				</a>
 				<a href="?controller=department&action=getAllDepartments">
-					<div class="section-card rounded-3 p-5 shadow-sm">Departments</div>
+					<div class="section-card display-6">Departments</div>
 				</a>
 			</div>
 		</div>

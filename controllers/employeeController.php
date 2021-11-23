@@ -45,6 +45,17 @@ function deleteEmployeeByID($request)
 	header("Location: ?controller=employee&action=getAllEmployees");
 }
 
+function updateEmployeeByID($request)
+{
+	if (!isset($request["emp_no"])) return error("ID not specified");
+
+	$response = updateEmployee($request);
+
+	if ($response["errorCode"]) return error("DB operation failed. $response[errorCode]");
+
+	header("Location: ?controller=employee&action=getAllEmployees");
+}
+
 function error($errorMsg)
 {
 	require_once VIEWS . "/error/error.php";

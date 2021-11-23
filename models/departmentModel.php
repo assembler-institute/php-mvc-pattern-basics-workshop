@@ -125,15 +125,11 @@ function updateDepartment($request)
 		$stmt->bindParam(":manager_no", $request["manager_no"]);
 		$stmt->execute();
 
-		$setNewManager = $stmt->rowCount();
-
-		if ($setNewManager) {
-			$query = "INSERT INTO dept_manager (dept_no, emp_no) VALUES (:dept_no, :manager_no);";
-			$stmt = $db->prepare($query);
-			$stmt->bindParam(":dept_no", 		$request["dept_no"]);
-			$stmt->bindParam(":manager_no", $request["manager_no"]);
-			$stmt->execute();
-		}
+		$query = "INSERT INTO dept_manager (dept_no, emp_no) VALUES (:dept_no, :manager_no);";
+		$stmt = $db->prepare($query);
+		$stmt->bindParam(":dept_no", 		$request["dept_no"]);
+		$stmt->bindParam(":manager_no", $request["manager_no"]);
+		$stmt->execute();
 
 		$data = $db->commit();
 
