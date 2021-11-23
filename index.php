@@ -9,7 +9,6 @@ if (isset($_GET['controller']))
     $fileExists = file_exists($controller);
 
     if ($fileExists) {
-        // echo "file exist";
         require_once $controller;
     } else {
         $errorMsg = "The page you are trying to access does not exists.";
@@ -17,7 +16,6 @@ if (isset($_GET['controller']))
     }
 } else {
     require_once VIEWS . "login/loginDashboard.php";
-    // require_once VIEWS . "main/main.php";
 }
 
 function getControllerPath($controller): string

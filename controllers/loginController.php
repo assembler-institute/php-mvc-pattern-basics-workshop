@@ -34,6 +34,34 @@ function validateLogin()
     }
 }
 
+function logout() {
+    session_start();
+    unset($_SESSION['username']);
+    if (ini_get("session.use_cookies")) {
+        $params = session_get_cookie_params();
+        setcookie(
+            session_name(),
+            "",
+            time() - 42000,
+            $params["path"],
+            $params["domain"],
+            $params["secure"],
+            $params["httpOnly"],
+        );
+    }
+
+    session_destroy();
+    header("Location: ?controller=login&action=viewLogin");
+}
+
+function viewLogin() {
+    require_once VIEWS . "login/loginDashboard.php";
+}
+
+
+/**
+ * This function includes the error view with a message
+ */
 function error($errorMsg)
 {
     require_once VIEWS . "/error/error.php";

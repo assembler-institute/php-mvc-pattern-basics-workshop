@@ -26,11 +26,10 @@ if(function_exists($action))
 
 
 /**
- * This function calls the corresponding model function and includes the corresponding view
+ * These functions calls the corresponding model functions and includes the corresponding views
  */
 function getAllEmployees()
 {
-    // echo "We are inside the function getAllEmployees";
     $employees = get();
 
     if(isset($employees)) {
@@ -40,9 +39,6 @@ function getAllEmployees()
     }
 }
 
-/**
- * This function calls the corresponding model function and includes the corresponding view
- */
 function getEmployee()
 {
     $action = $_GET["action"];
@@ -53,9 +49,6 @@ function getEmployee()
     require_once VIEWS . "/employee/employee.php";
 }
 
-/**
- * This function calls the corresponding model function and includes the corresponding view
- */
 function deleteEmployee()
 {
     $action = $_GET["action"];
@@ -66,9 +59,6 @@ function deleteEmployee()
     }
 }
 
-/**
- * This function calls the corresponding model function and includes the corresponding view
- */
 function createEmployee()
 {
     $action = $_GET["action"];
@@ -80,9 +70,6 @@ function createEmployee()
     $employee = create($_POST);
 }
 
-/**
- * This function calls the corresponding model function and includes the corresponding view
- */
 function updateEmployee() {
     $action = $_GET["action"];
     // var_dump($_POST);

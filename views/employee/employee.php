@@ -16,6 +16,20 @@
 </head>
 
 <body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="?controller=main&action=viewMain">Home Page</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="?controller=login&action=logout">Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 <main class="main container">
     <h1>Employee Details</h1>
     <?php

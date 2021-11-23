@@ -26,7 +26,7 @@ if(function_exists($action))
 
 
 /**
- * This function calls the corresponding model function and includes the corresponding view
+ * These functions calls the corresponding model functions and includes the corresponding views
  */
 function getAllSalaries()
 {
@@ -39,9 +39,6 @@ function getAllSalaries()
     }
 }
 
-/**
- * This function calls the corresponding model function and includes the corresponding view
- */
 function getSalary()
 {
     $action = $_GET["action"];
@@ -52,9 +49,6 @@ function getSalary()
     require_once VIEWS . "/salary/salary.php";
 }
 
-/**
- * This function calls the corresponding model function and includes the corresponding view
- */
 function deleteSalary()
 {
     $action = $_GET["action"];
@@ -65,9 +59,6 @@ function deleteSalary()
     }
 }
 
-/**
- * This function calls the corresponding model function and includes the corresponding view
- */
 function createSalary()
 {
     $action = $_GET["action"];
@@ -79,9 +70,6 @@ function createSalary()
     $salary = create($_POST);
 }
 
-/**
- * This function calls the corresponding model function and includes the corresponding view
- */
 function updateSalary() {
     $action = $_GET["action"];
     var_dump($_POST);
