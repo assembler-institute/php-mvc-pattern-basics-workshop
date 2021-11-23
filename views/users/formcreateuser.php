@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <?php ?>
-
-
+<h1 class="m-2 p-2"> Add student </h1>
+<div class="m-4 p-4">
 
     <form action="index.php?controller=users&action=<?php echo isset($_GET['id']) ? "updateUser" : "createUser" ?>" method="POST">
         <input type="hidden" name="id" value="<?php echo isset($_GET['id']) ? $_GET['id'] : null ?>">
@@ -34,10 +22,11 @@
         </div>
         <div class="form-group">
             <label for="avatar">Avatar</label>
-            <input type="text" class="form-control" id="avatar" name="avatar" aria-describedby="emailHelp" placeholder="Enter email" value="<?php echo isset($user['avatar']) ? $user['avatar'] : null ?>">
+            <input type="text" class="form-control" id="avatar" name="avatar" placeholder="Enter your avatar url" value="<?php echo isset($user['avatar']) ? $user['avatar'] : null ?>">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</body>
+        <div class="m-2 p-2">
 
-</html>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>

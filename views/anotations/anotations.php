@@ -1,12 +1,22 @@
-<h1> <?php echo $name  ?> Grades </h1>
-<div>
-    <table>
+<h1 class="m-2 p-2"> <?php echo $name  ?> Grades </h1>
+<div class="m-4 p-4">
+    <table class="w-100">
         <tr>
-            <th>Subject</th>
-            <th>Test</th>
-            <th>Grade</th>
-            <th>Date</th>
-            <th>Actions</th>
+            <th>
+                <h4>Subject</h4>
+            </th>
+            <th>
+                <h4>Test</h4>
+            </th>
+            <th>
+                <h4>Grade</h4>
+            </th>
+            <th>
+                <h4>Date</h4>
+            </th>
+            <th>
+                <h4>Actions</h4>
+            </th>
         </tr>
 
         <?php
@@ -15,7 +25,7 @@
 
             foreach ($anotations as $anotation) {
 
-                echo    "<tr>";
+                echo    "<tr class='m-4'>";
                 echo        "<td>" . $anotation['subjects_name'] . "</td>";
                 echo        "<td>" . $anotation['title'] . "</td>";
                 echo        "<td>" . $anotation['grades'] . "</td>";

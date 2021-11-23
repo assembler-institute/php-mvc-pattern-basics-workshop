@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anotations</title>
-</head>
-
-<body>
-
+<h1 class="m-2 p-2"> Add anotation </h1>
+<div class="m-4 p-4">
     <form action="index.php?controller=anotations&action=<?php echo isset($_GET['anotationId']) ? "updateAnotation" : "createAnotations" ?>" method="POST">
         <input type="hidden" name="anotationId" value="<?php echo $anotationId ? $anotationId : null ?>">
         <input type="hidden" name="anotations_user_id" value="<?php echo $userId ? $userId : null ?>">
@@ -37,8 +27,7 @@
             <label for="date">Date</label>
             <input type="date" class="form-control" id="date" name="date" placeholder="date" value="<?php echo isset($anotation['date']) ? $anotation['date'] : null ?>">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</body>
-
-</html>
+        <div class="m-2 p-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+</div>
