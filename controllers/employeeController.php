@@ -6,12 +6,12 @@ require_once MODELS . "employeeModel.php";
 
 $action = "";
 
-if (isset($_REQUEST["action"])) {
-    $action = $_REQUEST["action"];
+if (isset($_GET["action"])) {
+    $action = $_GET["action"];
 }
 
 if (function_exists($action)) {
-    call_user_func($action, $_REQUEST);
+    call_user_func($action, $_GET);
 } else {
     error("Invalid user action");
 }
@@ -43,7 +43,9 @@ function getEmployee($request)
 {
   $employee_id = $request['id'];
   $employee = getById($employee_id);
+  $employee = count($employee) > 0 ? $employee[0] : $employee;
   $hobbies = getHobbiesByEmployeeId($employee_id);
+  $form = renderFormEmployee($employee, $hobbies);
   
   if (isset($employee)) {
     require_once VIEWS . "/employee/employeeView.php";
@@ -58,4 +60,12 @@ function getEmployee($request)
 function error($errorMsg)
 {
     require_once VIEWS . "/error/error.php";
+}
+
+function proccesForm() {
+  # Type Edit or Add new employee
+  $action = $_POST['actionForm'];
+  unset($_POST['actionForm']);
+  $res = $action === 'create' ? addEmployee($_POST) : editEmployee($_POST);
+  header("Location: /?controller=employee&action=getAllEmployees&$action=$res");
 }

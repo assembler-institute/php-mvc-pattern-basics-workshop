@@ -9,15 +9,17 @@
 </head>
 
 <body>
-    <h1>Employee Edit!</h1>
-    <pre>
-    <?php
-      var_dump($employee);
+    <div class="container">
       
-      foreach ($hobbies as $hob) {
-        echo $hob;
-      }
-    ?>
-    </pre>
+      <h1>Employee Edit!</h1>
+
+      <?php
+        # If employees exist, then render the form with DB values
+        # If not, render an empty form and create a new eployee by given ID in URL
+
+        ### Form Logic
+        echo $form;
+      ?>
+    </div>
 </body>
 </html>

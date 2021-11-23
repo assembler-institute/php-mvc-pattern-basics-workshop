@@ -1,0 +1,62 @@
+{
+  "types_form": [
+    {
+      "name": "name",
+      "innerText": "Employee name",
+      "type": "text",
+      "tag": "input",
+      "value": [""]
+    },
+    {
+      "name": "email",
+      "innerText": "Email",
+      "type": "email",
+      "tag": "input",
+      "value": [""]
+    },
+    {
+      "name": "gender",
+      "innerText": "Gender",
+      "type": "",
+      "tag": "select",
+      "value": ["Male", "Female", "Others"] 
+    },
+    {
+      "name": "city",
+      "innerText": "City",
+      "type": "text",
+      "tag": "input",
+      "value": [""]
+    },
+    {
+      "name": "age",
+      "innerText": "Age",
+      "type": "number",
+      "tag": "input",
+      "value": [""]
+    },
+    {
+      "name": "phone_number",
+      "innerText": "Phone Number",
+      "type": "tel",
+      "tag": "input",
+      "value": [""]
+    },
+    {
+      "name": "hobbies",
+      "innerText": "Hobbies",
+      "type": "checkbox",
+      "tag": "input",
+      "value" : [
+        "3D Printing",
+        "Astrology",
+        "Karaoke",
+        "Airsoft",
+        "Archery",
+        "Tourism",
+        "Running",
+        "Kickboxing" 
+      ]
+    }
+  ]
+}
