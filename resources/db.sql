@@ -24,7 +24,7 @@ subjects_id INT NOT NULL,
 title VARCHAR(50),
 grades DECIMAL(6,2),
 date DATE,  
-FOREIGN KEY (post_user_id) REFERENCES users(id), 
+FOREIGN KEY (anotations_user_id) REFERENCES users(id), 
 FOREIGN KEY (subjects_id) REFERENCES subjects(id) 
 );
 
@@ -41,14 +41,3 @@ VALUES ("Maths");
 
 INSERT INTO anotations (anotations_user_id,subjects_id,title,grades,date)
 VALUES (1,1, "Surprise Exam",4.9, "2021-11-11");
-
-CREATE TABLE anotations(
-id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-post_user_id INT NOT NULL,
-subjects_id INT NOT NULL,
-title VARCHAR(50),
-grades DECIMAL(6,2),
-date DATE,  
-FOREIGN KEY (post_user_id) REFERENCES users(id), 
-FOREIGN KEY (subjects_id) REFERENCES subjects(id) 
-);

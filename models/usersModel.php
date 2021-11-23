@@ -4,7 +4,7 @@ require_once "helper/dbConnection.php";
 
 function get()
 {
-    $query = conn()->prepare("SELECT id, name, last_name, email, password, avatar FROM users");
+    $query = conn()->prepare("SELECT id, name, last_name, email, age, avatar FROM users");
     try {
         $query->execute();
         $users = $query->fetchAll();
@@ -16,7 +16,7 @@ function get()
 
 function getbyId($id)
 {
-    $query = conn()->prepare("SELECT id, name, last_name, email, password, avatar FROM users WHERE id=$id");
+    $query = conn()->prepare("SELECT id, name, last_name, email, age, avatar FROM users WHERE id=$id");
     try {
         $query->execute();
         $user = $query->fetchAll();
@@ -38,14 +38,14 @@ function deleteById($id)
 
 function create($user)
 { {
-        $query = conn()->prepare("INSERT INTO users (name, last_name, email, password, avatar)
+        $query = conn()->prepare("INSERT INTO users (name, last_name, email, age, avatar)
     VALUES
     (?, ?, ?, ?, ?);");
 
         $query->bindParam(1, $user["name"]);
         $query->bindParam(2, $user["last_name"]);
         $query->bindParam(3, $user["email"]);
-        $query->bindParam(4, $user["password"]);
+        $query->bindParam(4, $user["age"]);
         $query->bindParam(5, $user["avatar"]);
 
         try {
@@ -60,14 +60,14 @@ function create($user)
 function update($user)
 {
     $query = conn()->prepare("UPDATE users
-    SET id = ?, name = ?, last_name = ?, email = ?, password = ?, avatar = ?
+    SET id = ?, name = ?, last_name = ?, email = ?, age = ?, avatar = ?
     WHERE id =" . $user["id"] . ";");
 
     $query->bindParam(1, $user["id"]);
     $query->bindParam(2, $user["name"]);
     $query->bindParam(3, $user["last_name"]);
     $query->bindParam(4, $user["email"]);
-    $query->bindParam(5, $user["password"]);
+    $query->bindParam(5, $user["age"]);
     $query->bindParam(6, $user["avatar"]);
 
     try {

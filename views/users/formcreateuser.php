@@ -29,8 +29,8 @@
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Password" value="<?php echo isset($user['password']) ? $user['password'] : null ?>">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id="age" name="age" placeholder="age" value="<?php echo isset($user['age']) ? $user['age'] : null ?>">
         </div>
         <div class="form-group">
             <label for="avatar">Avatar</label>

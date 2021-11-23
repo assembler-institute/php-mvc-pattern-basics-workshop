@@ -17,6 +17,7 @@ if (isset($_GET['controller'])) {
         require_once VIEWS . "error/error.php";
     }
 } else {
+
     require_once VIEWS . "main/main.php";
 }
 include_once "./views/include/footer.html";
