@@ -35,7 +35,7 @@
             </div>
             <div class="mb-3">
                 <label for="confirmPassword" class="form-label">Password:</label>
-                <input type="confirmPassword" class="form-control" id="confirmPassword"  name="confirmPassword" autocomplete="current-password">
+                <input type="password" class="form-control" id="confirmPassword"  name="confirmPassword" autocomplete="current-password">
             </div>
             <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
         </form>
