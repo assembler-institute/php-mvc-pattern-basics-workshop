@@ -55,27 +55,28 @@ function deleteSalary()
     $employee = null;
     if (isset($_GET["id"])) {
         $employee = delete($_GET["id"]);
-        header("Location: index.php?controller=salary&action=getAllSalaries");
+        header("Location: ?controller=salary&action=getAllSalaries");
     }
 }
 
 function createSalary()
 {
     $action = $_GET["action"];
-    require_once VIEWS . "/salary/salary.php";
-    // if (isset($_POST)) {
-    //      $employee = create($_POST);
-    //      header("Location: index.php?controller=employee&action=getAllEmployees");
-    // }
     $salary = create($_POST);
+
+    if (isset($salary)) {
+         header("Location: ?controller=employee&action=getAllEmployees");
+    }
+    require_once VIEWS . "/salary/salary.php";
 }
 
 function updateSalary() {
     $action = $_GET["action"];
-    var_dump($_POST);
     $salary = update($_POST);
 
-    require_once VIEWS . "/salary/salary.php";
+    if (isset($salary)) {
+        header("Location: ?controller=employee&action=getAllEmployees");
+   }
 }
 
 

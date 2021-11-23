@@ -15,7 +15,7 @@
 
 <body>
     <div class="center" >
-        <h1>Account Login</h1>
+        <h1>Account Signup</h1>
         <form
             method="POST"
             action=""

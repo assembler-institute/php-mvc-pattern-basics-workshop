@@ -16,23 +16,25 @@
 </head>
 
 <body>
-    <div class="center" >
-        <h1>Account Login</h1>
-        <form
-            method="POST"
-            action="?controller=login&action=validateLogin"
-        >
-            <div class="mb-3">
-                <label for="username" class="form-label">Username:</label>
-                <input type="text" class="form-control" id="username"  name="username"  autocomplete="current-name">
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Password:</label>
-                <input type="password" class="form-control" id="password"  name="password" autocomplete="current-password">
-            </div>
-            <button type="submit" class="btn-login" value="Submit">Submit</button>
-        </form>
-        <p>Click here if you do not have any account <a href="#">Register</a></p>
-    </div>
+    <main class="main container">
+        <div class="center" >
+            <h1>Account Login</h1>
+            <form
+                method="POST"
+                action="?controller=login&action=validateLogin"
+            >
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" class="form-control" id="username"  name="username"  autocomplete="current-name">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" class="form-control" id="password"  name="password" autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+            </form>
+            <p>Click here if you do not have any account <a href="#">Register</a></p>
+        </div>
+    </main>
 </body>
 </html>
