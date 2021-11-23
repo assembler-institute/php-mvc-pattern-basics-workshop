@@ -4,8 +4,8 @@ require_once("helper/dbConnection.php");
 
 function get()
 {
-    $query = conn()->prepare("SELECT e.employeeId, e.firstName, e.lastName, e.age
-    FROM employees e;");
+    $query = conn()->prepare("SELECT employeeId, firstName, lastName, age
+    FROM employees;");
 
     try {
         $query->execute();
@@ -20,9 +20,9 @@ function get()
 
 function getById($id)
 {
-    $query = conn()->prepare("SELECT e.employeeId, e.firstName, e.lastName, e.age
-    FROM employees e
-    WHERE e.employeeId = $id;");
+    $query = conn()->prepare("SELECT employeeId, firstName, lastName, age
+    FROM employees 
+    WHERE employeeId = $id;");
 
     try {
         $query->execute();
@@ -42,7 +42,7 @@ function create($employee)
     $query->bindParam(1, $employee["first-name"]);
     $query->bindParam(2, $employee["last-name"]);
     $query->bindParam(3, $employee["age"]);
-    
+
 
     try {
         $query->execute();
@@ -55,7 +55,6 @@ function create($employee)
 
 function update($employee)
 {
-    print_r($employee);
     $query = conn()->prepare("UPDATE employees SET firstName = ?, lastName = ?, age = ?
     WHERE employeeId = ?;");
 

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Employee Dashboard page!</h1>
+    <h1>Employee Dashboard</h1>
     <style type="text/css">
 
     </style>
