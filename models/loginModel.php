@@ -7,9 +7,10 @@ function validate($username, $password) {
     FROM users
     WHERE username = ? AND password = ?; ");
 
+    $encryptPassword = sha1($password);
+
     $query->bindParam(1, $username);
-    $query->bindParam(2, $password);
-    // $query->bindParam(2, sha1($password));
+    $query->bindParam(2, $encryptPassword);
 
     try {
         $query->execute();
