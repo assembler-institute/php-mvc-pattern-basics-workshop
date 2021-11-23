@@ -33,7 +33,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
             </form>
-            <p>Click here if you do not have any account <a href="#">Register</a></p>
+            <p>Click here if you do not have any account <a href="?controller=signup&action=viewSignup">Register</a></p>
         </div>
     </main>
 </body>

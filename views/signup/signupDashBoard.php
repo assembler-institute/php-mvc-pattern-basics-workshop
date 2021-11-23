@@ -14,11 +14,12 @@
 </head>
 
 <body>
+<main class="main container">
     <div class="center" >
         <h1>Account Signup</h1>
         <form
             method="POST"
-            action=""
+            action="?controller=signup&action=createUser"
         >
             <div class="mb-3">
                 <label for="username" class="form-label">Username:</label>
@@ -36,8 +37,10 @@
                 <label for="confirmPassword" class="form-label">Password:</label>
                 <input type="confirmPassword" class="form-control" id="confirmPassword"  name="confirmPassword" autocomplete="current-password">
             </div>
-            <button type="submit" class="btn-login" value="Submit">Submit</button>
+            <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
         </form>
+        <p>Click here if you already have an account <a href="?controller=login&action=viewLogin">Log In</a></p>
     </div>
+</main>
 </body>
 </html>

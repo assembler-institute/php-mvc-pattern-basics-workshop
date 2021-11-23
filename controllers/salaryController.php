@@ -64,9 +64,9 @@ function createSalary()
     $action = $_GET["action"];
     $salary = create($_POST);
 
-    if (isset($salary)) {
-         header("Location: ?controller=employee&action=getAllEmployees");
-    }
+    // if (isset($salary)) {
+    //      header("Location: ?controller=employee&action=getAllEmployees");
+    // }
     require_once VIEWS . "/salary/salary.php";
 }
 
