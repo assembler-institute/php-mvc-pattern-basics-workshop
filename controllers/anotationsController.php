@@ -37,7 +37,7 @@ function error($errorMsg)
 }
 function formCreateAnotations()
 {
-    isset($_GET["anotationId"]) ? $anotionId = $_GET["anotationId"] : null;
+
     isset($_GET["id"]) ? $userId = $_GET["id"] : null;
     $subjects = getSubjects();
     require_once VIEWS . "/anotations/formcreateanotations.php";
@@ -48,11 +48,20 @@ function createAnotations()
         $anotation = create($_POST);
 
         if ($anotation[0]) {
-            header("Location: index.php?controller=anotations&action=getAnotationsById&id=" . $anotation['anotations_user_id'] . "&name=" . $anotation['name']);
+            header("Location: index.php?controller=users&action=getAllUsers");
         } else {
             echo $anotation[1];
         }
     } else {
-        require_once VIEWS . "/users/formcreateuser.php";
+        require_once VIEWS . "/anotations/formcreateanotations.php";
+    }
+}
+
+
+function deleteAnotations()
+{
+    if (isset($_GET["id"])) {
+        deleteById($_GET["id"]);
+        header("Location: index.php?controller=users&action=getAllUsers");
     }
 }
