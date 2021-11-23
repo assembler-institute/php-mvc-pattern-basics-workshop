@@ -16,7 +16,10 @@
 	<?php include(BASE_PATH . "/assets/html/header.html") ?>;
 	<main>
 		<div class="container-sm">
-			<h1 class="display-6 m-0 p-0">Employees</h1>
+			<div class="d-flex justify-content-between align-items-end">
+				<h1 class="display-6 m-0 p-0">Employees</h1>
+				<a class="btn btn-sm btn-primary" href="?controller=employee&action=getEmployeeForm">Add</a>
+			</div>
 			<hr>
 			<table class="table table-striped table-light rounded-2 shadow-sm">
 				<thead>

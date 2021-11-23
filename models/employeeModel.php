@@ -151,9 +151,9 @@ function updateEmployee($request)
 		$stmt->execute();
 		$departmentExists = boolval($stmt->rowCount());
 
-		// SET END DATE FOR CURRENT SALARY IF:
+		// SET END DATE FOR CURRENT DEPARTMENT IF:
 		// - IT EXISTS
-		// - NEW SALARY IS DIFERENT
+		// - NEW DEPARTMENT IS DIFERENT
 
 		if ($departmentExists) {
 			$query = "UPDATE dept_emp SET to_date = CURRENT_DATE WHERE emp_no = :emp_no AND dept_no != :dept_no AND to_date IS NULL;";
@@ -170,7 +170,7 @@ function updateEmployee($request)
 		// - THERE IS NOT ANY DEPARTMENT YET
 		// - CURRENT DEPARTMENT END DATE HAS BEEN SET
 
-		if ($departmentUpdated || $departmentExists) {
+		if ($departmentUpdated || !$departmentExists) {
 			$query = "INSERT INTO dept_emp (dept_no, emp_no) VALUES (:dept_no, :emp_no);";
 			$stmt = $db->prepare($query);
 			$stmt->bindParam(":dept_no", $request["dept_no"]);
@@ -227,8 +227,6 @@ function createEmployee($request)
 			$stmt->bindParam(":salary", $request["salary"]);
 			$stmt->execute();
 		}
-
-		$data = $db->commit();
 
 		// SET DEPARTMENT IF EXISTS IN THE REQUEST
 

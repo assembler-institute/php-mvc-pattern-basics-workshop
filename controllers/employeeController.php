@@ -25,6 +25,11 @@ function getEmployeeForm($request)
 		$responseEmp = getEmployee($request["id"]);
 
 		if ($responseEmp["errorCode"]) return error("DB operation failed.");
+	} else {
+		$responseEmp = [
+			"data" => null,
+			"errorCode" => null,
+		];
 	}
 
 	$responseDepts = getDepartments();
@@ -50,6 +55,15 @@ function updateEmployeeByID($request)
 	if (!isset($request["emp_no"])) return error("ID not specified");
 
 	$response = updateEmployee($request);
+
+	if ($response["errorCode"]) return error("DB operation failed. $response[errorCode]");
+
+	header("Location: ?controller=employee&action=getAllEmployees");
+}
+
+function createNewEmployee($request)
+{
+	$response = createEmployee($request);
 
 	if ($response["errorCode"]) return error("DB operation failed. $response[errorCode]");
 
