@@ -33,13 +33,38 @@ function getAllUsers()
     }
 }
 
+function formCreateUser()
+{
+    require_once VIEWS . "/users/formcreateuser.php";
+}
+
+function createUser()
+{
+    if (sizeof($_POST) > 0) {
+        $user = create($_POST);
+
+        if ($user[0]) {
+            header("Location: index.php?controller=users&action=getAllUsers");
+        } else {
+            echo $user[1];
+        }
+    } else {
+        require_once VIEWS . "/users/formcreateuser.php";
+    }
+}
+
+
 /**
  * This function calls the corresponding model function and includes the corresponding view
  */
-function getEmployee($request)
+function deleteUser()
 {
-    //
+    if (isset($_GET["id"])) {
+        deleteById($_GET["id"]);
+        header("Location: index.php?controller=users&action=getAllUsers");
+    }
 }
+
 
 /**
  * This function includes the error view with a message
