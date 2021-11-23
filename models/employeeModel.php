@@ -63,6 +63,7 @@ function getHobbiesByEmployeeId($id) {
 }
 
 function renderFormEmployee($employee, $hobbies) {
+  var_dump($employee, $hobbies);
   # Call the JSON structure Form
   $html = '';
   $jsonUrl = './resources/formStructure.json';
@@ -136,6 +137,46 @@ function renderFormEmployee($employee, $hobbies) {
 }
 
 function addEmployee($data) {
+
+  $employeeName = filter_var($data['name'], FILTER_SANITIZE_SPECIAL_CHARS);
+  $employeeCity = filter_var($data['city'], FILTER_SANITIZE_SPECIAL_CHARS);
+  $employeeEmail = filter_var($data['email'], FILTER_SANITIZE_EMAIL);
+  $employeeGender = filter_var($data['gender'], FILTER_SANITIZE_SPECIAL_CHARS);
+  $employeeAge = filter_var((int)$data['age'], FILTER_SANITIZE_NUMBER_INT);
+  $employeePhoneNumber = filter_var((int)$data['phone_number'], FILTER_SANITIZE_NUMBER_INT);
+
+  $employeeHobbies = [];
+  foreach($data as $key => $value) {
+     if (str_contains($key, 'hobbie')) {
+       array_push($employeeHobbies, filter_var($value, FILTER_SANITIZE_SPECIAL_CHARS));
+     }
+  }
+
+  $query = conn()->prepare(
+    "INSERT INTO employees
+      (name, email, gender_id, age, phone_number, city)
+      VALUES 
+      (
+        '$employeeName', 
+        '$employeeEmail', 
+        (SELECT id FROM genders WHERE name = '$employeeGender'),
+        $employeeAge,
+        $employeePhoneNumber,
+        '$employeeCity'
+      )
+    ;"
+  );
+
+  try {
+      if ($query->execute()) {
+        $employeeId = conn()->query("SELECT id FROM employees WHERE email = '$employeeEmail';")->fetchAll();
+        $employeeId = $employeeId['id'];
+        return updateEmployeeHobbies($employeeId, $employeeHobbies);
+      }
+      return false;
+  } catch (PDOException $e) {
+      return [];
+  }
 
 }
 

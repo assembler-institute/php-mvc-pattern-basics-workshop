@@ -66,6 +66,10 @@ function proccesForm() {
   # Type Edit or Add new employee
   $action = $_POST['actionForm'];
   unset($_POST['actionForm']);
-  $res = $action === 'create' ? addEmployee($_POST) : editEmployee($_POST);
+  $res = $action === 'Create' ? addEmployee($_POST) : editEmployee($_POST);
   header("Location: /?controller=employee&action=getAllEmployees&$action=$res");
+}
+
+function createEmployee() {
+  header("Location: /?controller=employee&action=getEmployee&id=0");
 }
