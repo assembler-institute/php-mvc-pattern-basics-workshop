@@ -13,6 +13,8 @@
     <h1>MVC Basics</h1>
     <div class="list-group">
         <a class="list-group-item list-group-item-action" href="?controller=employee&action=getAllEmployees">Employees</a>
+        <a class="list-group-item list-group-item-action" href="?controller=offices&action=getAllOffices">Company offices</a>
+
 </body>
 
 </html>
