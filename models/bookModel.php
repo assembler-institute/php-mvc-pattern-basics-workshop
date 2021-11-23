@@ -4,7 +4,7 @@ require_once "helpers/dbConnection.php";
 
 function get()
 {
-    $query = conn()->prepare("SELECT id, title, language, year, mov_id
+    $query = conn()->prepare("SELECT id, title, language, year, mov_id, author_id
     FROM books;");
     try {
         $query->execute();

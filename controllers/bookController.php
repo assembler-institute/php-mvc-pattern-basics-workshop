@@ -118,12 +118,13 @@ function getMovement($book)
 
 function getAuthor($book)
 {
+
     $authors = getAll();
 
     $currentAuthor = null;
 
     foreach ($authors as $author) {
-        if ($author["id"] === $book["mov_id"]) {
+        if ($author["id"] === $book["author_id"]) {
             $currentAuthor = $author;
         }
     }

@@ -11,7 +11,7 @@
 
 <body>
     <div class="form__header">
-        <a id="home" class="form__btn" href="?controller=author&action=createAuthor">+</a>
+        <a id="home" class="form__btn" href="?controller=book&action=newBook">+</a>
         <h1 class="form__title">Our Books</h1>
         <a id="home" class="form__btn return" href="./">↩️</a>
 
@@ -39,7 +39,7 @@
                 echo "<td class='form__tabCell'>" . $book["language"] . "</td>";
                 echo "<td class='form__tabCell'>" . $book["year"] . "</td>";
                 echo "<td class='form__tabCell'>" . $movement . "</td>";
-                echo "<td class='form__tabCell'>" . $author . "</td>";
+                echo "<td class='form__tabCell'>" . $author["first_name"] . " " . $author["last_name"] . "</td>";
                 echo "<td colspan='2' class='form__tabCell centredRow'>
                 <a class='form__edit' href='?controller=book&action=getBook&id=" . $book["id"] . "'>Edit</a>
                 <a class='form__delete' href='?controller=book&action=deleteBook&id=" . $book["id"] . "'>Delete</a>
