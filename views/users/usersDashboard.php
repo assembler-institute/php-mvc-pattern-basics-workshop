@@ -16,7 +16,7 @@
     foreach ($users as $user) {
         echo '<div class="card"> <div class="card-body">';
         echo "<a href=?controller=posts&action=getPostsById&id=" . $user['id'] . ">" . "<h2>" . $user["name"] . "</h2>" . "</a>";
-        echo "<a href=?controller=users&action=updateUser&id=" . $user['id'] . ">" . "<button type='button' class='btn btn-success btn-sm'>Edit</button>" . "</a>";
+        echo "<a href=?controller=users&action=getUser&id=" . $user['id'] . ">" . "<button type='button' class='btn btn-success btn-sm'>Edit</button>" . "</a>";
         echo "<a href=?controller=users&action=deleteUser&id=" . $user['id'] . ">" . "<button type='button' class='btn btn-danger btn-sm'>Delete</button>" . "</a>" . "<br>";
         echo '</div> </div>';
     }

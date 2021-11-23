@@ -19,7 +19,6 @@ if (function_exists($action)) {
 }
 
 /* ~~~ CONTROLLER FUNCTIONS ~~~ */
-
 /**
  * This function calls the corresponding model function and includes the corresponding view
  */
@@ -30,6 +29,14 @@ function getAllUsers()
         require_once VIEWS . "/users/usersDashboard.php";
     } else {
         error("Database error connection");
+    }
+}
+
+function getUser()
+{
+    if (isset($_GET["id"])) {
+        $user = getbyId($_GET["id"])[0];
+        require_once VIEWS . "/users/formcreateuser.php";
     }
 }
 
@@ -54,6 +61,24 @@ function createUser()
 }
 
 
+function updateUser()
+{
+
+    if (sizeof($_POST) > 0) {
+        $user = update($_POST);
+        if ($user[0]) {
+            header("Location: index.php?controller=users&action=getAllUsers");
+        } else {
+            $user = $_POST;
+            $error = "The data entered is incorrect, check that there is no other employee with that email.";
+            require_once VIEWS . "/users/formcreateuser.php";
+        }
+    } else {
+        require_once VIEWS . "/users/formcreateuser.php";
+    }
+}
+
+
 /**
  * This function calls the corresponding model function and includes the corresponding view
  */
@@ -64,7 +89,6 @@ function deleteUser()
         header("Location: index.php?controller=users&action=getAllUsers");
     }
 }
-
 
 /**
  * This function includes the error view with a message

@@ -14,6 +14,18 @@ function get()
     }
 }
 
+function getbyId($id)
+{
+    $query = conn()->prepare("SELECT id, name, last_name, email, password, avatar FROM users WHERE id=$id");
+    try {
+        $query->execute();
+        $user = $query->fetchAll();
+        return $user;
+    } catch (PDOException $e) {
+        return [];
+    }
+}
+
 function deleteById($id)
 {
     $query = conn()->prepare("DELETE FROM users WHERE id = $id");
@@ -36,12 +48,32 @@ function create($user)
         $query->bindParam(4, $user["password"]);
         $query->bindParam(5, $user["avatar"]);
 
-
         try {
             $query->execute();
             return [true];
         } catch (PDOException $e) {
             return [false, $e];
         }
+    }
+}
+
+function update($user)
+{
+    $query = conn()->prepare("UPDATE users
+    SET id = ?, name = ?, last_name = ?, email = ?, password = ?, avatar = ?
+    WHERE id =" . $user["id"] . ";");
+
+    $query->bindParam(1, $user["id"]);
+    $query->bindParam(2, $user["name"]);
+    $query->bindParam(3, $user["last_name"]);
+    $query->bindParam(4, $user["email"]);
+    $query->bindParam(5, $user["password"]);
+    $query->bindParam(6, $user["avatar"]);
+
+    try {
+        $query->execute();
+        return [true];
+    } catch (PDOException $e) {
+        return [false, $e];
     }
 }
