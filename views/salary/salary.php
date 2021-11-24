@@ -67,7 +67,7 @@
         <div class="col-md-6">
             <label for="fromDate" class="form-label">From Date</label>
             <input
-                type="text"
+                type="date"
                 class="form-control"
                 id="fromDate"
                 name="fromDate"
@@ -79,7 +79,7 @@
             <label for="toDate" class="form-label">To Date</label>
             <input
                 required
-                type="text"
+                type="date"
                 class="form-control"
                 id="toDate"
                 name="toDate"

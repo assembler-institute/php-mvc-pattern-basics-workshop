@@ -57,7 +57,7 @@
             <label for="birthDate" class="form-label">Birth Date</label>
             <input
                 required
-                type="text"
+                type="date"
                 class="form-control"
                 id="birthDate"
                 name="birthDate"
@@ -99,7 +99,7 @@
             <label for="hireDate" class="form-label">Hire Date</label>
             <input
                 required
-                type="text"
+                type="date"
                 class="form-control"
                 id="hireDate"
                 name="hireDate"

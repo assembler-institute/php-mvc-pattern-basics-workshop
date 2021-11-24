@@ -63,8 +63,11 @@ function createEmployee()
 {
     $action = $_GET["action"];
     $employee = create($_POST);
-    // if (isset($employee)) {
-    //      header("Location: ?controller=employee&action=getAllEmployees");
+    // if (isset($_POST)) {
+    //     $employee = create($_POST);
+    //     if (isset($employee)) {
+    //         header("Location: ?controller=employee&action=getAllEmployees");
+    //     }
     // }
     require_once VIEWS . "/employee/employee.php";
 }
