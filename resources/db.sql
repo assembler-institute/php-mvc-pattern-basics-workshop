@@ -31,6 +31,7 @@ name VARCHAR(50) NOT NULL,
 type ENUM("Indoor", "Outdoor")
 );
 
+-- Many to many example
 CREATE TABLE employee_hobbies(
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 employee_id INT NOT NULL,
