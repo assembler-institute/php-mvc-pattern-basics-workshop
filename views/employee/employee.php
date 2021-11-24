@@ -38,8 +38,8 @@ $action = isset($employee) ? "updateEmployeeByID" : "createNewEmployee";
 						<input class="form-control my-2" type="text" id="last_name" name="last_name" value="<?= $employee['last_name'] ?? null ?>" />
 					</div>
 					<div class="col-3 my-2">
-						<label class="fw-normal" for="birth_date">Last name</label>
-						<input class="form-control my-2" type="date" id="birth_date" name="birth_date" value="<?= $employee['birth_date'] ?? null ?>" />
+						<label class="fw-normal" for="birth_date">Birth date</label>
+						<input class="form-control my-2" type="date" id="birth_date" name="birth_date" value="<?= $employee['birth_date'] ?? date("Y-m-d") ?>" />
 					</div>
 					<div class="col-3 my-2">
 						<label class="fw-normal" for="gender">Gender</label>

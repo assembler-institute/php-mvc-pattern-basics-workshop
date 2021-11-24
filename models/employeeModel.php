@@ -129,6 +129,8 @@ function updateEmployee($request)
 			$stmt->bindParam(":salary", $request["salary"]);
 			$stmt->execute();
 			$salaryUpdated = boolval($stmt->rowCount());
+		} else {
+			$salaryUpdated = false;
 		}
 
 		// INSERT NEW SALARY IF:

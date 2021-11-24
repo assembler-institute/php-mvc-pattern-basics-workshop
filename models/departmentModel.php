@@ -18,7 +18,7 @@ function getDepartments()
 				)
 			) AS total_employees,
 			IF(dept_manager.emp_no IS NOT NULL, CONCAT(first_name, ' ', last_name), 'None') AS manager_name,
-			IF(dept_manager.emp_no IS NOT NULL, dept_manager.from_date, 'None') AS manager_date  
+			IF(dept_manager.emp_no IS NOT NULL, DATE(dept_manager.from_date), 'None') AS manager_date  
 			FROM departments
 			LEFT JOIN dept_emp 			ON departments.dept_no = dept_emp.dept_no
 			LEFT JOIN dept_manager 	ON departments.dept_no = dept_manager.dept_no

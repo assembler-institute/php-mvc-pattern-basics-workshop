@@ -58,8 +58,8 @@ CREATE TABLE departments (
 CREATE TABLE dept_manager (
 	emp_no       INT             NOT NULL,
 	dept_no      INT             NOT NULL,
-	from_date    DATE            NOT NULL DEFAULT (CURRENT_DATE),
-	to_date      DATE,
+	from_date    DATETIME        NOT NULL DEFAULT (NOW()),
+	to_date      DATETIME ,
 	FOREIGN KEY (emp_no)  REFERENCES employees (emp_no)    ON DELETE CASCADE,
 	FOREIGN KEY (dept_no) REFERENCES departments (dept_no) ON DELETE CASCADE,
 	PRIMARY KEY (emp_no,dept_no,from_date)
@@ -68,8 +68,8 @@ CREATE TABLE dept_manager (
 CREATE TABLE dept_emp (
   emp_no      INT             NOT NULL,
   dept_no     INT             NOT NULL,
-  from_date   DATE            NOT NULL DEFAULT (CURRENT_DATE),
-  to_date     DATE,
+	from_date   DATETIME       NOT NULL DEFAULT (NOW()),
+  to_date     DATETIME,
   FOREIGN KEY (emp_no)  REFERENCES employees   (emp_no)  ON DELETE CASCADE,
   FOREIGN KEY (dept_no) REFERENCES departments (dept_no) ON DELETE CASCADE,
   PRIMARY KEY (emp_no,dept_no,from_date)
@@ -78,17 +78,17 @@ CREATE TABLE dept_emp (
 CREATE TABLE titles (
   emp_no      INT             NOT NULL,
   title       VARCHAR(50)     NOT NULL,
-  from_date   DATE            NOT NULL,
-  to_date     DATE,
+  from_date   DATETIME,
+  to_date     DATETIME,
   FOREIGN KEY (emp_no) REFERENCES employees (emp_no) ON DELETE CASCADE,
-  PRIMARY KEY (emp_no,title, from_date)
+  PRIMARY KEY (emp_no, title)
 ); 
 
 CREATE TABLE salaries (
 	emp_no      INT             NOT NULL,
 	salary      INT             NOT NULL,
-	from_date   DATE            NOT NULL DEFAULT (CURRENT_DATE),
-	to_date     DATE,
+	from_date   DATETIME        NOT NULL DEFAULT (NOW()),
+	to_date     DATETIME,
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no) ON DELETE CASCADE,
 	PRIMARY KEY (emp_no, from_date)
 ); 
