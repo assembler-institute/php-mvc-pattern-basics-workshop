@@ -1,7 +1,5 @@
 <?php
 
-// Create connection
-
 function conn()
 {
     try {

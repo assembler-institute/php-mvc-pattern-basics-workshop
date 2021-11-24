@@ -1,11 +1,8 @@
 <?php
-//$documentRoot = dirname(__FILE__);
 $documentRoot = getcwd();
 
-//BASE PATH -> FOR REFERENCE FILES
 define("BASE_PATH", $documentRoot);
 
-//BASE URL -> FOR LINK CSS
 $uri = $_SERVER['REQUEST_URI'];
 
 if (isset($uri) && $uri !== null) {
