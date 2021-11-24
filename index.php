@@ -1,5 +1,5 @@
 <?php
-
+ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
 // This is the entry point of your application, all your application must be executed in
 // the "index.php", in such a way that you must include the controller passed by the URL
 // dynamically so that it ends up including the view.

@@ -22,10 +22,10 @@ function get()
 function getById($id){
 
   $query = conn()->prepare(
-  "SELECT 
+  "SELECT
   e.name, e.email, g.name as 'gender',
   e.city, e.age, e.phone_number
-  FROM employees e 
+  FROM employees e
   INNER JOIN genders g ON e.gender_id = g.id
   WHERE e.id = $id
   ;");
@@ -46,7 +46,7 @@ function getHobbiesByEmployeeId($id) {
     INNER JOIN employee_hobbies eh ON h.id = eh.hobbie_id
     WHERE employee_id = $id
     ;");
-  
+
     try {
         $query->execute();
         $res = $query->fetchAll();
@@ -63,12 +63,12 @@ function getHobbiesByEmployeeId($id) {
 }
 
 function renderFormEmployee($employee, $hobbies) {
-  var_dump($employee, $hobbies);
+
   # Call the JSON structure Form
   $html = '';
   $jsonUrl = './resources/formStructure.json';
   if (!file_exists($jsonUrl)) echo "json file doesnt exist: $jsonUrl";
-  
+
   $data = file_get_contents($jsonUrl);
   if (!$data) echo "json data is unreadable";
   $data = json_decode($data, true); # 2 arg. allows to get the data as an Array
@@ -77,17 +77,17 @@ function renderFormEmployee($employee, $hobbies) {
   $html .= '<form action="?controller=employee&action=proccesForm" method="post">';
   # Foreach object in $data we get the variables from the keys, every ITEM is the object in $data
   foreach ($data as $item) {
-    
+
   $label = $item['name'];
   $labelInnerText = $item['innerText'];
   $tag = $item['tag'];
   $type = $item['type'];
-  
+
   $arrayValue = [];
 
   if (!count($employee) > 0 || $item['name'] === 'hobbies' || $item['name'] === 'gender') {
     $arrayValue = $item['value'];
-  } 
+  }
 
   if (count($employee) > 0 && ($item['name'] !== 'hobbies' && $item['name'] !== 'gender') ) {
     $arrayValue = [$employee[$item['name']]];
@@ -97,7 +97,7 @@ function renderFormEmployee($employee, $hobbies) {
   $html .= "<div class='mb-3'>";
 
   $html .= "<label for='$label' class='form-label'>$labelInnerText</label>";
-    # If our $tag is an select tag we render 
+    # If our $tag is an select tag we render
     if ($tag === 'select') {
         # Sleect render
         $html .= "<select name='$label' id='$label'>";
@@ -120,7 +120,7 @@ function renderFormEmployee($employee, $hobbies) {
         }
       }
     }
-    
+
     $html .= '</div>';
   }
 
@@ -136,7 +136,7 @@ function renderFormEmployee($employee, $hobbies) {
   return $html;
 }
 
-function addEmployee($data) {
+function createEmployee($data) {
 
   $employeeName = filter_var($data['name'], FILTER_SANITIZE_SPECIAL_CHARS);
   $employeeCity = filter_var($data['city'], FILTER_SANITIZE_SPECIAL_CHARS);
@@ -145,20 +145,13 @@ function addEmployee($data) {
   $employeeAge = filter_var((int)$data['age'], FILTER_SANITIZE_NUMBER_INT);
   $employeePhoneNumber = filter_var((int)$data['phone_number'], FILTER_SANITIZE_NUMBER_INT);
 
-  $employeeHobbies = [];
-  foreach($data as $key => $value) {
-     if (str_contains($key, 'hobbie')) {
-       array_push($employeeHobbies, filter_var($value, FILTER_SANITIZE_SPECIAL_CHARS));
-     }
-  }
-
   $query = conn()->prepare(
     "INSERT INTO employees
       (name, email, gender_id, age, phone_number, city)
-      VALUES 
+      VALUES
       (
-        '$employeeName', 
-        '$employeeEmail', 
+        '$employeeName',
+        '$employeeEmail',
         (SELECT id FROM genders WHERE name = '$employeeGender'),
         $employeeAge,
         $employeePhoneNumber,
@@ -169,15 +162,38 @@ function addEmployee($data) {
 
   try {
       if ($query->execute()) {
-        $employeeId = conn()->query("SELECT id FROM employees WHERE email = '$employeeEmail';")->fetchAll();
-        $employeeId = $employeeId['id'];
-        return updateEmployeeHobbies($employeeId, $employeeHobbies);
+
+        return true;
       }
       return false;
   } catch (PDOException $e) {
       return [];
   }
 
+}
+
+# this function fist adds the employee in the employees table and then update his hobbies
+function addEmployee($data){
+
+  // create employee
+  $newEmployee = createEmployee($data);
+  $employeeEmail = filter_var($data['email'], FILTER_SANITIZE_EMAIL);
+
+  //uppadte hobbies
+  if($newEmployee){
+    // get id from table, looking for unique email
+    $employeeId = conn()->query("SELECT id FROM employees WHERE email = '$employeeEmail';")->fetchAll();
+    $employeeId = $employeeId[0]['id'];
+
+    $employeeHobbies = [];
+    foreach($data as $key => $value) {
+       if (str_contains($key, 'hobbie')) {
+         array_push($employeeHobbies, filter_var($value, FILTER_SANITIZE_SPECIAL_CHARS));
+       }
+    }
+
+    return updateEmployeeHobbies($employeeId, $employeeHobbies);
+  }
 }
 
 function editEmployee($data) {
@@ -189,7 +205,7 @@ function editEmployee($data) {
    $employeeGender = filter_var($data['gender'], FILTER_SANITIZE_SPECIAL_CHARS);
    $employeeAge = filter_var((int)$data['age'], FILTER_SANITIZE_NUMBER_INT);
    $employeePhoneNumber = filter_var((int)$data['phone_number'], FILTER_SANITIZE_NUMBER_INT);
-  
+
    $employeeHobbies = [];
    foreach($data as $key => $value) {
       if (str_contains($key, 'hobbie')) {
@@ -198,11 +214,11 @@ function editEmployee($data) {
    }
   # Returns bool if you need to
   $updateHobbies = updateEmployeeHobbies($employeeId, $employeeHobbies);
-   
+
 
   $query = conn()->prepare(
     "UPDATE employees
-    SET 
+    SET
       name = '$employeeName',
       email = '$employeeEmail',
       gender_id = (SELECT id FROM genders WHERE name = '$employeeGender'),
@@ -211,7 +227,7 @@ function editEmployee($data) {
       city = '$employeeCity'
     WHERE id = $employeeId
     ;");
-    
+
     try {
         if ($query->execute() && $updateHobbies) {
           return true;
@@ -225,7 +241,7 @@ function editEmployee($data) {
 function updateEmployeeHobbies($id, $hobbies) {
 
   $querys[] = conn()->prepare("DELETE FROM employee_hobbies WHERE employee_id = $id;");
-  
+
   foreach ($hobbies as $hobbie) {
     $querys[] = conn()->prepare(
       "INSERT INTO employee_hobbies (employee_id, hobbie_id)
@@ -243,4 +259,28 @@ function updateEmployeeHobbies($id, $hobbies) {
     } catch (PDOException $e) {
         return [];
     }
+}
+
+
+function deleteEmployeeById($id){
+
+  $query = conn()->prepare(
+    "DELETE FROM employees
+     WHERE id = '$id'
+    ;"
+  );
+
+  try {
+      if ($query->execute()) {
+        return true;
+      }
+      return false;
+  } catch (PDOException $e) {
+      return [];
+  }
+
+
+
+
+
 }

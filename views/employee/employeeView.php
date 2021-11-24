@@ -10,8 +10,8 @@
 
 <body>
     <div class="container">
-      
-      <h1>Employee Edit!</h1>
+
+      <h1>Employee Details</h1>
 
       <?php
         # If employees exist, then render the form with DB values

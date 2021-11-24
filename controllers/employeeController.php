@@ -46,7 +46,7 @@ function getEmployee($request)
   $employee = count($employee) > 0 ? $employee[0] : $employee;
   $hobbies = getHobbiesByEmployeeId($employee_id);
   $form = renderFormEmployee($employee, $hobbies);
-  
+
   if (isset($employee)) {
     require_once VIEWS . "/employee/employeeView.php";
   } else {
@@ -67,9 +67,18 @@ function proccesForm() {
   $action = $_POST['actionForm'];
   unset($_POST['actionForm']);
   $res = $action === 'Create' ? addEmployee($_POST) : editEmployee($_POST);
-  header("Location: /?controller=employee&action=getAllEmployees&$action=$res");
+  header("Location: ?controller=employee&action=getAllEmployees&$action=$res");
 }
 
-function createEmployee() {
-  header("Location: /?controller=employee&action=getEmployee&id=0");
+function createNewEmployee() {
+  header("Location: ?controller=employee&action=getEmployee&id=0");
+}
+
+function deleteEmployee($request){
+
+  $employee_id = $request['id'];
+  $res = deleteEmployeeById($employee_id);
+
+  header("Location: ?controller=employee&action=getAllEmployees&delete=$res");
+
 }

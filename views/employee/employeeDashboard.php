@@ -46,7 +46,7 @@
             ?>
         </tbody>
     </table>
-    <a id="home" class="btn btn-primary" href="?controller=employee&action=createEmployee">Create</a>
+    <a id="home" class="btn btn-primary" href="?controller=employee&action=createNewEmployee">Create</a>
     <a id="home" class="btn btn-secondary" href="./">Back</a>
 </body>
 </html>
