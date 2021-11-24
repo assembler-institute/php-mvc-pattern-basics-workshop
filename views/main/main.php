@@ -11,10 +11,28 @@
 </head>
 
 <body>
-    <h1>Welcome to MVC Pattern Basics!</h1>
-    <div class="list-group">
-        <a class="list-group-item list-group-item-action" href="?controller=employee&action=getAllEmployees">Employee Controller</a>
-        <a class="list-group-item list-group-item-action" href="?controller=hobbie&action=getAllHobbies">Hobbie Controller</a>
+<div class="area" >
+    
+            <ul class="circles">
+                <h1 class="text-light">Welcome to MVC Pattern Basics!</h1>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action w-25" href="?controller=employee&action=getAllEmployees">
+                    Employee Controller</a>
+                <a class="list-group-item list-group-item-action w-25" href="?controller=hobbie&action=getAllHobbies">Hobbie Controller</a>
+            </div>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+    
 </body>
 
 </html>
