@@ -39,7 +39,7 @@
                 echo "<td class='form__tabCell'>" . $book["language"] . "</td>";
                 echo "<td class='form__tabCell'>" . $book["year"] . "</td>";
                 echo "<td class='form__tabCell'>" . $movement . "</td>";
-                echo "<td class='form__tabCell'>" . $author["first_name"] . " " . $author["last_name"] . "</td>";
+                echo isset($author) ? "<td class='form__tabCell'>" . $author["first_name"] . " " . $author["last_name"] . "</td>" : "Author not registered";
                 echo "<td colspan='2' class='form__tabCell centredRow'>
                 <a class='form__edit' href='?controller=book&action=getBook&id=" . $book["id"] . "'>Edit</a>
                 <a class='form__delete' href='?controller=book&action=deleteBook&id=" . $book["id"] . "'>Delete</a>

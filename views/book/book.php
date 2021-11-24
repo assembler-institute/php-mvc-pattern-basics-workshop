@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    <div class="form__header">
+        <h1 class="form__title"><?php echo isset($book['id']) ? "Edit Book" : "Add Book" ?></h1>
+        <a id="home" class="form__btn return" href="./">↩️</a>
+    </div>
     <form action="index.php?controller=book&action=<?php echo isset($book['id']) ? "editBook" : "newBook" ?>" class="form" method="post">
         <input type="hidden" name="id" value=<?php echo isset($book['id']) ? $book['id'] : null ?>>
         <div class="form__el">
@@ -26,7 +30,7 @@
         </div>
         <div class="form__el">
             <label for="mov_id">Movement</label>
-            <select name="mov_id" class="form-control" id="type" required>
+            <select name="mov_id" class="form__control" id="type" required>
                 <option value="">Please Select</option>
                 <option value="1" <?php echo isset($book['mov_id']) && $book['mov_id']  == 1 ? 'selected' : null ?>>Romanticism</option>
                 <option value="2" <?php echo isset($book['mov_id']) && $book['mov_id']  == 2 ? 'selected' : null ?>>Symbolism</option>
@@ -37,6 +41,5 @@
             </select>
         </div>
         <button type="submit" class="main__link"><?php echo isset($book['id']) ? "Update" : "Create" ?></button>
-        <a href="./" class="form__return">Return</a>
     </form>
 </body>
