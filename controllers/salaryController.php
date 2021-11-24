@@ -7,7 +7,7 @@ if (!isset($_SESSION['username'])) {
     exit;
 }
 
-require_once MODELS . "employeeModel.php";
+require_once MODELS . "salaryModel.php";
 
 $action = "";
 
@@ -28,56 +28,55 @@ if(function_exists($action))
 /**
  * These functions calls the corresponding model functions and includes the corresponding views
  */
-function getAllEmployees()
+function getAllSalaries()
 {
-    $employees = get();
+    $salaries = get();
 
-    if(isset($employees)) {
-        require_once VIEWS . "/employee/employeeDashboard.php";
+    if(isset($salaries)) {
+        require_once VIEWS . "/salary/salaryDashboard.php";
     } else {
         error("There is problem with database");
     }
 }
 
-function getEmployee()
+function getSalary()
 {
     $action = $_GET["action"];
-    $employee = null;
+    $salary = null;
     if (isset($_GET["id"])) {
-        $employee = getById($_GET["id"]);
+        $salary = getById($_GET["id"]);
     }
-    require_once VIEWS . "/employee/employee.php";
+    require_once VIEWS . "/salary/salary.php";
 }
 
-function deleteEmployee()
+function deleteSalary()
 {
     $action = $_GET["action"];
     $employee = null;
     if (isset($_GET["id"])) {
         $employee = delete($_GET["id"]);
-        header("Location: ?controller=employee&action=getAllEmployees");
+        header("Location: ?controller=salary&action=getAllSalaries");
     }
 }
 
-function createEmployee()
+function createSalary()
 {
     $action = $_GET["action"];
-    $employee = create($_POST);
-    // if (isset($_POST)) {
-    //     $employee = create($_POST);
-    //     if (isset($employee)) {
-    //         header("Location: ?controller=employee&action=getAllEmployees");
-    //     }
+    $salary = create($_POST);
+
+    // if (isset($salary)) {
+    //      header("Location: ?controller=employee&action=getAllEmployees");
     // }
-    require_once VIEWS . "/employee/employee.php";
+    require_once VIEWS . "/salary/salary.php";
 }
 
-function updateEmployee() {
+function updateSalary() {
     $action = $_GET["action"];
-    $employee = update($_POST);
-    if (isset($employee)) {
+    $salary = update($_POST);
+
+    if (isset($salary)) {
         header("Location: ?controller=employee&action=getAllEmployees");
-    }
+   }
 }
 
 
