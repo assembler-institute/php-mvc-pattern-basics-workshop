@@ -1,3 +1,6 @@
+# SOLUTION: JOSÉ VALENZUELA @ https://github.com/Jose1i1o/globe_bank 
+>> Briefing on project delivery status at README.me
+
 `#patterns` `#mvc` `#php` `#master-in-software-engineering`
 
 # Assembler School: PHP MVC Pattern Basics - Workshop <!-- omit in toc -->
