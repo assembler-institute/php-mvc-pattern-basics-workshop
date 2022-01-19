@@ -2,20 +2,20 @@
 require_once("config/constants.php");
 require_once("config/db.php");
 
-if(isset($_GET["controller"])){
-    $controller=getControllerPath($_GET["controller"]);
+if (isset($_GET["controller"])) {
+    $controller = getControllerPath($_GET["controller"]);
     $fileExists = file_exists($controller);
-    if($fileExists){
+    if ($fileExists) {
         require_once($controller);
-    }else{
+    } else {
         $errorMsg = "The page you are trying to access does not exist.";
-        require_once(VIEWS."error/error.php");
+        require_once(VIEWS . "error/error.php");
     }
-
-}else{
+} else {
     require_once(VIEWS . "main/main.php");
 }
 
-function getControllerPath($controller): string{
+function getControllerPath($controller): string
+{
     return CONTROLLERS . $controller . "Controller.php";
 }

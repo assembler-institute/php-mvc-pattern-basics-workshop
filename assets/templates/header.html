@@ -1,0 +1,38 @@
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Wiki's Gallery
+            </a>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" onclick=changeToArtists() data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Artists</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" onclick=changeToArtwork() data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Artworks</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+<script>
+    function changeToArtists() {
+        window.location = "?controller=artists&action=getAllArtists";
+    }
+
+    function changeToArtwork() {
+        window.location = "?controller=artworks&action=getAllArtworks";
+    }
+</script>
