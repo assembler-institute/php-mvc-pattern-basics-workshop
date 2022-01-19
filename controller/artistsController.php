@@ -1,9 +1,27 @@
 <?php
+require_once MODELS . "artistsModel.php";
 
-if (isset($_GET["action"])) {
-    $action = function_exists($_GET["action"]);
-    echo "action working";
+$action = "";
+
+if (isset($_REQUEST["action"])) {
+    $action = $_REQUEST["action"];
+}
+if (function_exists($action)) {
+    call_user_func($action);
 } else {
-    $errorMsg = "action required";
-    echo $errorMsg;
+    error("There was an error executing trying to search the action, please, try again");
+}
+//CONTROLLER FUNCTIONS
+function getAllArtists()
+{
+    //calling function in model
+    $artists = get();
+    if (isset($artists)) {
+        require_once VIEWS . "/artists";
+    }
+}
+
+function error($errorMsg): string
+{
+    return require_once(VIEWS . "error/error.php");
 }
