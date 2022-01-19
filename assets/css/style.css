@@ -1,0 +1,25 @@
+body{
+    background-image: url(../img/pokedex.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+#tablaTodos{
+    max-height: 55% !important;
+    width: 40%;
+    scroll-behavior: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 27%;
+    left: 4%;
+}
+
+.pokemonData{
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
