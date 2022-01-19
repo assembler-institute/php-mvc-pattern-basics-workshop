@@ -5,7 +5,7 @@ require_once("constantsBase.php");
 define("CONTROLLERS",BASE_PATH . "/controller/");
 
 //VIEW
-define ("VIEWS", BASE_PATH, "/views/");
+define ("VIEWS", BASE_PATH . "/view/");
 
 //MODEL
 define ("MODELS", BASE_PATH . "/model/");
