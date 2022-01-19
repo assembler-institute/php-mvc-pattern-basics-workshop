@@ -21,6 +21,20 @@ function getAllArtists()
     }
 }
 
+function getInfo()
+{
+    if (isset($_REQUEST["id"])) {
+        $id = $_REQUEST["id"];
+        $info = getInformationArtist($id);
+        if (isset($info)) {
+            $info = $info[0];
+            require_once VIEWS . "artists/artistInfo.php";
+        }
+    } else {
+        error("invalid ID");
+    }
+}
+
 function error($errorMsg): string
 {
     return require_once(VIEWS . "error/error.php");
