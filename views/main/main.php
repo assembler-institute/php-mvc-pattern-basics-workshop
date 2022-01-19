@@ -6,10 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <script src="assets/js/main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <button>Pokedex</button>
-    <input type="text" placeholder="Nombre Pokemon">
+    <div class="pokedex" id="pokedex"></div>
+    <p class="error" id="error">el Pokemon no existe</p>
 </body>
 </html>

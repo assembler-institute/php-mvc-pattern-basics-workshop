@@ -53,10 +53,8 @@
 </div>
 <?php  ?>
 <div id="pokemon" class="pokemonData">
-    <div id="imageLargePokemon" >
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<?= $pokemonSelectedTodo1[0][0]?>.png" alt="">
         <h3><?= $pokemonSelectedTodo1[0]["name"];?></h3>
-    </div>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<?= $pokemonSelectedTodo1[0][0]?>.png" alt="">
         <p><?php
         foreach($pokemonSelectedTodo2 as $type){
                 if($pokemonSelectedTodo1[0]["tipo1"]==$pokemonSelectedTodo1[0]["tipo2"]){
@@ -75,9 +73,8 @@
         ?></p>
 
         <h4>Weak against</h4>
-
-    <?php
-      ?>
+        <button class="" id="cInfo" data-id="<?= $pokemonSelectedTodo1[0][0]?>">Combat Information</button>
+        <button class="" id="mInfo" data-name="<?= $pokemonSelectedTodo1[0]["name"];?>">More Info</button>
   </div>
 </body>
 </html>
