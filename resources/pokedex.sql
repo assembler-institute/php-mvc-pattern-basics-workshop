@@ -208,7 +208,7 @@ INSERT INTO TabTypes VALUES
 
 
 INSERT INTO types VALUES
-(1,"ACERO","gris"),
+(1,"ACERO","assets/img/steel.PNG"),
 (2,"AGUA","gris"),
 (3,"BICHO","gris"),
 (4,"DRAGON","gris"),
