@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error</title>
+    <?php require_once(ASSETS . "templates/head.html"); ?>
+    <title>Error | Wiki's Gallery</title>
 </head>
 
 <body>
+    <?php require_once(ASSETS . "templates/header.html"); ?>
     <h1><?= $errorMsg ?></h1>
+
 </body>
 
 </html>

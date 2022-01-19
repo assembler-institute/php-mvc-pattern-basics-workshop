@@ -15,6 +15,7 @@ function conn()
         $pdo = new PDO($connection, USER, PASSWORD, $options);
         return $pdo;
     } catch (PDOException $e) {
+        error($e);
         require_once(VIEWS . "error/error.php");
     }
 }

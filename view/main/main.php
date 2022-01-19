@@ -3,7 +3,7 @@
 
 <head>
     <?php require_once(ASSETS . "templates/head.html"); ?>
-    <title>Wiki's Gallery</title>
+    <title>Main | Wiki's Gallery</title>
 </head>
 
 <body>

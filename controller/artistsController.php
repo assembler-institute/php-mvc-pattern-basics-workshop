@@ -26,16 +26,18 @@ function getInfo()
     if (isset($_REQUEST["id"])) {
         $id = $_REQUEST["id"];
         $info = getInformationArtist($id);
-        if (isset($info)) {
+        if (isset($info) && $info !== []) {
             $info = $info[0];
             require_once VIEWS . "artists/artistInfo.php";
+        } else {
+            error("This user don't have information");
         }
     } else {
         error("invalid ID");
     }
 }
 
-function error($errorMsg): string
+function error($errorMsg)
 {
     return require_once(VIEWS . "error/error.php");
 }
