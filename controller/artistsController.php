@@ -17,7 +17,7 @@ function getAllArtists()
     //calling function in model
     $artists = get();
     if (isset($artists)) {
-        require_once VIEWS . "/artists";
+        require_once VIEWS . "artists/artists.php";
     }
 }
 

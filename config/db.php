@@ -1,17 +1,16 @@
 <?php
 
 //host
-define("HOST","localhost");
+define("HOST", "localhost");
 
 //DB NAME
-define("DB","art_gallery");
+define("DB", "art_gallery");
 
 //USER
-define("USER","root");
+define("USER", "root");
 
 //PASSWORD
-define("PASS","");
+define("PASSWORD", "");
 
 //CHARSET
-define("CHARSET","utf8mb4");
-
+define("CHARSET", "utf8mb4");
