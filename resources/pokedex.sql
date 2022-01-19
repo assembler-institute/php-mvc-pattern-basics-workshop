@@ -26,11 +26,31 @@ FOREIGN KEY (tipo2) REFERENCES types(id)
 
 CREATE TABLE TabTypes(
 tipoA INT,
-Efect VARCHAR("10"),
+Efect VARCHAR(10),
 tipoE INT,
 FOREIGN KEY (tipoA) REFERENCES types(id),
 FOREIGN KEY (tipoE) REFERENCES types(id)
 );
+
+INSERT INTO types VALUES
+(1,"ACERO","assets/img/steel.PNG"),
+(2,"AGUA","assets/img/water.PNG"),
+(3,"BICHO","assets/img/bug.PNG"),
+(4,"DRAGON","assets/img/dragon.PNG"),
+(5,"ELECTRICO","assets/img/electric.PNG"),
+(6,"FANTASMA","assets/img/ghost.PNG"),
+(7,"FUEGO","assets/img/fire.PNG"),
+(8,"HADA","assets/img/fairy.PNG"),
+(9,"HIELO","assets/img/ice.PNG"),
+(10,"LUCHA","assets/img/fighting.PNG"),
+(11,"NORMAL","assets/img/normal.PNG"),
+(12,"PLANTA","assets/img/grass.PNG"),
+(13,"PSIQUICO","assets/img/psychic.PNG"),
+(14,"ROCA","assets/img/rock.PNG"),
+(15,"SINIESTRO","assets/img/dark.PNG"),
+(16,"TIERRA","assets/img/ground.PNG"),
+(17,"VENENO","assets/img/posion.PNG"),
+(18,"VOLADOR","assets/img/flying.PNG");
 
 INSERT INTO TabTypes VALUES
 (1,"EF",9),
@@ -204,28 +224,6 @@ INSERT INTO TabTypes VALUES
 (18,"DB",14),
 (18,"IN",16);
 
-
-
-
-INSERT INTO types VALUES
-(1,"ACERO","assets/img/steel.PNG"),
-(2,"AGUA","gris"),
-(3,"BICHO","gris"),
-(4,"DRAGON","gris"),
-(5,"ELECTRICO","gris"),
-(6,"FANTASMA","gris"),
-(7,"FUEGO","gris"),
-(8,"HADA","gris"),
-(9,"HIELO","gris"),
-(10,"LUCHA","gris"),
-(11,"NORMAL","gris"),
-(12,"PLANTA","gris"),
-(13,"PSIQUICO","gris"),
-(14,"ROCA","gris"),
-(15,"SINIESTRO","gris"),
-(16,"TIERRA","gris"),
-(17,"VENENO","gris"),
-(18,"VOLADOR","gris");
 
 
 INSERT INTO pokemon VALUES
