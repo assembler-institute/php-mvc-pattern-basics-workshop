@@ -10,6 +10,14 @@
     <?php require_once(BASE_PATH . "/assets/" . "templates/header.html"); ?>
     <h1 class="mainTitle">Welcome to Wiki's Gallery</h1>
 
+    <?php
+    if (isset($purchaseMsg)) {
+        echo '<div class="alert alert-info" role="alert">
+            ' . $purchaseMsg . '
+          </div>';
+    }
+    ?>
+
 </body>
 
 </html>

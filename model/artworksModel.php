@@ -56,11 +56,13 @@ function getOneArtwork($id)
 function purchased($id)
 {
     $query = conn()->prepare(
-        "UPDATE artworks SET is_bought=1 WHERE id=$id;"
+        "UPDATE artworks SET is_bought=1 WHERE id=?;"
+
     );
+    $query->bindparam(1, $id);
     try {
         $query->execute();
-        $purchased = $query->fetchAll();
+        $purchased = [true];
         return $purchased;
     } catch (PDOException $e) {
         return error("Fail with database");

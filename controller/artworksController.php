@@ -59,9 +59,11 @@ function purchaseArtwork()
     if (isset($_REQUEST["id"])) {
         $id = $_REQUEST["id"];
         $purchase =  purchased($id);
-        print_r($purchase);
-        if ($purchase) {
+        if ($purchase[0]) {
             $purchaseMsg = "Your purchase has been completed!";
+            require_once(VIEWS . "main/main.php");
+        } else {
+            error("The data entered is incorrect");
             require_once(VIEWS . "artworks/artworkPurchase.php");
         }
     } else {
