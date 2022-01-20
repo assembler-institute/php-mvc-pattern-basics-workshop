@@ -15,10 +15,10 @@
     <div class="EF">
         <h2>Efective Againts</h2>
         <?php 
-        foreach($Cinfo as $info){
-            if($info["Efect"]=="EF"){
+        foreach($tipostot as $info){
+            if($info[0]>1){
                 ?> 
-                 <img src="<?= $info["img"]?>" alt="">
+                 <img src="<?= $info[1]?>" alt="">
                 <?php
             }
         }
@@ -28,36 +28,25 @@
     <div class="NEF">
         <h2>No Efective Againts</h2>
     <?php 
-        foreach($Cinfo as $info){
-            if($info["Efect"]=="NEF"){
+        foreach($tipostot as $info){
+            if($info[0]<1&&$info[0]>0){
                 ?> 
-                 <img src="<?= $info["img"]?>" alt="">
+                 <img src="<?= $info[1]?>" alt="">
                 <?php
             }
         }
         ?>
     </div>
 
-    <div class="DB">
-        <h2>Weak Againts</h2>
-    <?php 
-        foreach($Cinfo as $info){
-            if($info["Efect"]=="DB"){
-                ?> 
-                 <img src="<?= $info["img"]?>" alt="">
-                <?php
-            }
-        }
-        ?>
-    </div>
+    
 
     <div class="IN">
-        <h2>Immune</h2>
+        <h2>Not Efective</h2>
     <?php 
-        foreach($Cinfo as $info){
-            if($info["Efect"]=="IN"){
+        foreach($tipostot as $info){
+            if($info[0]==0){
                 ?> 
-                 <img src="<?= $info["img"]?>" alt="">
+                 <img src="<?= $info[1]?>" alt="">
                 <?php
             }
         }

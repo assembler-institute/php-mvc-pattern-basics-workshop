@@ -23,18 +23,11 @@ text-align: center;
 text-align: center;
 }
 
-.DB{
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    max-width: 30%;
-    text-align: center;
-}
 
 .IN{
     position: absolute;
     bottom: 10%;
-    left: 10%;
+    left: 48%;
     max-width: 30%;
 text-align: center;
 }
