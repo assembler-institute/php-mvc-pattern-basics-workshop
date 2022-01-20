@@ -15,6 +15,12 @@
     <div id="modoShiny" class="btnPokedex"></div>
     <div id="buscadorPokemon" class="btnPokedex"></div>
   </nav>
+  <div class="buscardor">
+    <form action="./index.php?controller=pokemon&action=getAllPokemons" method="POST">
+      <input class="pokebusca" name="buscar" type="text">
+      <button>Buscar</button>
+    </form>
+  </div>
   <div id="tablaTodos" class="overflow-auto">
     <table class="table">
       <thead>
@@ -79,8 +85,8 @@
         ?></p>
 
 <div id="pokemonIdData"><?= $pokemonSelectedTodo1[0][0]?></div>
-        <button class="" id="cInfo" data-id="<?= $pokemonSelectedTodo1[0][0]?>">Combat Information</button>
-        <button class="" id="mInfo" data-name="<?= $pokemonSelectedTodo1[0]["name"];?>">More Info</button>
+        <button class="pokebtn" id="cInfo" data-id="<?= $pokemonSelectedTodo1[0][0]?>">Combat Information</button>
+        <button class="pokebtn" id="mInfo" data-name="<?= $pokemonSelectedTodo1[0]["name"];?>">More Info</button>
   </div>
 </body>
 

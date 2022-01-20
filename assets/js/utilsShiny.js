@@ -7,6 +7,12 @@ var mInfo= document.getElementById("mInfo");
 var btnPokedexCloseShiny = document.getElementById("cerrarPokedex");
 var btnPokedexNormal = document.getElementById("modoNormal");
 var btnPokedexSearchShiny = document.getElementById("buscadorPokemon");
+var pokebusca=document.getElementsByClassName("pokebusca")[0];
+
+
+pokebusca.addEventListener("keydown",  function(){
+    window.location.reload();
+})
 
 btnPokedexCloseShiny.addEventListener("click", function(){
     window.location.replace("./index.php")

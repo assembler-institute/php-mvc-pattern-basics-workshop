@@ -34,6 +34,7 @@ function getAllPokemons()
 }
 
 /**
+ * 
  * This function calls the corresponding model function and includes the corresponding view
  */
 function getPokemon($request)

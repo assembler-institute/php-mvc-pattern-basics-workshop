@@ -1,9 +1,17 @@
 <?php
     require_once(MODELS."helper/dbConection.php");
 function get(){
-    $query1=conn()->prepare("SELECT pokemon.id , pokemon.name ,pokemon.tipo1,pokemon.tipo2
-    FROM pokemon
-    GROUP BY pokemon.id");
+    if(isset($_POST["buscar"])){
+        $a=$_POST["buscar"];
+        $query1=conn()->prepare("SELECT pokemon.id , pokemon.name ,pokemon.tipo1,pokemon.tipo2
+        FROM pokemon
+        WHERE pokemon.name
+        like '$a%'
+        GROUP BY pokemon.id");
+    }
+    else{
+        $query1=conn()->prepare("SELECT pokemon.id , pokemon.name ,pokemon.tipo1,pokemon.tipo2 FROM pokemon    GROUP BY pokemon.id");
+    }
     $query2=conn()->prepare("SELECT id , img
     FROM types");
     try{

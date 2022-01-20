@@ -15,6 +15,12 @@
     <div id="modoNormal" class="btnPokedex"></div>
     <div id="buscadorPokemon" class="btnPokedex"></div>
   </nav>
+  <div class="buscardor">
+    <form action="./index.php?controller=pokemonShiny&action=getAllPokemons"  method="POST">
+      <input class="pokebusca" name="buscar" type="text">
+      <button>Buscar</button>
+    </form>
+  </div>
   <div id="tablaTodos" class="overflow-auto">
     <table class="table">
       <thead>
