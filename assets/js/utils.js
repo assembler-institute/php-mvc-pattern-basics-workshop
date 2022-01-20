@@ -8,6 +8,7 @@ var btnPokedexClose = document.getElementById("cerrarPokedex");
 var btnPokedexShiny = document.getElementById("modoShiny");
 var btnPokedexSearch = document.getElementById("buscadorPokemon");
 var pokebusca=document.getElementsByClassName("pokebusca")[0];
+var searchDiv = document.getElementsByClassName("buscardor")[0];
 
 
 pokebusca.addEventListener("keydown",  function(e){
@@ -16,6 +17,9 @@ pokebusca.addEventListener("keydown",  function(e){
     pokebusca.value=a;
 })
 
+btnPokedexSearch.addEventListener("click", function(){
+    searchDiv.classList.toggle("buscardorVisible");
+})
 
 btnPokedexClose.addEventListener("click", function(){
     window.location.replace("./index.php")
