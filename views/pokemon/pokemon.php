@@ -15,7 +15,7 @@
     <div id="modoShiny" class="btnPokedex"></div>
     <div id="buscadorPokemon" class="btnPokedex"></div>
   </nav>
-  <div class="buscardor">
+  <div class="buscardor buscardorInvisible">
     <form action="./index.php?controller=pokemon&action=getAllPokemons" method="POST">
       <input class="pokebusca" name="buscar" type="text">
       <button class="pokebtn">Buscar</button>

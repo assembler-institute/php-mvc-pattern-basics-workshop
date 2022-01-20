@@ -88,3 +88,11 @@ body{
     color: rgb(37, 37, 37);
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
+
+.buscardorInvisible{
+    visibility: hidden;
+}
+
+.buscardorVisible{
+    visibility: visible;
+}
