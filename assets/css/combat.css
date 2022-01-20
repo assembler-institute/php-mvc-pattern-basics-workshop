@@ -49,3 +49,7 @@ text-align: center;
    height: 150%;
    width: 150%;
 }
+
+#imgPokeDiv{
+    visibility: hidden;
+}
