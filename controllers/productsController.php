@@ -44,8 +44,7 @@ function createProduct($request)
         $products = get();
         $lastProduct = end($products);
         $lastProductId = $lastProduct["CÓDIGOARTÍCULO"];
-        $newIdProduct = createNewIdProduct($lastProductId);
-        $_POST["CÓDIGOARTÍCULO"] = $newIdProduct ;
+        $_POST["CÓDIGOARTÍCULO"] = $lastProductId+1 ;
         $product = create($_POST);
 
         if ($product[0]) {
@@ -91,9 +90,4 @@ function deleteProduct($request)
 function error($errorMsg)
 {
     require_once VIEWS . "/error/error.php";
-}
-
-function createNewIdProduct($lastId){
-    return $newLastId ="AR". intval(substr($lastId, 2))+1;
-   
 }

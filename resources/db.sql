@@ -179,3 +179,31 @@ INSERT INTO `products`.`PRODUCTOS` (`CÓDIGOARTÍCULO`, `SECCIÓN`, `NOMBREARTÍ
  (38, 'CERÁMICA', 'JARRA CHINA', 127.7704, '2002-09-02', 'VERDADERO', 'CHINA'),
  (39, 'DEPORTES', 'BOTA ALPINISMO', 144, '2002-05-05', 'FALSO', 'ESPAÑA'),
  (40, 'DEPORTES', 'PALAS DE PING PONG', 21.6, '2002-02-02', 'FALSO', 'ESPAÑA');;
+
+
+
+INSERT INTO `pedidos` (`CÓDIGOCLIENTE`, `CÓDIGOARTÍCULO`) VALUES
+('1', '17'),
+('1', '1'),
+('1', '3'),
+('1', '11'),
+('1', '17'),
+('1', '21'),
+('1', '15'),
+('3', '17'),
+('3', '1'),
+('3', '3'),
+('3', '11'),
+('3', '17'),
+('3', '21'),
+('3', '15');;
+
+
+ --select from pedidos 
+
+
+SELECT `productos`.`NOMBREARTÍCULO`, `pedidos`.`CÓDIGOCLIENTE`,`clientes`.`EMPRESA`
+FROM `productos` 
+    INNER JOIN `pedidos` ON `pedidos`.`CÓDIGOARTÍCULO` = `productos`.`CÓDIGOARTÍCULO`
+    INNER JOIN `clientes` ON `pedidos`.`CÓDIGOCLIENTE` = `clientes`.`CÓDIGOCLIENTE`
+WHERE `pedidos`.`CÓDIGOCLIENTE` = '1';

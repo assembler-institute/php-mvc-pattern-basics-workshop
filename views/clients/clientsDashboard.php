@@ -31,9 +31,11 @@
                 echo "<td class='tg-0lax'>" . $client["CÓDIGOCLIENTE"] . "</td>";
                 echo "<td class='tg-0lax'>" . $client["EMPRESA"] . "</td>";
                 echo "<td colspan='2' class='tg-0lax'>
+                <a class='btn btn-secondary' href='?controller=orders&action=getOrdersById&id=" . $client["CÓDIGOCLIENTE"] . "'>Orders</a>
                 <a class='btn btn-secondary' href='?controller=clients&action=getClient&id=" . $client["CÓDIGOCLIENTE"] . "'>Edit</a>
                 <a class='btn btn-danger' href='?controller=clients&action=deleteClient&id=" . $client["CÓDIGOCLIENTE"] . "'>Delete</a>
                 </td>";
+                
                 echo "</tr>";
             }
             ?>

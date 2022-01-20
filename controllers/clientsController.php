@@ -44,8 +44,7 @@ function createClient($request)
         $clients = get();
         $lastClient = end($clients);
         $lastClientId = $lastClient["CÓDIGOCLIENTE"];
-        $newId = createNewId($lastClientId);
-        $_POST["CÓDIGOCLIENTE"] = $newId;
+        $_POST["CÓDIGOCLIENTE"] = $lastClientId+1;
         $employee = create($_POST);
 
         if ($employee[0]) {
@@ -90,9 +89,4 @@ function deleteClient($request)
 function error($errorMsg)
 {
     require_once VIEWS . "/error/error.php";
-}
-
-function createNewId($lastId){
-    return $newLastId ="CT". intval(substr($lastId, 2))+1;
-   
 }
