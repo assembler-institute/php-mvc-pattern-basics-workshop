@@ -8,7 +8,7 @@
 <body>
     <?php require_once(BASE_PATH . "/assets/"  . "templates/header.html"); ?>
     <main class="d-flex justify-content-center gap-5">
-        <img class="productImg rounded" src="<?= ASSETS . "img/" . $work["artwork_photo"] ?>">
+        <img data-id="<?= $work["id"] ?>" class="productImg rounded" src="<?= ASSETS . "img/" . $work["artwork_photo"] ?>">
         <article class="d-flex flex-column justify-content-center information">
             <h4>Name: <?= $work["artwork_name"] ?></h4>
             <hr>
@@ -17,9 +17,9 @@
             <h5 id="price"> <?= $work["price"] ?></h5>
             <?php
             if ($work["is_bought"] == 1) {
-                echo '<button type="button" class="btn btn-warning disabled  btn-lg">SOLD!</button>';
+                echo '<button type="button"  class="btn btn-warning disabled  btn-lg">SOLD!</button>';
             } else {
-                echo '<button type="button" class="btn btn-success  btn-lg">Buy it now!</button>';
+                echo '<button type="button" onclick="purchaseDone()" class="btn btn-success  btn-lg">Buy it now!</button>';
             }
             ?>
         </article>

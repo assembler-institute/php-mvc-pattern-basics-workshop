@@ -56,4 +56,15 @@ function error($errorMsg)
 
 function purchaseArtwork()
 {
+    if (isset($_REQUEST["id"])) {
+        $id = $_REQUEST["id"];
+        $purchase =  purchased($id);
+        print_r($purchase);
+        if ($purchase) {
+            $purchaseMsg = "Your purchase has been completed!";
+            require_once(VIEWS . "artworks/artworkPurchase.php");
+        }
+    } else {
+        error("invalid id");
+    }
 }

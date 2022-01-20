@@ -53,3 +53,16 @@ function getOneArtwork($id)
         error($e);
     }
 }
+function purchased($id)
+{
+    $query = conn()->prepare(
+        "UPDATE artworks SET is_bought=1 WHERE id=$id;"
+    );
+    try {
+        $query->execute();
+        $purchased = $query->fetchAll();
+        return $purchased;
+    } catch (PDOException $e) {
+        return error("Fail with database");
+    }
+}

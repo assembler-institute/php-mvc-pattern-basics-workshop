@@ -15,6 +15,9 @@ function formatPrice(num) {
     })
 
     num.innerText = formatter.format(numToFormat);
+}
 
-
+function purchaseDone() {
+    const id = document.querySelector(".productImg").dataset.id;
+    return window.location = "?controller=artworks&action=purchaseArtwork&id=" + id;
 }
