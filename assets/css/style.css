@@ -14,13 +14,3 @@ body{
 .divide:hover{
     cursor: pointer;
 }
-.img{
-    z-index: 1;
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    
-}
-/* h5{
-    margin-top: 22%;
-    text-align: center;
-} */
