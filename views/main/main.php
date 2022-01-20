@@ -12,5 +12,6 @@
     <div class="list-group">
         <a class="list-group-item list-group-item-action" href="?controller=clients&action=getAllClients">Clients</a>
         <a class="list-group-item list-group-item-action" href="?controller=products&action=getAllProducts">Products</a>
+        <a class="list-group-item list-group-item-action" href="?controller=orders&action=newOrder">New Order</a>
 </body>
 </html>

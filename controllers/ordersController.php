@@ -25,3 +25,31 @@ if(sizeof($order)>0){
     require_once VIEWS."error/error.php";
 }
 }
+
+
+function newOrder($request)
+{
+    $action = $request["action"];
+    if (sizeof($_POST) > 0) {
+        $order = create($_POST);
+        if ($order[0]) {
+            header("Location: index.php?controller=orders&action=getOrdersById&id=".$_POST["CÓDIGOCLIENTE"]);
+        } else {
+            echo $order[1];
+        }
+    } else {
+        $clients = getClients();
+        $products = getProducts();
+        require_once VIEWS . "/orders/newOrder.php";
+    }
+}
+
+function deleteOrder($request)
+{
+    $action = $request["action"];
+    $client = null;
+    if (isset($request["id"])) {
+        $client = delete($request["id"]);
+        header("Location: index.php?controller=orders&action=getOrdersById&id=".$request["idCLiente"]);
+    }
+}

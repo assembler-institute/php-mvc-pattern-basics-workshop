@@ -14,7 +14,7 @@
 
     </style>
     
-        <a id="home" class="btn btn-primary" href="?controller=products&action=createProduct">Create</a>
+        <a id="home" class="btn btn-primary" href="?controller=orders&action=newOrder">Create</a>
         <a id="home" class="btn btn-secondary" href="./index.php">Back</a>
     <table class="table">
         <thead>
@@ -29,7 +29,11 @@
             foreach ($order as $index => $product) {
                 echo "<tr>";
                 echo "<td class='tg-0lax'>" . $product["NOMBREARTÍCULO"] . "</td>";
+                echo "<td colspan='2' class='tg-0lax'>
+                <a class='btn btn-danger' href='?controller=orders&idCLiente=".$product["CÓDIGOCLIENTE"]."&action=deleteOrder&id=". $product["NUMERO_PEDIDO"] . "'>Delete</a>
+                </td>";
                 echo "</tr>";
+                
             }
             ?>
         </tbody>

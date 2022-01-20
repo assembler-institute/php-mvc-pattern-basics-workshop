@@ -45,12 +45,12 @@ function createClient($request)
         $lastClient = end($clients);
         $lastClientId = $lastClient["CÓDIGOCLIENTE"];
         $_POST["CÓDIGOCLIENTE"] = $lastClientId+1;
-        $employee = create($_POST);
+        $client = create($_POST);
 
-        if ($employee[0]) {
+        if ($client[0]) {
             header("Location: index.php?controller=clients&action=getAllClients");
         } else {
-            echo $employee[1];
+            echo $client[1];
         }
     } else {
         require_once VIEWS . "/clients/client.php";
