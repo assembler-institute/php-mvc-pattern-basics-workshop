@@ -46,9 +46,6 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-end py-5">
-                <a href="?controller=pokemon&action=getAllPokemons"><button class="btn btn-primary">Volver a la pokedex</button></a>
-            </div>
         </div>
     </main>
 </body>
