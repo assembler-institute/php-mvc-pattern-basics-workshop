@@ -4,7 +4,7 @@ require_once("helper/dbConnection.php");
 function get()
 {
     $query = conn()->prepare(
-        "SELECT cat_name FROM category"
+        "SELECT * FROM category"
     );
     try {
         $query->execute();

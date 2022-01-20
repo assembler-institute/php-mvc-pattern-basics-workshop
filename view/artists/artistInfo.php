@@ -11,11 +11,9 @@
 
     <h1 class="text-center"><?= $info["first_name"] . " " . $info["last_name"] ?></h1>
     <main class="ms-3 row row-cols-1 row-cols-md-2  row-cols-xl-4 g-3">
-        <img src="assets/img/<?= $info["artist_photo"] ?>" alt="">
+        <img src="assets/img/<?= $info["artist_photo"] ?>" class="rounded mx-auto d-block" alt="...">
         <!-- TODO INSERT CARROUSELL -->
         <!-- TODO INSERT CONTAINER  -->
-        <?php
 
-        ?>
     </main>
 </body>

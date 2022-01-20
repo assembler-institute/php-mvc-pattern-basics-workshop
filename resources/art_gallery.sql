@@ -14,7 +14,8 @@ CREATE TABLE artists(
 
 CREATE TABLE category(
     id_cat int AUTO_INCREMENT,
-    cat_name VARCHAR (15),
+    cat_name VARCHAR (20),
+    cat_img VARCHAR(255),
     PRIMARY KEY(id_cat)
 );
 
@@ -97,8 +98,11 @@ INSERT INTO artists_info(id_artist, information) VALUES(
     representatives of surrealism. Salvador Dali is known for his striking and dreamlike surrealist images."
 );
 
-INSERT INTO category (cat_name) VALUES
-("Historic paintings"),("Portraits"),("Landscape painting"), ("cinetic art");
+INSERT INTO category (cat_name,cat_img) VALUES
+("Historic paintings","category/historic.jpg"),
+("Portraits","category/portrait.jpg"),
+("Landscape painting","category/landscape.jpg"),
+ ("cinetic art","category/cinetic.jpg");
 
 INSERT INTO artworks (id_artist,id_cat,artwork_name,history,price,
 artwork_photo,style) VALUES(
