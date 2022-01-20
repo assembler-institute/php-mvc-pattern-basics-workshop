@@ -1,12 +1,27 @@
-.category-card:hover {
+.mainTitle {
+    font-family: 'Pacifico';
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.4;
+    color: lightskyblue;
+}
+
+.categoryCard:hover {
     background-color: lightgray;
     opacity: 0.9;
     transition: 1s;
     cursor: pointer;
 }
 
-.category-card {
+.categoryCard {
     width: 40%;
+}
+
+.productImg {
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover;
 }
 
 .artistPhoto {
@@ -15,6 +30,6 @@
     object-fit: cover;
 }
 
-.artistCard {
+.widthCard {
     width: 18rem;
 }

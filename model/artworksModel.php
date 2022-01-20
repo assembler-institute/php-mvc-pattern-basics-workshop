@@ -40,3 +40,16 @@ function getArtworks($id)
         error("There was an error with the query");
     }
 }
+function getOneArtwork($id)
+{
+    $query = conn()->prepare(
+        "SELECT * FROM artworks WHERE id=$id"
+    );
+    try {
+        $query->execute();
+        $work = $query->fetchAll();
+        return $work;
+    } catch (PDOException $e) {
+        error($e);
+    }
+}

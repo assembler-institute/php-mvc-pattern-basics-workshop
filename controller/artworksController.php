@@ -34,7 +34,26 @@ function getAllCategories()
     }
 }
 
+function getArtworkById()
+{
+    if (isset($_REQUEST["id"])) {
+        $id = $_REQUEST["id"];
+        $work =  getOneArtwork($id);
+        if (isset($work) && $work !== null) {
+            //show correct array
+            $work = $work[0];
+            require_once(VIEWS . "artworks/artworkPurchase.php");
+        }
+    } else {
+        error("invalid id");
+    }
+}
+
 function error($errorMsg)
 {
     require(VIEWS . "error/error.php");
+}
+
+function purchaseArtwork()
+{
 }

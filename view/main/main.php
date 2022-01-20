@@ -8,6 +8,7 @@
 
 <body>
     <?php require_once(BASE_PATH . "/assets/" . "templates/header.html"); ?>
+    <h1 class="mainTitle">Welcome to Wiki's Gallery</h1>
 
 </body>
 

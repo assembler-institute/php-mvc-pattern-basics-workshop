@@ -25,6 +25,7 @@ CREATE TABLE artworks(
     id_cat int NOT NULL ,
     artwork_name VARCHAR(20),
     history TEXT,
+    is_bought bit NOT NULL,
     price INT ,
     artwork_photo VARCHAR(255),
     style VARCHAR(15),
@@ -104,62 +105,62 @@ INSERT INTO category (cat_name,cat_img) VALUES
 ("Landscape painting","category/landscape.jpg"),
  ("cinetic art","category/cinetic.jpg");
 
-INSERT INTO artworks (id_artist,id_cat,artwork_name,history,price,
+INSERT INTO artworks (id_artist,id_cat,artwork_name,history,is_bought,price,
 artwork_photo,style) VALUES(
     2,1,"The last Supper",
     "The Last Supper is an original mural painting by Leonardo da Vinci executed between 1495 and 1498. It is located on the wall on which it was originally painted, in the refectory of the Dominican convent of Santa Maria delle Grazie, in Milan, declared a World Heritage Site by Unesco in 1980.",
-    400000000,"paintings/lastsupper.jpg", "Renacentism"
+    0,400000000,"paintings/lastsupper.jpg", "Renacentism"
 ),
 (
     2,2,"Mona lisa",
     "The Portrait of Lisa Gherardini, wife of Francesco del Giocondo,1 better known as La Gioconda (La Joconde in French) or Monna Lisa, is a pictorial work by the Italian Renaissance polymath Leonardo da Vinci. It was acquired by King Francis I of France in the early 16th 
     century and has since been owned by the French state.",
-    200000,"paintings/mona.jpg", "Renacentism"
+    0,200000,"paintings/mona.jpg", "Renacentism"
 ),
 (
     6,1,"La musique",
     "The music is a wall-sized painting by Henri Matisse in 1910. The painting was commissioned by Sergei Shchukin, who hung it with Matisse's 1910 Dance on the staircase of his Moscow mansion.",
-    500000,"paintings/musique.jpg","Oil on canvas"
+    0,500000,"paintings/musique.jpg","Oil on canvas"
 ),
 (
     1,1,"Guernica",
     "Guernica is a painting by Pablo Picasso, painted in Paris 2 between the months of May and June 1937, whose title refers to the bombing of Guernica, which occurred on April 26 of that year (1937), during the Spanish Civil War. It was commissioned by the Director General of Fine Arts, Josep Renau, at the request of the Government of the Second Spanish Republic to be exhibited in the Spanish pavilion during the International Exhibition of 1937 in Paris, in order to attract public attention to the Republican cause in the midst of the Spanish Civil War.",
-    1000000, "paintings/guernica.jpg","Cubism"
+    0,1000000, "paintings/guernica.jpg","Cubism"
 ),
 (
     1,2,"Ambroise Vollard",
     "Portrait of Ambroise Vollard is an oil on canvas by Pablo Picasso, which he painted in 1910. It is currently housed in the Pushkin Museum in Moscow. The painting is a depiction of the influential art dealer Ambroise Vollard, who played an important role in Picasso's early career as an artist.",
-    20000,"paintings/vollard.jpg","Cubism"
+    0,20000,"paintings/vollard.jpg","Cubism"
 ),
 (  
     3,2,"Self-Portrait",
     "he observed himself critically in a mirror. Painting oneself is not an innocuous act: it is a questioning which often leads to an identity crisis.
     People say, and I am willing to believe it, that Thus he wrote to his sister: 'I am looking for a deeper likeness than that obtained by a photographer.' And later to his brother: 'it is hard to know yourself. But it is not easy to paint yourself, either'.",
-    5000000,"paintings/self.jpg", "Modern art"
+    0,5000000,"paintings/self.jpg", "Modern art"
 ),
 (
     3,3,"The Starry Night",
     "The Starry Night is an oil on canvas by the Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room in Saint-Rémy-de-Provence, just before dawn, with the addition of an imaginary village.",
-    300000,"paintings/starry.jpg","Modern art"
+    0,300000,"paintings/starry.jpg","Modern art"
 ),
 
 (
     4,1,"The last judgment",
     "The Last Judgment or The Last Judgment is the mural frescoed by Michelangelo to decorate the apse of the Sistine Chapel (Vatican City, Rome). Michelangelo began painting it 25 years after he finished painting the vault of the chapel.",
-    700000,"paintings/judgment.jpg","Renacentism"
+    0,700000,"paintings/judgment.jpg","Renacentism"
 ),
 (
     4,4,"David",
     "The David is a white marble sculpture 5.17 meters1 high and 5572 kilograms in mass,2 made by Michelangelo Buonarroti between 1501 and 1504, commissioned by the Opera del Duomo of the Cathedral of Santa Maria del Fiore in Florence. ",
-    100000,"paintings/david.jpg","Renacentism"
+    0,100000,"paintings/david.jpg","Renacentism"
 ),
 (
     6,2,"The Green Stripe",
     "The Green Stripe-also called Madame Matisse-is an oil painting by French painter Henri Matisse. Matisse painted this portrait in 1905, using his wife, Amélie Noellie Matisse-Parayre, as his model.",
-    150000,"paintings/green.jpg","Oil on canvas"
+    0,150000,"paintings/green.jpg","Oil on canvas"
 ),
 (
     5,2,"Galatea of the Sheres",
     "Galatea of the Spheres is a painting by Salvador Dalí in 1952. It depicts Gala Dalí, Salvador's wife and muse, forming herself with a series of spheres.",
-    15000,"paintings/galatea.jpg","Surrealism"
+    0,15000,"paintings/galatea.jpg","Surrealism"
 );
