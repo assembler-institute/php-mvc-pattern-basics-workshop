@@ -34,18 +34,21 @@ function getById($id)
     }
 }
 
-function create($client)
+function create($product)
 {
-    $query = conn()->prepare("INSERT INTO productos (RESPONSABLE, EMPRESA, DIRECCIÓN , POBLACIÓN , TELÉFONO, CÓDIGOCLIENTE)
+    $query = conn()->prepare("INSERT INTO productos (SECCIÓN , NOMBREARTÍCULO, PRECIO, FECHA, IMPORTADO, PAÍSDEORIGEN, CÓDIGOARTÍCULO)
     VALUES
-    (?, ?, ?, ?, ?, ?);");
+    (?, ?, ?, ?, ?, ?,?);");
 
-    $query->bindParam(1, $client["RESPONSABLE"]);
-    $query->bindParam(2, $client["EMPRESA"]);
-    $query->bindParam(3, $client["DIRECCIÓN"]);
-    $query->bindParam(4, $client["POBLACIÓN"]);
-    $query->bindParam(5, $client["TELÉFONO"]);
-    $query->bindParam(6, $client["CÓDIGOCLIENTE"]);
+
+
+$query->bindParam(1, $product["SECCIÓN"]);
+$query->bindParam(2, $product["NOMBREARTÍCULO"]);
+$query->bindParam(3, $product["PRECIO"]);
+$query->bindParam(4, $product["FECHA"]);
+$query->bindParam(5, $product["IMPORTADO"]);
+$query->bindParam(6, $product["PAÍSDEORIGEN"]);
+$query->bindParam(7, $product["CÓDIGOARTÍCULO"]);
 
     try {
         $query->execute();
@@ -55,18 +58,19 @@ function create($client)
     }
 }
 
-function update($client)
+function update($product)
 {
-    $query = conn()->prepare("UPDATE clientes
-    SET RESPONSABLE = ?, EMPRESA = ?, DIRECCIÓN = ?, POBLACIÓN = ?, TELÉFONO = ?
-    WHERE CÓDIGOCLIENTE = ?;");
+    $query = conn()->prepare("UPDATE productos
+    SET SECCIÓN = ?, NOMBREARTÍCULO = ?, PRECIO = ?, FECHA = ?, IMPORTADO = ?, PAÍSDEORIGEN = ?
+    WHERE CÓDIGOARTÍCULO = ?;");
 
-    $query->bindParam(1, $client["RESPONSABLE"]);
-    $query->bindParam(2, $client["EMPRESA"]);
-    $query->bindParam(3, $client["DIRECCIÓN"]);
-    $query->bindParam(4, $client["POBLACIÓN"]);
-    $query->bindParam(5, $client["TELÉFONO"]);
-    $query->bindParam(6, $client["CÓDIGOCLIENTE"]);
+    $query->bindParam(1, $product["SECCIÓN"]);
+    $query->bindParam(2, $product["NOMBREARTÍCULO"]);
+    $query->bindParam(3, $product["PRECIO"]);
+    $query->bindParam(4, $product["FECHA"]);
+    $query->bindParam(5, $product["IMPORTADO"]);
+    $query->bindParam(6, $product["PAÍSDEORIGEN"]);
+    $query->bindParam(7, $product["CÓDIGOARTÍCULO"]);
 
     try {
         $query->execute();
@@ -78,7 +82,7 @@ function update($client)
 
 function delete($id)
 {
-    $query = conn()->prepare("DELETE FROM clientes WHERE CÓDIGOCLIENTE = ?");
+    $query = conn()->prepare("DELETE FROM productos WHERE CÓDIGOARTÍCULO = ?");
     $query->bindParam(1, $id);
 
     try {

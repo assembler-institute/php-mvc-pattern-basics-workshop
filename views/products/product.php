@@ -49,7 +49,7 @@
                 <div class="col">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Fecha</label>
-                        <input required type="text" value="<?php echo isset($product['FECHA']) ? $product['FECHA'] : null ?>" class="form-control" id="FECHA" name="FECHA" aria-describedby="FECHAHelp" placeholder="Enter FECHA">
+                        <input required type="text" value="<?php echo isset($product['FECHA']) ? $product['FECHA'] : null ?>" class="form-control" id="FECHA" name="FECHA" aria-describedby="FECHAHelp" placeholder="YYYY-MM-DD">
                     
                     </div>
                 </div>
@@ -64,15 +64,19 @@
                 </div>
                 <div class="col">
                     <div class="form-group">
-                        <label for="city">IMPORTADO</label>
-                        <input type="text" value="<?php echo isset($product['IMPORTADO']) ? $product['IMPORTADO'] : null ?>" class="form-control" id="IMPORTADO" name="IMPORTADO" aria-describedby="IMPORTADOHelp" placeholder="Enter IMPORTADO">
+                        <label for="IMPORTADO">Importado</label>
+                        <select name="IMPORTADO" class="form-control" id="IMPORTADO" required>
+                            <option value="">Please Select</option>
+                            <option value="VERDADERO" <?php echo isset($product['IMPORTADO']) && $product['IMPORTADO']  == 'VERDADERO' ? 'selected' : null; ?>>True</option>
+                            <option value="FALSO" <?php echo isset($product['IMPORTADO']) && $product['IMPORTADO']  == "FALSO" ? 'selected' : null; ?>>False</option>
+                        </select>
                     </div>
                 </div>
             </div>
 
 
             <button type="submit" class="btn btn-primary">Submit</button>
-            <a id="return" class="btn btn-secondary" href="<?php echo "?controller=clients&action=getAllClients"; ?>">Return</a>
+            <a id="return" class="btn btn-secondary" href="<?php echo "?controller=products&action=getAllProducts"; ?>">Return</a>
         </form>
     </div>
 </body>

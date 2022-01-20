@@ -41,20 +41,20 @@ function createProduct($request)
 {
     $action = $request["action"];
     if (sizeof($_POST) > 0) {
-        $clients = get();
-        $lastClient = end($clients);
-        $lastClientId = $lastClient["CÓDIGOCLIENTE"];
-        $newId = createNewId($lastClientId);
-        $_POST["CÓDIGOCLIENTE"] = $newId;
-        $employee = create($_POST);
+        $products = get();
+        $lastProduct = end($products);
+        $lastProductId = $lastProduct["CÓDIGOARTÍCULO"];
+        $newIdProduct = createNewIdProduct($lastProductId);
+        $_POST["CÓDIGOARTÍCULO"] = $newIdProduct ;
+        $product = create($_POST);
 
-        if ($employee[0]) {
-            header("Location: index.php?controller=clients&action=getAllClients");
+        if ($product[0]) {
+            header("Location: index.php?controller=products&action=getAllProducts");
         } else {
-            echo $employee[1];
+            echo $product[1];
         }
     } else {
-        require_once VIEWS . "/clients/client.php";
+        require_once VIEWS . "/products/product.php";
     }
 }
 
@@ -77,13 +77,14 @@ function updateClient($request)
     }
 }
 
-function deleteClient($request)
+function deleteProduct($request)
 {
     $action = $request["action"];
-    $client = null;
+    $product = null;
+    echo $request["id"];
     if (isset($request["id"])) {
-        $client = delete($request["id"]);
-        header("Location: index.php?controller=clients&action=getAllClients");
+        $product = delete($request["id"]);
+        header("Location: index.php?controller=products&action=getAllProducts");
     }
 }
 
@@ -92,7 +93,7 @@ function error($errorMsg)
     require_once VIEWS . "/error/error.php";
 }
 
-function createNewId($lastId){
-    return $newLastId ="CT". intval(substr($lastId, 2))+1;
+function createNewIdProduct($lastId){
+    return $newLastId ="AR". intval(substr($lastId, 2))+1;
    
 }
