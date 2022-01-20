@@ -18,7 +18,7 @@
   <div class="buscardor">
     <form action="./index.php?controller=pokemon&action=getAllPokemons" method="POST">
       <input class="pokebusca" name="buscar" type="text">
-      <button>Buscar</button>
+      <button class="pokebtn">Buscar</button>
     </form>
   </div>
   <div id="tablaTodos" class="overflow-auto">

@@ -11,7 +11,7 @@ var pokebusca=document.getElementsByClassName("pokebusca")[0];
 
 
 pokebusca.addEventListener("keydown",  function(){
-    window.location.reload();
+    // window.location.reload();
 })
 
 btnPokedexCloseShiny.addEventListener("click", function(){

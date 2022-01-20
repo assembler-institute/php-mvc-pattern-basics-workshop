@@ -12,7 +12,7 @@
     <DIV class="pokemon">
     <img id="imgPoke" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<?= $id["id"]?>.png" class="imgPoke">
 </DIV>
-<div id="imgPokeDiv"><?= $id["id"]?></div>
+<div class="imgPokeDiv" id="imgPokeDiv"><?= $id["id"]?></div>
 
     <div class="EF">
         <h2>Efective Againts</h2>

@@ -11,9 +11,9 @@ var pokebusca=document.getElementsByClassName("pokebusca")[0];
 
 
 pokebusca.addEventListener("keydown",  function(e){
-    var a= pokebusca.value
-    window.location.reload();
-    pokebusca.value=a;
+    // var a= pokebusca.value
+    // window.location.reload();
+    // pokebusca.value=a;
 })
 
 

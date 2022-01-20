@@ -73,14 +73,14 @@ body{
 
 .buscardor{
     position: absolute;
-    top: 15%;
+    top: 14%;
     right: 53%;
 }
 
 .pokebtn{
     background: linear-gradient(red 48%,black 48% 53%, rgb(253, 253, 253) 53% 100%);
     border: 3px black solid;
-    border-radius: 20px;
+    border-radius: 50px;
     margin: 1em;
     padding: 10px;
     font-size: larger;

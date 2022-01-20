@@ -36,6 +36,7 @@ text-align: center;
     position: absolute;
     bottom: 41.5%;
     left: 47%;
+    cursor: pointer;
 }
 
 .imgPoke{
