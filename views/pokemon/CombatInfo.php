@@ -28,7 +28,7 @@
     </div>
 
     <div class="NEF">
-        <h2>No Efective Againts</h2>
+        <h2>Less Efective Againts</h2>
     <?php 
         foreach($tipostot as $info){
             if($info[0]<1&&$info[0]>0){
