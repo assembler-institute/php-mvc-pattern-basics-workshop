@@ -14,4 +14,4 @@ define("MODELS", BASE_PATH . "/model/");
 define("RESOURCES", BASE_PATH . "/resources/");
 
 //ASSETS
-define("ASSETS", BASE_PATH . "/assets/");
+define("ASSETS", BASE_URL . "/assets/");

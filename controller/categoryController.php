@@ -15,11 +15,3 @@ function error($errorMsg)
 {
     require_once(VIEWS . "error/error.php");
 }
-
-function getAllCategories()
-{
-    $categories = get();
-    if (isset($categories)) {
-        require_once(VIEWS . "artworks/categories.php");
-    }
-}

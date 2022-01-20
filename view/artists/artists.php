@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <?php require_once(ASSETS . "templates/head.html"); ?>
+    <?php require_once(BASE_PATH . "/assets/" . "templates/head.php"); ?>
     <title>Artists | Wiki's Gallery</title>
 </head>
 
 <body>
-    <?php require_once(ASSETS . "templates/header.html"); ?>
+    <?php require_once(BASE_PATH . "/assets/" . "templates/header.html"); ?>
 
     <h1 class="text-center">Best artists of all times</h1>
     <main class="ms-3 row row-cols-1 row-cols-md-2  row-cols-xl-4 g-3">
