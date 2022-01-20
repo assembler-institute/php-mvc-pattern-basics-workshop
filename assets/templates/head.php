@@ -11,7 +11,5 @@
 <!-- FontAwesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <!-- My styles -->
-<?php
-require_once(ASSETS . 'css/style.css');
-require_once(ASSETS . 'js/script.js');
-?>
+<link rel="stylesheet" href="<?= ASSETS . 'css/style.css' ?>">
+<script src="<?= ASSETS . 'js/script.js' ?>"></script>

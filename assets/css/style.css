@@ -1,0 +1,20 @@
+.category-card:hover {
+    background-color: lightgray;
+    opacity: 0.9;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.category-card {
+    width: 40%;
+}
+
+.artistPhoto {
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.artistCard {
+    width: 18rem;
+}

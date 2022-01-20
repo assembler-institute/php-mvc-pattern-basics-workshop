@@ -18,6 +18,7 @@
                         <h5 class="card-title"><?= $artwork["artwork_name"] . " " . $artwork["last_name"] ?></h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
                         <a href="?controller=artworks&action=getInfo&id=<?= $artwork["id"] ?>" class="btn btn-primary">More information</a>
+                        <button type="button" class="btn btn-outline-danger">Purchase</button>
                     </div>
                 </div>
             </div>
