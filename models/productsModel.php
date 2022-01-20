@@ -4,14 +4,14 @@ require_once("helper/dbConnection.php");
 
 function get()
 {
-    $query = conn()->prepare("SELECT EMPRESA, CÓDIGOCLIENTE
-    FROM clientes
-    ORDER BY CÓDIGOCLIENTE ASC;");
+    $query = conn()->prepare("SELECT NOMBREARTÍCULO, CÓDIGOARTÍCULO
+    FROM productos
+    ORDER BY CÓDIGOARTÍCULO ASC;");
 
     try {
         $query->execute();
-        $clients = $query->fetchAll();
-        return $clients;
+        $products = $query->fetchAll();
+        return $products;
     } catch (PDOException $e) {
         return [];
     }
@@ -22,13 +22,13 @@ function get()
 function getById($id)
 {
     $query = conn()->prepare("SELECT *
-    FROM `clientes`
-    WHERE `clientes`.`CÓDIGOCLIENTE` = '$id';");
+    FROM `productos`
+    WHERE `productos`.`CÓDIGOARTÍCULO` = '$id';");
 
     try {
         $query->execute();
-        $client = $query->fetch();
-        return $client;
+        $product = $query->fetch();
+        return $product;
     } catch (PDOException $e) {
         return [];
     }
@@ -36,7 +36,7 @@ function getById($id)
 
 function create($client)
 {
-    $query = conn()->prepare("INSERT INTO clientes (RESPONSABLE, EMPRESA, DIRECCIÓN , POBLACIÓN , TELÉFONO, CÓDIGOCLIENTE)
+    $query = conn()->prepare("INSERT INTO productos (RESPONSABLE, EMPRESA, DIRECCIÓN , POBLACIÓN , TELÉFONO, CÓDIGOCLIENTE)
     VALUES
     (?, ?, ?, ?, ?, ?);");
 

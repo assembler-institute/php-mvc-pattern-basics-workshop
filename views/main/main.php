@@ -11,6 +11,6 @@
     <h1>Welcome to MERCADONA !</h1>
     <div class="list-group">
         <a class="list-group-item list-group-item-action" href="?controller=clients&action=getAllClients">Clients</a>
-        <a class="list-group-item list-group-item-action" href="?controller=hobbie&action=getAllHobbies">Products</a>
+        <a class="list-group-item list-group-item-action" href="?controller=products&action=getAllProducts">Products</a>
 </body>
 </html>
