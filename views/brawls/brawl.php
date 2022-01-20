@@ -12,7 +12,19 @@
     <title>Document</title>
 </head>
 <body>
-<button><a href="<?= BASE_URL.'?controller=employee&action=getAllEmployees'?>">Return</a></button>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="<?= BASE_URL?>">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="<?= BASE_URL.'?controller=brawl&action=getbrawls'?>">Brawls</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= BASE_URL.'?controller=class&seeBrawl=checkRarity'?>">Class/Rarity</a>
+        </li>
+      </ul>
+</nav>
   <?php
     foreach ($BRAWLS as $brawlers) {
         $imagen =$brawlers["imagen"];
@@ -51,7 +63,7 @@
 
 <p class="text-hp">Your browser does not support HTML5 videos.</p>
 </video>
-<div class="p-1 super-desc text-center" style="border: none;">
+<div class="p-1 super-desc text-center" style="border: none; background-image: url('https://i.redd.it/iapqmzd3zu721.jpg')">
 <span class="super-title">ATTACK</span>
 </div>
 </div>
@@ -60,9 +72,9 @@
 <div class="card card-body post-type4 dark-border p-0 mb-2">
 <video id="Bull-Super" width="640" height="640" class="dark-border-btm img-fluid" poster="https://cdn.brawlify.com/videos/preview/<?= $nombre?>-Super.jpg" preload="metadata" controls="" controlslist="nodownload">
 <source src="https://cdn.brawlify.com/videos/<?= $nombre?>-Super.mp4" type="video/mp4">
- <p class="text-hp">Your browser does not support HTML5 videos.</p>
+ <p class="text-hp" >Your browser does not support HTML5 videos.</p>
 </video>
-<div class="p-1 super-desc text-center" style="border: none;">
+<div class="p-1 super-desc text-center" style="border: none; background-image: url('https://i.redd.it/iapqmzd3zu721.jpg')">
 <span class="super-title">SUPER</span>
 </div>
 </div>

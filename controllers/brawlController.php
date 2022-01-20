@@ -1,6 +1,6 @@
 <?php
 
-require_once MODELS . "employeeModel.php";
+require_once MODELS . "brawlModel.php";
 
 //OBTAIN THE ACCION PASSED IN THE URL AND EXECUTE IT AS A FUNCTION
 
@@ -18,17 +18,18 @@ if (function_exists($action)) {
     error("Invalid user action");
 }
 
+
 /* ~~~ CONTROLLER FUNCTIONS ~~~ */
 
 /**
  * This function calls the corresponding model function and includes the corresponding view
  */
-function getAllEmployees()
+function getbrawls()
 {
     DBCREATED();
     $BRAWLS = get();
     if (isset($BRAWLS)) {
-        require_once VIEWS . "/employee/employeeDashboard.php";
+        require_once VIEWS . "/brawls/brawlsDashboard.php";
     } else {
         error("There is a database error, try again.");
     }
@@ -43,9 +44,10 @@ function getbrawl()
     // echo $_REQUEST["id"];
     $BRAWLS = getBrawler($_REQUEST["id"]);
     if (isset($BRAWLS)) {
-     require_once VIEWS . "/employee/employee.php";
+     require_once VIEWS . "/brawls/brawl.php";
     }
 }
+
 
 /**
  * This function includes the error view with a message

@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+<button><a href="<?= BASE_URL?>">HOME</a></button>
     <?php
     echo "<h1>". $errorMsg ."</h1>";
     ?>
