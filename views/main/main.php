@@ -12,6 +12,6 @@
 </head>
 <body>
     <div class="pokedex" id="pokedex"></div>
-    <p class="error" id="error">el Pokemon no existe</p>
+    <p class="error" id="error"></p>
 </body>
 </html>

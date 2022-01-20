@@ -46,6 +46,8 @@ function getPokemon($request)
     $types = $todo[1];
     if(isset($pokemonSelectedTodo)){
         require_once(VIEWS."pokemon/pokemon.php");
+    } else{
+        error();
     }
 }
 

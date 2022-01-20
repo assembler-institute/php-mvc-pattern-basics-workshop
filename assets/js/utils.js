@@ -7,7 +7,11 @@ var mInfo= document.getElementById("mInfo");
 
 for (const iterator of pokemonSelected) {
     iterator.addEventListener("click", function(e){
-        window.location.replace("./index.php?controller=pokemon&action=getPokemon&id="+ e.path[2].id)
+        if(e.path[2].id !== ""){
+            window.location.replace("./index.php?controller=pokemon&action=getPokemon&id="+ e.path[2].id)
+        } else{
+            window.location.replace("./index.php?controller=sefasdf")
+        }
     })
 }
 
