@@ -1,5 +1,51 @@
 
 
 body{
-    background-image: url("./assets/img/pokeball.jpg");
+    background-image: url("../img/pokeball.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 98vh;
+}
+
+.EF{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    max-width: 30%;
+text-align: center;
+}
+
+.NEF{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    max-width: 30%;
+text-align: center;
+}
+
+.DB{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    max-width: 30%;
+    text-align: center;
+}
+
+.IN{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    max-width: 30%;
+text-align: center;
+}
+
+.pokemon{
+    position: absolute;
+    bottom: 41.5%;
+    left: 47%;
+}
+
+.imgPoke{
+   height: 150%;
+   width: 150%;
 }

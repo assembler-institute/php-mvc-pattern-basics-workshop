@@ -18,11 +18,10 @@ function getById($id){
 }
 
 function infoCombat($tipo1,$tipo2){
-    $query=conn()->prepare("SELECT *FROM TabTypes WHERE TabTypes.tipoA=$tipo1 OR TabTypes.tipoA=$tipo2");
+    $query=conn()->prepare("SELECT tabtypes.tipoA , tabtypes.Efect, types.img FROM tabtypes INNER JOIN types ON types.id=tabtypes.tipoE WHERE tabtypes.tipoA=$tipo1 OR tabtypes.tipoA=$tipo2 ORDER by tabtypes.Efect;");
     try{
         $query->execute();
         $type=$query->fetchAll();
-
         return $type;
     }catch(PDOException $e){
         return [];

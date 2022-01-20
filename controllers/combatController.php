@@ -11,9 +11,7 @@ if(function_exists($action)){
 }
 
 function combat($id){
-    echo $id;
-    // $todo=getById($id);
-    // $pokemon=$todo[0];
-    // infoCombat($pokemon["tipo1"],$pokemon["tipo2"]);
-    // require_once(VIEWS."pokemon/CombatInfo.php");
+    $todo=getById($id["id"]);
+    $Cinfo=infoCombat($todo[0][0]["tipo1"] , $todo[0][0]["tipo2"]);
+    require_once(VIEWS."pokemon/CombatInfo.php");
 }
