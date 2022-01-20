@@ -34,6 +34,6 @@ function getPokemon($request)
     if(isset($pokemonSelectedTodo)){
         require_once(VIEWS."pokemon/pokemonShiny.php");
     } else{
-        error();
+        // error();
     }
 }
