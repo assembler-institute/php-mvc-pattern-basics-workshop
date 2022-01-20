@@ -10,6 +10,11 @@
     <script src="assets/js/utils.js" defer></script>
 </head>
 <body>
+  <nav id="botonesPokedex">
+    <div id="cerrarPokedex" class="btnPokedex"></div>
+    <div id="modoShiny" class="btnPokedex"></div>
+    <div id="buscadorPokemon" class="btnPokedex"></div>
+  </nav>
   <div id="tablaTodos" class="overflow-auto">
     <table class="table">
       <thead>

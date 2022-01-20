@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/combat.css">
+    <script src="assets/js/combat.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <DIV class="pokemon">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<?= $id["id"]?>.png" class="imgPoke">
-    </DIV>
+    <img id="imgPoke" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<?= $id["id"]?>.png" class="imgPoke">
+</DIV>
+<div id="imgPokeDiv"><?= $id["id"]?></div>
 
     <div class="EF">
         <h2>Efective Againts</h2>

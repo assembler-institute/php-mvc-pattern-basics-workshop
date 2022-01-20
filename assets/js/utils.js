@@ -1,8 +1,22 @@
 
 
 var pokemonSelected = document.getElementsByClassName("pickAPokemon");
+var pokemonIdData = document.getElementById("pokemonIdData");
 var cInfo= document.getElementById("cInfo");
 var mInfo= document.getElementById("mInfo");
+var btnPokedexClose = document.getElementById("cerrarPokedex");
+var btnPokedexShiny = document.getElementById("modoShiny");
+var btnPokedexSearch = document.getElementById("buscadorPokemon");
+
+
+btnPokedexClose.addEventListener("click", function(){
+    window.location.replace("./index.php")
+})
+
+btnPokedexShiny.addEventListener("click", function(){
+    console.log('a');
+    window.location.replace("./index.php?controller=pokemonShiny&action=getAllPokemons")
+})
 
 
 for (const iterator of pokemonSelected) {
@@ -13,6 +27,15 @@ for (const iterator of pokemonSelected) {
             window.location.replace("./index.php?controller=sefasdf")
         }
     })
+}
+
+function hover(element) {
+    console.log(pokemonIdData);
+    element.setAttribute('src', "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/" + pokemonIdData.innerHTML + ".png");
+}
+
+function unhover(element) {
+    element.setAttribute('src', "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + pokemonIdData.innerHTML + ".png");
 }
 
 cInfo.addEventListener("click",function(e){

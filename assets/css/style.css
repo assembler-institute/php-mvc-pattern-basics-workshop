@@ -26,3 +26,26 @@ body{
     flex-direction: column;
     width: 20%;
 }
+
+#botonesPokedex{
+    width: 145px;
+    height: 30px;
+    position: absolute;
+    top: 3%;
+    left: 23.75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.btnPokedex{
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25%;
+}
+
+#pokemonIdData{
+    visibility: hidden;
+}
