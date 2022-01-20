@@ -1,0 +1,39 @@
+.bg-blue {
+    background-color: #30a7d7;
+    border-radius: 20px;
+}
+
+.cards {
+    margin: 20px;
+    display: grid;
+    gap: 40px;
+}
+
+.card-pokemons {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cards-type {
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.card-img-top-poke {
+    height: 180px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.card-img-top-type {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.card-img-top img {
+    height: 90%;
+    width: 50%;
+}
+
+.pokeinfo-img > img {
+    height: 200px;
+}
