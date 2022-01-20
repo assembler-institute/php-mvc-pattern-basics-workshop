@@ -1,8 +1,8 @@
 <?php
 
 require_once("config/db.php");
-// Create connection
 
+// Create connection
 function conn() {
     try{
         $connection = "mysql:host=" . HOST . ";"

@@ -12,6 +12,7 @@
 
 <body>
     <main>
+        <?php require_once(BASE_PATH . "/assets/template/navbar.html"); ?>
         <h2 class="p-5 display-4 text-center"><strong>INFORMACIÓN SOBRE POKEMON</strong></h2>
         <section class="container">
             <a class="list-group-item list-group-item-action" href="?controller=pokemon&action=getAllPokemons">Pokemon Controller</a>

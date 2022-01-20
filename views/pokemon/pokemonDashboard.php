@@ -12,6 +12,7 @@
 
 <body>
     <main>
+        <?php require_once(BASE_PATH . "/assets/template/navbar.html"); ?>
         <h2 class="p-5 display-4 text-center">Pokedex Nacional</h2>
 
         <select id="types">

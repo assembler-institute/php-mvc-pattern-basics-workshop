@@ -2,6 +2,7 @@
 
 require_once "models/helper/dbConnection.php";
 
+//Return consult all pokemons
 function getPokemons() {
     $query = conn()->prepare("SELECT * FROM pokemon");
 
@@ -14,6 +15,7 @@ function getPokemons() {
     }
 }
 
+//Return consult one pokemon
 function getPokeByOneType($id) {
     $query = conn()->prepare("SELECT pokemon.* FROM pokemon INNER JOIN pokemon_types ON pokemon.id = pokemon_types.poke_id WHERE pokemon_types.type_id = ?");
 
@@ -26,6 +28,7 @@ function getPokeByOneType($id) {
     }
 }
 
+//Return consult pokemon by id
 function getPokeByID($id) {
     $query = conn()->prepare("SELECT * FROM pokemon WHERE id = ?");
 

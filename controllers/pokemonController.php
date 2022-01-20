@@ -15,6 +15,7 @@ if(function_exists($action)) {
     error("No encuentra la funcion");
 }
 
+/* This function includes the all model pokemons */
 function getAllPokemons() {
     $pokemons = getPokemons();
     $types = getTypes();
@@ -25,6 +26,7 @@ function getAllPokemons() {
     }
 }
 
+/* This function includes the model pokemons by one type */
 function getPokemonsByType() {
     if(isset($_REQUEST["nameType"])) {
         if($_REQUEST["nameType"] === "all") {
@@ -39,6 +41,7 @@ function getPokemonsByType() {
     }
 }
 
+/* This function includes the model one pokemon */
 function getPokemon() {
     if(isset($_REQUEST["id"])) {
         $pokemon = getPokeByID($_REQUEST["id"]);
@@ -48,6 +51,7 @@ function getPokemon() {
     }
 }
 
+/* This function includes the error view with a message */
 function error($errorMsg) {
     require_once VIEWS . "/error/error.php";
 }

@@ -23,6 +23,7 @@ if (isset($_GET['controller'])) {
     require_once VIEWS . "main/main.php";
 }
 
+//Return the ccontroller path complete
 function getControllerPath($controller): string {
     return CONTROLLERS . $controller . "Controller.php";
 }

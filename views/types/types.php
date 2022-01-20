@@ -12,6 +12,7 @@
 
 <body>
     <main>
+        <?php require_once(BASE_PATH . "/assets/template/navbar.html"); ?>
         <h2 class="p-5 display-4 text-center">Tipos de los pokemons</h2>
         <section class="cards cards-type text-center" id="cards-type">
             <?php foreach ($types as $key => $value) { ?>

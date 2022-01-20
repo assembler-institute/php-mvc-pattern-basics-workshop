@@ -14,6 +14,7 @@ if(function_exists($action)) {
     error("No encuentra la funcion");
 }
 
+/* This function includes the all model types */
 function getAllTypes() {
     $types = getTypes();
     if(isset($types)) {
@@ -23,6 +24,7 @@ function getAllTypes() {
     }
 }
 
+/* This function includes the error view with a message */
 function error($errorMsg) {
     require_once VIEWS . "/error/error.php";
 }

@@ -12,6 +12,7 @@
 
 <body>
     <main>
+        <?php require_once(BASE_PATH . "/assets/template/navbar.html"); ?>
         <h2 class="text-center my-5">Información Detallada sobre Pokemon</h2>
         <div class="container my-5">
             <div class="row">
