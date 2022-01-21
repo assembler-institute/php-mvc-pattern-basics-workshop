@@ -1,4 +1,30 @@
 `#patterns` `#mvc` `#php` `#master-in-software-engineering`
+##Investigation <br>
+
+What is an architecture pattern?
+```
+An architectural pattern is a general, reusable solution to a commonly occurring problem in software architecture within a given context.
+```
+What is the MVC pattern?
+```
+is a software architecture pattern, which separates the data and mainly the business logic of an application from its representation and the module in charge of managing events and communications.
+```
+Draw a scheme where you understand that the MVC pattern is clearly
+```
+<a href="https://i.stack.imgur.com/YgydT.png">Scheme</a>
+```
+Explain in which cases you would use this pattern
+```
+In cases of using php, for views and db, and i'll do a big project, i need to see all the files, components clearly if later i want to refact or something. 
+```
+Describe step by step what happens in this pattern from when you create a Request until a Response is returned (you can give more than one example if you consider it necessary).
+```
+When user create a request, it pass for many conditions, if the request was well-formulated, if the variables are setted, this part is take by the controller, after that, the controller will ask to model for the action previously sended by the user, the controller recibes a response, and the controller sends to user a response too in VIEW format.
+```
+What advantages do you think this pattern has to use?
+```
+Better file structure, when you start to know what each file can do, you enjoy the code and it's more easy to find yourself, what fails, what steps you need to do, in which way, etc.
+```
 
 # Assembler School: PHP MVC Pattern Basics - Workshop <!-- omit in toc -->
 
