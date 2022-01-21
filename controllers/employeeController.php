@@ -6,7 +6,15 @@ require_once MODELS . "employeeModel.php";
 
 //Keep in mind that the function to be executed has to be one of the ones declared in this controller
 // TODO Implement the logic
-
+require_once MODELS."employeeModel.php";
+if(isset($_REQUEST["action"])){
+    $action=$_REQUEST["action"];
+}
+if(function_exists($action)){
+    call_user_func($action,$_REQUEST);
+}else{
+    error("invalid user action");
+}
 
 /* ~~~ CONTROLLER FUNCTIONS ~~~ */
 
@@ -15,7 +23,12 @@ require_once MODELS . "employeeModel.php";
  */
 function getAllEmployees()
 {
-    //
+    $employees=get();
+    if(isset($employees)){
+        require_once VIEWS."/employee/employeeDashboard.php";
+    }else{
+        error("there is a database error");
+    }
 }
 
 /**
@@ -23,9 +36,32 @@ function getAllEmployees()
  */
 function getEmployee($request)
 {
-    //
+    $employees=getById($_POST["id"]);
+    if(isset($employees)){
+        require_once VIEWS."/employee/employeeDashboard.php";
+    }else{
+        error("there is a database error");
+    }}
+
+function deleteEmployee(){
+    $employees=delete();
+    if(isset($employees)){
+        require_once VIEWS."/employee/employeeDashboard.php";
+    }else{
+        error("there is a database error");
+    }
+
 }
 
+function updateEmployee(){
+    $employees=update();
+    if(isset($employees)){
+        require_once VIEWS."/employee/employeeDashboard.php";
+    }else{
+        error("there is a database error");
+    }
+
+}
 /**
  * This function includes the error view with a message
  */
