@@ -1,5 +1,6 @@
 <?php
 
+require_once "config/baseConstran.php";
 //CONTROLLERS
 define("CONTROLLERS", BASE_PATH . '/controllers/');
 
@@ -11,3 +12,5 @@ define("MODELS", BASE_PATH . '/models/');
 
 //RESOURCES
 define("RESOURCES", BASE_PATH . '/resources/');
+
+
