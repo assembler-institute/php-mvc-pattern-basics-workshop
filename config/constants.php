@@ -1,5 +1,5 @@
 <?php
-
+include_once "./config/baseConstants.php";
 //CONTROLLERS
 define("CONTROLLERS", BASE_PATH . '/controllers/');
 
