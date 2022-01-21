@@ -8,6 +8,21 @@ window.addEventListener("DOMContentLoaded", async () => {
             displayPokemons(response);
         })
     }
+
+    if (document.getElementById("cards-type")) {
+        const cardsType = document.querySelectorAll(".cards-type > .card");
+
+        for (const cardType of cardsType) {
+            cardType.addEventListener("click", async (e) => {
+                const card = e.target.parentNode;
+                const cardTitle = card.querySelector(".card-title");
+                const typesStrong = await getTypeStrong(cardTitle.textContent);
+                displayTypesStrong(typesStrong);
+                const typesWear = await getTypeWear(cardTitle.textContent);
+                displayTypesWear(typesWear);
+            });
+        }
+    }
 });
 
 async function getTypes(nameType) {
@@ -16,8 +31,20 @@ async function getTypes(nameType) {
     return data;
 }
 
+async function getTypeStrong(nameType) {
+    const response =  await fetch(`?controller=typePokemon&action=getAllTypeByStrong&nameTypeStrong=${nameType}`);
+    const data = await response.json();
+    return data;
+}
+
+async function getTypeWear(nameType) {
+    const response =  await fetch(`?controller=typePokemon&action=getAllTypeByWear&nameTypeWear=${nameType}`);
+    const data = await response.json();
+    return data;
+}
+
 async function displayPokemons(pokemons) {
-    clearDisplayPokemons(document.querySelector(".card-pokemons"));
+    clearDisplays(document.querySelector(".card-pokemons"));
 
     for (const pokemon of pokemons) {
         const template = `
@@ -33,7 +60,25 @@ async function displayPokemons(pokemons) {
     }
 }
 
-async function clearDisplayPokemons(dom) {
+async function displayTypesStrong(typesStrong) {
+    clearDisplays(document.getElementById("types-strong"));
+    document.getElementById("types-strong").insertAdjacentHTML("beforeend", "<h5>TIPOS EFICACES</h5>");
+    for (const typeStrong of typesStrong) {
+        const template = `<p>${typeStrong.name}</p>`;
+        document.getElementById("types-strong").insertAdjacentHTML("beforeend", template);
+    }
+}
+
+async function displayTypesWear(typesWear) {
+    clearDisplays(document.getElementById("types-wear"));
+    document.getElementById("types-wear").insertAdjacentHTML("beforeend", "<h5>TIPOS DEBILES</h5>");
+    for (const typeWear of typesWear) {
+        const template = `<p>${typeWear.name}</p>`;
+        document.getElementById("types-wear").insertAdjacentHTML("beforeend", template);
+    }
+}
+
+async function clearDisplays(dom) {
     while (dom.firstChild) {
         dom.lastChild.remove();
     }

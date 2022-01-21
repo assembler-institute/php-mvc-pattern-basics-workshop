@@ -34,7 +34,7 @@ function getTypesByStrong($id) {
 
     try {
         $query->execute([$id]);
-        $pokemons = $query->fetch();
+        $pokemons = $query->fetchAll();
         return $pokemons;
     } catch (PDOException $e) {
         return [];
@@ -47,7 +47,7 @@ function getTypesByWeak($id) {
 
     try {
         $query->execute([$id]);
-        $pokemons = $query->fetch();
+        $pokemons = $query->fetchAll();
         return $pokemons;
     } catch (PDOException $e) {
         return [];

@@ -24,5 +24,11 @@
             </article>
             <?php } ?>
         </section>
+        <section class="d-flex justify-content-around">
+            <article id="types-strong"></article>
+            <article id="types-wear"></article>
+        </section>
     </main>
+
+    <script src="<?=BASE_URL?>/php-mvc-pattern-basics-workshop/assets/js/utils.js"></script>
 </body>

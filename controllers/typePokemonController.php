@@ -24,6 +24,26 @@ function getAllTypes() {
     }
 }
 
+function getAllTypeByStrong() {
+    if(isset($_REQUEST["nameTypeStrong"])) {
+        $type = getTypeOneByName($_REQUEST["nameTypeStrong"]);
+        $typesStrong = getTypesByStrong($type["id"]);
+        echo json_encode($typesStrong);
+    } else {
+        return [];
+    }
+}
+
+function getAllTypeByWear() {
+    if(isset($_REQUEST["nameTypeWear"])) {
+        $type = getTypeOneByName($_REQUEST["nameTypeWear"]);
+        $typesWear = getTypesByWeak($type["id"]);
+        echo json_encode($typesWear);
+    } else {
+        return [];
+    }
+}
+
 /* This function includes the error view with a message */
 function error($errorMsg) {
     require_once VIEWS . "/error/error.php";
