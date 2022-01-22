@@ -1,35 +1,33 @@
 .mainTitle {
-    font-family: 'Pacifico';
-    font-weight: normal;
-    font-size: 40px;
-    text-align: center;
-    line-height: 1.4;
-    color: lightskyblue;
+  font-family: "Pacifico";
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.4;
+  color: lightskyblue;
 }
 
 .categoryCard:hover {
-    background-color: lightgray;
-    opacity: 0.9;
-    transition: 1s;
-    cursor: pointer;
+  background-color: lightgray;
+  opacity: 0.9;
+  transition: 1s;
+  cursor: pointer;
 }
 
 .categoryCard {
-    width: 40%;
+  width: 40%;
 }
 
 .productImg {
-    width: 20rem;
-    height: 25rem;
-    object-fit: cover;
+  width: 20rem;
+  height: 25rem;
+  object-fit: cover;
 }
 
 .artistPhoto {
-    width: 200px;
-    height: 400px;
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .widthCard {
-    width: 18rem;
+  width: 18rem;
 }

@@ -23,7 +23,7 @@ CREATE TABLE artworks(
     id int(10) AUTO_INCREMENT,
     id_artist int NOT NULL,
     id_cat int NOT NULL ,
-    artwork_name VARCHAR(20),
+    artwork_name VARCHAR(25),
     history TEXT,
     is_bought bit NOT NULL,
     price INT ,
