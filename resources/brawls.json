@@ -1,0 +1,3527 @@
+{
+    "list": [{
+        "id": 16000054,
+        "avatarId": 28000081,
+        "name": "Fang",
+        "hash": "Fang",
+        "path": "Fang",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Fang",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Fang.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Fang.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Fang.png",
+        "class": {
+            "id": 15,
+            "name": "Damage Dealer"
+        },
+        "rarity": {
+            "id": 7,
+            "name": "Chromatic",
+            "color": "#f88f25"
+        },
+        "unlock": null,
+        "description": "Fang kicks first and he kicks fast. His main attack is a hefty kick that sends his shoe flying! Fangs Super is a powerful kick that will chain hit multiple enemies who are close together.",
+        "starPowers": [],
+        "gadgets": [],
+        "videos": []
+    }, {
+        "id": 16000048,
+        "avatarId": 28000080,
+        "name": "Grom",
+        "hash": "Grom",
+        "path": "Grom",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Grom",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Grom.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Grom.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Grom.png",
+        "class": {
+            "id": 15,
+            "name": "Damage Dealer"
+        },
+        "rarity": {
+            "id": 4,
+            "name": "Epic",
+            "color": "#d850ff"
+        },
+        "unlock": null,
+        "description": "Watchman Groms priority is to keep guard. He throws his trusty radio at his enemies. His Super is a big bad bomb that breaks walls and pushes back enemies!",
+        "starPowers": [],
+        "gadgets": [],
+        "videos": []
+    }, {
+        "id": 16000053,
+        "avatarId": 28000075,
+        "name": "Lola",
+        "hash": "Lola",
+        "path": "Lola",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Lola",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Lola.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Lola.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Lola.png",
+        "class": {
+            "id": 15,
+            "name": "Damage Dealer"
+        },
+        "rarity": {
+            "id": 7,
+            "name": "Chromatic",
+            "color": "#f88f25"
+        },
+        "unlock": null,
+        "description": "Despite being just a guide, Lola portrays herself as THE leading lady of Brawlywood. She attacks with her scarf and her Super is a channeled manifestation of her Ego.",
+        "starPowers": [],
+        "gadgets": [],
+        "videos": []
+    }, {
+        "id": 16000052,
+        "avatarId": 28000074,
+        "name": "Meg",
+        "hash": "Meg",
+        "path": "Meg",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Meg",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Meg.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Meg.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Meg.png",
+        "class": {
+            "id": 15,
+            "name": "Damage Dealer"
+        },
+        "rarity": {
+            "id": 6,
+            "name": "Legendary",
+            "color": "#fff11e"
+        },
+        "unlock": null,
+        "description": "Meg has a basic form and an advanced form where she hops inside her trusted Mecha. The Mecha loses health over time and has low healing ability. Destroying the Mecha returns Meg to her basic form.",
+        "starPowers": [{
+            "id": 23000421,
+            "name": "Force Field",
+            "path": "Force-Field",
+            "version": 1,
+            "description": "Meg is protected by a 35% shield for 30 seconds when her Mecha is destroyed.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Force-Field.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000423,
+            "name": "Jolting Volts",
+            "path": "Jolting-Volts",
+            "version": 1,
+            "description": "Heal the Mecha by 450 health per second for 5 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Jolting-Volts.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000051,
+        "avatarId": 28000071,
+        "name": "Ash",
+        "hash": "Ash",
+        "path": "Ash",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Ash",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Ash.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Ash.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Ash.png",
+        "class": {
+            "id": 3,
+            "name": "Heavyweight"
+        },
+        "rarity": {
+            "id": 7,
+            "name": "Chromatic",
+            "color": "#f88f25"
+        },
+        "unlock": null,
+        "description": "Ash easily gets furious about all the junk he has to clean up. Dealing or receiving blows, even more so. The Fury makes him faster and more dangerous, but eventually he cools down.",
+        "starPowers": [{
+            "id": 23000414,
+            "name": "First Bash",
+            "path": "First-Bash",
+            "version": 1,
+            "description": "When hitting an opponent with his attack charges full, Ash gets even more angry. His Rage goes up by 100%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/First-Bash.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000416,
+            "name": "Chill Pill",
+            "path": "Chill-Pill",
+            "version": 1,
+            "description": "Though furious, Ash has to collect himself. A full Rage meter will recover 2500 health when this gadget is popped - less Rage, less recovery.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Chill-Pill.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000050,
+        "avatarId": 28000068,
+        "name": "Griff",
+        "hash": "Griff",
+        "path": "Griff",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Griff",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Griff.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Griff.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Griff.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 4,
+            "name": "Epic",
+            "color": "#d850ff"
+        },
+        "unlock": null,
+        "description": "Griff is the proprietor of Starr Parks gift shop. Business is bad, but he still throws coins away - from his employees tip jar!",
+        "starPowers": [{
+            "id": 23000397,
+            "name": "Keep The Change",
+            "path": "Keep-The-Change",
+            "version": 1,
+            "description": "Furious Griff tosses coins faster, reducing the time for a full salvo by 35%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Keep-The-Change.png",
+            "released": true
+        }, {
+            "id": 23000398,
+            "name": "Business Resilience",
+            "path": "Business-Resilience",
+            "version": 1,
+            "description": "Every 2 seconds, Griff regains up to 7% of his missing health.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Business-Resilience.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000399,
+            "name": "Piggy Bank",
+            "path": "Piggy-Bank",
+            "version": 2,
+            "description": "Griff drops a firecracker-filled piggy bank that, after a short delay, explodes destroying obstacles and dealing 1000 damage to opponents within range.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Piggy-Bank.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000049,
+        "avatarId": 28000067,
+        "name": "Buzz",
+        "hash": "Buzz",
+        "path": "Buzz",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Buzz",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Buzz.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Buzz.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Buzz.png",
+        "class": {
+            "id": 12,
+            "name": "Assassin"
+        },
+        "rarity": {
+            "id": 7,
+            "name": "Chromatic",
+            "color": "#f88f25"
+        },
+        "unlock": null,
+        "description": "Buzz is the lifeguard at Velocirapids. He constantly scans for folks in trouble he can throw his torpedo buoy to, but his throws are rather overenthusiastic.",
+        "starPowers": [{
+            "id": 23000390,
+            "name": "Tougher Torpedo",
+            "path": "Tougher-Torpedo",
+            "version": 1,
+            "description": "The minimum duration of Buzzs Super stun is increased by 0.5 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Tougher-Torpedo.png",
+            "released": true
+        }, {
+            "id": 23000391,
+            "name": "Eyes Sharp",
+            "path": "Eyes-Sharp",
+            "version": 1,
+            "description": "Buzzs Super charging area is increased by 33%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Eyes-Sharp.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000392,
+            "name": "Reserve Buoy",
+            "path": "Reserve-Buoy",
+            "version": 1,
+            "description": "Instantly fills the Super meter, but the next Torpedo Throw doesnt stun opponents.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Reserve-Buoy.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000047,
+        "avatarId": 28000066,
+        "name": "Squeak",
+        "hash": "Squeak",
+        "path": "Squeak",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Squeak",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Squeak.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Squeak.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Squeak.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 5,
+            "name": "Mythic",
+            "color": "#fe5e72"
+        },
+        "unlock": null,
+        "description": "As Col. Ruffs accidental creation, Squeak was born to play fetch!",
+        "starPowers": [{
+            "id": 23000376,
+            "name": "Chain Reaction",
+            "path": "Chain-Reaction",
+            "version": 1,
+            "description": "Each opponent within the area of a Sticky Blombs explosion increases the Blombs damage by 10%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Chain-Reaction.png",
+            "released": true
+        }, {
+            "id": 23000377,
+            "name": "Super Sticky",
+            "path": "Super-Sticky",
+            "version": 1,
+            "description": "Secondary Sticky Blomb explosions from Squaks Super also slow down opponents for 4 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Super-Sticky.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000378,
+            "name": "Windup",
+            "path": "Windup",
+            "version": 1,
+            "description": "Squeaks next Sticky Blomb has its range increased by 100%.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Windup.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000046,
+        "avatarId": 28000065,
+        "name": "Belle",
+        "hash": "Belle",
+        "path": "Belle",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Belle",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Belle.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Belle.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Belle.png",
+        "class": {
+            "id": 2,
+            "name": "Sharpshooter"
+        },
+        "rarity": {
+            "id": 7,
+            "name": "Chromatic",
+            "color": "#f88f25"
+        },
+        "unlock": null,
+        "description": "Belle inspires adoration in her gang, while her Electo-Rifle brings shock and awe to any opponent!",
+        "starPowers": [{
+            "id": 23000369,
+            "name": "Positive Feedback",
+            "path": "Positive-Feedback",
+            "version": 1,
+            "description": "Belle gains a 20% shield whenever her Electro-Bolts hit a target.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Positive-Feedback.png",
+            "released": true
+        }, {
+            "id": 23000370,
+            "name": "Grounded",
+            "path": "Grounded",
+            "version": 1,
+            "description": "Getting marked by Belles Super prevents the target from reloading for 3 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Grounded.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000371,
+            "name": "Nest Egg",
+            "path": "Nest-Egg",
+            "version": 1,
+            "description": "Belle places a trap on the ground that will explode when triggered by an opponent. The trap deals 500 damage, and slows down anyone within its blast radius for 3 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Nest-Egg.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000045,
+        "avatarId": 28000062,
+        "name": "Stu",
+        "hash": "Stu",
+        "path": "Stu",
+        "released": true,
+        "version": 2,
+        "link": "https://brawlify.com/brawlers/detail/Stu",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Stu.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Stu.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Stu.png",
+        "class": {
+            "id": 13,
+            "name": "Action Assassin"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 10000,
+        "description": "Stu is a stunt driver extraordinaire with gasoline in his veins! He makes a big entrance, burning serious rubber all over the stage.",
+        "starPowers": [{
+            "id": 23000362,
+            "name": "Zero Drag",
+            "path": "Zero-Drag",
+            "version": 2,
+            "description": "Stus Nitro Boost Super dash distance increases by 71%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Zero-Drag.png",
+            "released": true
+        }, {
+            "id": 23000363,
+            "name": "Gaso-Heal",
+            "path": "Gaso-Heal",
+            "version": 2,
+            "description": "Using his Nitro Boost Super restores 400 of Stus health.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Gaso-Heal.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000364,
+            "name": "Speed Zone",
+            "path": "Speed-Zone",
+            "version": 2,
+            "description": "Stu drops a booster that makes himself, his teammates and other allies move faster while inside its area of effect.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Speed-Zone.png",
+            "released": true
+        }, {
+            "id": 23000401,
+            "name": "Breakthrough",
+            "path": "Breakthrough",
+            "version": 2,
+            "description": "Stus next Super can bash through obstacles, making debris fly forward. Each piece of debris deals 200 damage to any opponent it hits.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Breakthrough.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000044,
+        "avatarId": 28000059,
+        "name": "Colonel Ruffs",
+        "hash": "Colonel-Ruffs",
+        "path": "Colonel-Ruffs",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Colonel-Ruffs",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Colonel-Ruffs.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Colonel-Ruffs.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Colonel-Ruffs.png",
+        "class": {
+            "id": 8,
+            "name": "Support"
+        },
+        "rarity": {
+            "id": 7,
+            "name": "Chromatic",
+            "color": "#f88f25"
+        },
+        "unlock": null,
+        "description": "Ruffs fires twin shots of lasers that bounce off walls. His Super is a supply drop that can damage enemies in the drop zone and leaves a power up for your team to use.",
+        "starPowers": [{
+            "id": 23000345,
+            "name": "Air Superiority",
+            "path": "Air-Superiority",
+            "version": 2,
+            "description": "Supply Drop now includes a bomb that adds +1000 damage to the drop and also allows it to destroy walls.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Air-Superiority.png",
+            "released": true
+        }, {
+            "id": 23000346,
+            "name": "Field Promotion",
+            "path": "Field-Promotion",
+            "version": 2,
+            "description": "Friendly Brawlers have their maximum health increased by 30 every second that they are in range of this ability while its active.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Field-Promotion.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000347,
+            "name": "Take Cover",
+            "path": "Take-Cover",
+            "version": 2,
+            "description": "Ruffs throws down 3 sandbags to cover himself. Each one has 2000 health.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Take-Cover.png",
+            "released": true
+        }, {
+            "id": 23000402,
+            "name": "Air Support",
+            "path": "Air-Support",
+            "version": 1,
+            "description": "Ruffs calls a barrage around the nearest opponent, dealing 700 damage with each hit.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Air-Support.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000043,
+        "avatarId": 28000058,
+        "name": "Edgar",
+        "hash": "Edgar",
+        "path": "Edgar",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Edgar",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Edgar.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Edgar.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Edgar.png",
+        "class": {
+            "id": 12,
+            "name": "Assassin"
+        },
+        "rarity": {
+            "id": 4,
+            "name": "Epic",
+            "color": "#d850ff"
+        },
+        "unlock": null,
+        "description": "Lets face it, this is an angry kid. He also loves parkour.",
+        "starPowers": [{
+            "id": 23000338,
+            "name": "Hard Landing",
+            "path": "Hard-Landing",
+            "version": 2,
+            "description": "Edgars Super will also deal 1000 damage to nearby enemies upon landing.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Hard-Landing.png",
+            "released": true
+        }, {
+            "id": 23000339,
+            "name": "Fisticuffs",
+            "path": "Fisticuffs",
+            "version": 2,
+            "description": "Edgar receives 25% more healing from damage he deals.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Fisticuffs.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000340,
+            "name": "Lets Fly",
+            "path": "Lets-Fly",
+            "version": 2,
+            "description": "Edgars Super charges faster, 525% for 4 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Lets-Fly.png",
+            "released": true
+        }, {
+            "id": 23000403,
+            "name": "Hardcore",
+            "path": "Hardcore",
+            "version": 2,
+            "description": "Edgar gets a shield that protects him from the next 2000 damage. The shield gets weaker over time.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Hardcore.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000042,
+        "avatarId": 28000057,
+        "name": "Byron",
+        "hash": "Byron",
+        "path": "Byron",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Byron",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Byron.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Byron.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Byron.png",
+        "class": {
+            "id": 8,
+            "name": "Support"
+        },
+        "rarity": {
+            "id": 5,
+            "name": "Mythic",
+            "color": "#fe5e72"
+        },
+        "unlock": null,
+        "description": "Byron deals with potent medicaments, but never call him a snake oil salesman!",
+        "starPowers": [{
+            "id": 23000331,
+            "name": "Malaise",
+            "path": "Malaise",
+            "version": 2,
+            "description": "Byrons Super will also cause opponents to receive 75% less healing from any source for 9 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Malaise.png",
+            "released": true
+        }, {
+            "id": 23000332,
+            "name": "Injection",
+            "path": "Injection",
+            "version": 2,
+            "description": "Every 3.5 seconds the next basic attack will pierce through targets.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Injection.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000333,
+            "name": "Shot In The Arm",
+            "path": "Shot-In-The-Arm",
+            "version": 2,
+            "description": "Byron uses one of his shots to heal himself 800 per second for 3 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Shot-In-The-Arm.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000041,
+        "avatarId": 28000056,
+        "name": "Lou",
+        "hash": "Lou",
+        "path": "Lou",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Lou",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Lou.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Lou.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Lou.png",
+        "class": {
+            "id": 8,
+            "name": "Support"
+        },
+        "rarity": {
+            "id": 7,
+            "name": "Chromatic",
+            "color": "#f88f25"
+        },
+        "unlock": null,
+        "description": "Lou is a cool guy, literally! He can dole out all kinds of chill stuff. But watch your step on the ice, and be careful not to get brain freeze!",
+        "starPowers": [{
+            "id": 23000324,
+            "name": "Supercool",
+            "path": "Supercool",
+            "version": 2,
+            "description": "Opponents standing on Lous Super area get gradually frozen, like from his Brain Freeze attack.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Supercool.png",
+            "released": true
+        }, {
+            "id": 23000325,
+            "name": "Hypothermia",
+            "path": "Hypothermia",
+            "version": 2,
+            "description": "Opponents lose up to 75% of their reload speed based on how frozen they are from Lous attacks.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Hypothermia.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000326,
+            "name": "Ice Block",
+            "path": "Ice-Block",
+            "version": 2,
+            "description": "Lou shields himself with ice, becoming invulnerable for 1.0 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Ice-Block.png",
+            "released": true
+        }, {
+            "id": 23000400,
+            "name": "Cryo Syrup",
+            "path": "Cryo-Syrup",
+            "version": 1,
+            "description": "Instantly adds 50% freeze meter to opponents inside Lous Super.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Cryo-Syrup.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000040,
+        "avatarId": 28000055,
+        "name": "Amber",
+        "hash": "Amber",
+        "path": "Amber",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Amber",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Amber.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Amber.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Amber.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 6,
+            "name": "Legendary",
+            "color": "#fff11e"
+        },
+        "unlock": null,
+        "description": "Amber has always been a firebug. She loves to light up the world and any opponents that come at her!",
+        "starPowers": [{
+            "id": 23000307,
+            "name": "Wild Flames",
+            "path": "Wild-Flames",
+            "version": 2,
+            "description": "Amber can have two fuel puddles on the ground simultaneously and she will recharge her Super automatically when standing near one.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Wild-Flames.png",
+            "released": true
+        }, {
+            "id": 23000308,
+            "name": "Scorchin Siphon",
+            "path": "Scorchin-Siphon",
+            "version": 2,
+            "description": "While being near a puddle of fire fluid, Amber uses it to reload her firebreathing \r\n50% faster.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Scorchin-Siphon.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000309,
+            "name": "Fire Starters",
+            "path": "Fire-Starters",
+            "version": 2,
+            "description": "Amber runs fast for 3 seconds while spilling her fire fluid, which she can then ignite.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Fire-Starters.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000039,
+        "avatarId": 28000054,
+        "name": "Colette",
+        "hash": "Colette",
+        "path": "Colette",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Colette",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Colette.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Colette.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Colette.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 7,
+            "name": "Chromatic",
+            "color": "#f88f25"
+        },
+        "unlock": null,
+        "description": "Colette is going to get you! She taxes opponents health and has fancy moves to boot.",
+        "starPowers": [{
+            "id": 23000300,
+            "name": "Push It",
+            "path": "Push-It",
+            "version": 2,
+            "description": "All enemy brawlers hit by Colettes charge are carried to the farthest point of the attack!",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Push-It.png",
+            "released": true
+        }, {
+            "id": 23000301,
+            "name": "Mass Tax",
+            "path": "Mass-Tax",
+            "version": 2,
+            "description": "Colettes super gives her a 20% shield for 5 seconds. Every enemy brawler hit by it will add 10% more protection.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Mass-Tax.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000302,
+            "name": "Na-ah!",
+            "path": "Na-ah",
+            "version": 2,
+            "description": "Colettes next shot deals extra 1000 damage.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Na-ah.png",
+            "released": true
+        }],
+        "videos": []
+    }, {
+        "id": 16000038,
+        "avatarId": 28000053,
+        "name": "Surge",
+        "hash": "Surge",
+        "path": "Surge",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Surge",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Surge.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Surge.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Surge.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 7,
+            "name": "Chromatic",
+            "color": "#f88f25"
+        },
+        "unlock": null,
+        "description": "Hes a Protector with a penchant for parties. Surge attacks foes with energy drink blasts that split in two on contact. His Super upgrades his stats in 3 stages and comes complete with totally awesome body mods!",
+        "starPowers": [{
+            "id": 23000283,
+            "name": "To The Max!",
+            "path": "To-The-Max",
+            "version": 2,
+            "description": "Surges main attack now splits when hitting walls or when reaching max distance.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/To-The-Max.png",
+            "released": true
+        }, {
+            "id": 23000284,
+            "name": "Serve Ice Cold",
+            "path": "Serve-Ice-Cold",
+            "version": 2,
+            "description": "Surge keeps his STAGE 1 Super upgrade for the full match duration.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Serve-Ice-Cold.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000285,
+            "name": "Power Surge",
+            "path": "Power-Surge",
+            "version": 2,
+            "description": "Surge overloads his circuits and teleports a short distance forward.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Power-Surge.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Surges Main Attack",
+            "description": "Check out how Surge attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Surge-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Surge-Main-Attack.jpg",
+            "uploadDate": "2020-07-09T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Surges Super Attack",
+            "description": "Check out how Surge uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Surge-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Surge-Super.jpg",
+            "uploadDate": "2020-07-09T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000036,
+        "avatarId": 28000052,
+        "name": "Nani",
+        "hash": "Nani",
+        "path": "Nani",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Nani",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Nani.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Nani.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Nani.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 4,
+            "name": "Epic",
+            "color": "#d850ff"
+        },
+        "unlock": null,
+        "description": "Nani loves her friends and looks over them with a watchful lens. She handles threats with angled shots, and her Super allows Nani to commandeer her pal Peep, who goes out with a bang!",
+        "starPowers": [{
+            "id": 23000234,
+            "name": "Autofocus",
+            "path": "Autofocus",
+            "version": 2,
+            "description": "Peep deals up to 1600 extra damage based on his travel distance.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Autofocus.png",
+            "released": true
+        }, {
+            "id": 23000235,
+            "name": "Tempered Steel",
+            "path": "Tempered-Steel",
+            "version": 2,
+            "description": "Nani takes 80% less damage while her Super is active.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Tempered-Steel.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000278,
+            "name": "Warp Blast",
+            "path": "Warp-Blast",
+            "version": 2,
+            "description": "Nani detonates Peep and teleports herself to his last location.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Warp-Blast.png",
+            "released": true
+        }, {
+            "id": 23000353,
+            "name": "Return to Sender",
+            "path": "Return-to-Sender",
+            "version": 2,
+            "description": "For the next 5 seconds, the first time Nani takes damage from an enemy, 80% of the damage is returned to the enemy.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Return-to-Sender.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Nanis Main Attack",
+            "description": "Check out how Nani attacks.",
+            "duration": "PT5S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Nani-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Nani-Main-Attack.jpg",
+            "uploadDate": "2020-05-29T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Nanis Super Attack",
+            "description": "Check out how Nani uses the Super.",
+            "duration": "PT7S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Nani-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Nani-Super.jpg",
+            "uploadDate": "2020-05-29T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000035,
+        "avatarId": 28000051,
+        "name": "Gale",
+        "hash": "Gale",
+        "path": "Gale",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Gale",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Gale.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Gale.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Gale.png",
+        "class": {
+            "id": 8,
+            "name": "Support"
+        },
+        "rarity": {
+            "id": 7,
+            "name": "Chromatic",
+            "color": "#f88f25"
+        },
+        "unlock": null,
+        "description": "Gale is a tireless handyman who gets no rest. He blasts foes with a wide shot of wind and snow and his Super pushes them back with a huge gust of wind!",
+        "starPowers": [{
+            "id": 23000228,
+            "name": "Blustery Blow",
+            "path": "Blustery-Blow",
+            "version": 2,
+            "description": "Gales Super now stuns enemies for 1.0 seconds if they are pushed against obstacles.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Blustery-Blow.png",
+            "released": true
+        }, {
+            "id": 23000229,
+            "name": "Freezing Snow",
+            "path": "Freezing-Snow",
+            "version": 2,
+            "description": "Gales snow balls now also slow down opponents for 0.5 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Freezing-Snow.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000277,
+            "name": "Spring Ejector",
+            "path": "Spring-Ejector",
+            "version": 2,
+            "description": "Gale drops a bounce pad underfoot, launching friend and foe alike into the air.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Spring-Ejector.png",
+            "released": true
+        }, {
+            "id": 23000407,
+            "name": "Twister",
+            "path": "Twister",
+            "version": 1,
+            "description": "Gale uses his leaf blower to create a local tornado, which will push away any opponents that try to pass through.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Twister.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Gales Main Attack",
+            "description": "Check out how Gale attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Gale-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Gale-Main-Attack.jpg",
+            "uploadDate": "2020-05-29T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Gales Super Attack",
+            "description": "Check out how Gale uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Gale-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Gale-Super.jpg",
+            "uploadDate": "2020-05-29T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000037,
+        "avatarId": 28000050,
+        "name": "Sprout",
+        "hash": "Sprout",
+        "path": "Sprout",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Sprout",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Sprout.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Sprout.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Sprout.png",
+        "class": {
+            "id": 8,
+            "name": "Support"
+        },
+        "rarity": {
+            "id": 5,
+            "name": "Mythic",
+            "color": "#fe5e72"
+        },
+        "unlock": null,
+        "description": "Sprout was built to plant life, launching bouncy Seed Bombs with reckless love. Its Super creates a plant-based obstacle!",
+        "starPowers": [{
+            "id": 23000240,
+            "name": "Overgrowth",
+            "path": "Overgrowth",
+            "version": 2,
+            "description": "Every 5 seconds, the next Seed Bomb will explode with a larger explosion radius.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Overgrowth.png",
+            "released": true
+        }, {
+            "id": 23000241,
+            "name": "Photosynthesis",
+            "path": "Photosynthesis",
+            "version": 2,
+            "description": "Sprout activates a shield, partially protecting itself from all attacks while inside a bush.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Photosynthesis.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000244,
+            "name": "Garden Mulcher",
+            "path": "Garden-Mulcher",
+            "version": 2,
+            "description": "Sprout consumes a bush to restore 1500 health.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Garden-Mulcher.png",
+            "released": true
+        }, {
+            "id": 23000315,
+            "name": "Transplant",
+            "path": "Transplant",
+            "version": 2,
+            "description": "Sprout destroys its current Hedge, but will instantly have its Super fully charged again.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Transplant.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Sprouts Main Attack",
+            "description": "Check out how Sprout attacks.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Sprout-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Sprout-Main-Attack.jpg",
+            "uploadDate": "2020-04-10T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Sprouts Super Attack",
+            "description": "Check out how Sprout uses the Super.",
+            "duration": "PT13S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Sprout-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Sprout-Super.jpg",
+            "uploadDate": "2020-04-10T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000034,
+        "avatarId": 28000049,
+        "name": "Jacky",
+        "hash": "Jacky",
+        "path": "Jacky",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Jacky",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Jacky.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Jacky.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Jacky.png",
+        "class": {
+            "id": 3,
+            "name": "Heavyweight"
+        },
+        "rarity": {
+            "id": 3,
+            "name": "Super Rare",
+            "color": "#5ab3ff"
+        },
+        "unlock": null,
+        "description": "Jacky works her Jackhammer to shake up the ground and nearby enemies. Her Super pulls in nearby foes, leaving them in the dust!",
+        "starPowers": [{
+            "id": 23000222,
+            "name": "Counter Crush",
+            "path": "Counter-Crush",
+            "version": 2,
+            "description": "When receiving damage, Jacky returns the favor by converting 30% of the damage into a Groundbreaker counterattack.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Counter-Crush.png",
+            "released": true
+        }, {
+            "id": 23000223,
+            "name": "Hardy Hard Hat",
+            "path": "Hardy-Hard-Hat",
+            "version": 2,
+            "description": "Jackys Hard Hat protects her by reducing any damage she takes by 10%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Hardy-Hard-Hat.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000256,
+            "name": "Pneumatic Booster",
+            "path": "Pneumatic-Booster",
+            "version": 2,
+            "description": "Jacky gets a burst of energy and moves 20% faster for 3 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Pneumatic-Booster.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Jackys Main Attack",
+            "description": "Check out how Jacky attacks.",
+            "duration": "PT1S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Jacky-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Jacky-Main-Attack.jpg",
+            "uploadDate": "2020-04-10T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Jackys Super Attack",
+            "description": "Check out how Jacky uses the Super.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Jacky-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Jacky-Super.jpg",
+            "uploadDate": "2020-04-10T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000031,
+        "avatarId": 28000048,
+        "name": "Mr. P",
+        "hash": "Mr.P",
+        "path": "Mr.P",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Mr.P",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Mr.P.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Mr.P.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Mr.P.png",
+        "class": {
+            "id": 2,
+            "name": "Sharpshooter"
+        },
+        "rarity": {
+            "id": 5,
+            "name": "Mythic",
+            "color": "#fe5e72"
+        },
+        "unlock": null,
+        "description": "Mr. P is a disgruntled luggage handler who angrily hurls suitcases at opponents. His Super calls robo-porters to help him.",
+        "starPowers": [{
+            "id": 23000204,
+            "name": "Handle With Care",
+            "path": "Handle-With-Care",
+            "version": 2,
+            "description": "Mr.Ps overstuffed suitcases bounce and burst even if they dont hit a target or obstacle.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Handle-With-Care.png",
+            "released": true
+        }, {
+            "id": 23000205,
+            "name": "Revolving Door",
+            "path": "Revolving-Door",
+            "version": 2,
+            "description": "The robo-porters respawn 3 seconds faster after being defeated.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Revolving-Door.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000269,
+            "name": "Service Bell",
+            "path": "Service-Bell",
+            "version": 2,
+            "description": "Mr. P buffs his current porter by increasing its damage by 150 and health by 1000.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Service-Bell.png",
+            "released": true
+        }, {
+            "id": 23000349,
+            "name": "Porter Reinforcements",
+            "path": "Porter-Reinforcements",
+            "version": 2,
+            "description": "The next attack will spawn an extra porter where the attack lands.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Porter-Reinforcements.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Mr. Ps Main Attack",
+            "description": "Check out how Mr. P attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Mr.P-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Mr.P-Main-Attack.jpg",
+            "uploadDate": "2020-01-23T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Mr. Ps Super Attack",
+            "description": "Check out how Mr. P uses the Super.",
+            "duration": "PT6S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Mr.P-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Mr.P-Super.jpg",
+            "uploadDate": "2020-01-23T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000032,
+        "avatarId": 28000047,
+        "name": "Max",
+        "hash": "Max",
+        "path": "Max",
+        "released": true,
+        "version": 2,
+        "link": "https://brawlify.com/brawlers/detail/Max",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Max.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Max.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Max.png",
+        "class": {
+            "id": 8,
+            "name": "Support"
+        },
+        "rarity": {
+            "id": 5,
+            "name": "Mythic",
+            "color": "#fe5e72"
+        },
+        "unlock": null,
+        "description": "Max goes fast! Her attack is a fast-firing blaster. Her Super speeds up her and allies!",
+        "starPowers": [{
+            "id": 23000210,
+            "name": "Super Charged",
+            "path": "Super-Charged",
+            "version": 2,
+            "description": "Max now charges her Super while moving.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Super-Charged.png",
+            "released": true
+        }, {
+            "id": 23000211,
+            "name": "Run n Gun",
+            "path": "Run-n-Gun",
+            "version": 2,
+            "description": "Max reloads faster while moving.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Run-n-Gun.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000254,
+            "name": "Phase Shifter",
+            "path": "Phase-Shifter",
+            "version": 2,
+            "description": "Max dashes forward, and becomes immune to all damage from enemies while dashing.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Phase-Shifter.png",
+            "released": true
+        }, {
+            "id": 23000311,
+            "name": "Sneaky Sneakers",
+            "path": "Sneaky-Sneakers",
+            "version": 2,
+            "description": "Max blinks back to a place of her choosing after 3 seconds delay, recovering any damage she received in the meantime.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Sneaky-Sneakers.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Maxs Main Attack",
+            "description": "Check out how Max attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Max-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Max-Main-Attack.jpg",
+            "uploadDate": "2019-12-18T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Maxs Super Attack",
+            "description": "Check out how Max uses the Super.",
+            "duration": "PT7S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Max-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Max-Super.jpg",
+            "uploadDate": "2019-12-18T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000029,
+        "avatarId": 28000046,
+        "name": "Bea",
+        "hash": "Bea",
+        "path": "Bea",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Bea",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Bea.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Bea.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Bea.png",
+        "class": {
+            "id": 2,
+            "name": "Sharpshooter"
+        },
+        "rarity": {
+            "id": 4,
+            "name": "Epic",
+            "color": "#d850ff"
+        },
+        "unlock": null,
+        "description": "Bea loves bugs and hugs. She shoots her mechanical drones at range, and her Super sends forth an angry army of swarming bees!",
+        "starPowers": [{
+            "id": 23000192,
+            "name": "Insta Beeload",
+            "path": "Insta-Beeload",
+            "version": 2,
+            "description": "Instantly supercharge Beas Big Sting one time if she misses a supercharged shot.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Insta-Beeload.png",
+            "released": true
+        }, {
+            "id": 23000193,
+            "name": "Honeycomb",
+            "path": "Honeycomb",
+            "version": 2,
+            "description": "Bea receives a 20% shield while Dig Sting is supercharged.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Honeycomb.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000271,
+            "name": "Honey Molasses",
+            "path": "Honey-Molasses",
+            "version": 2,
+            "description": "Bea drops a beehive with a splash of sticky honey around it. The honey slows down enemies that step in it.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Honey-Molasses.png",
+            "released": true
+        }, {
+            "id": 23000312,
+            "name": "Rattled Hive",
+            "path": "Rattled-Hive",
+            "version": 2,
+            "description": "Bea unleashes 4 angry bees that circle away from her, dealing more damage the further they go (up to 600 damage).",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Rattled-Hive.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Beas Main Attack",
+            "description": "Check out how Bea attacks.",
+            "duration": "PT5S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Bea-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Bea-Main-Attack.jpg",
+            "uploadDate": "2019-12-17T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Beas Super Attack",
+            "description": "Check out how Bea uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Bea-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Bea-Super.jpg",
+            "uploadDate": "2019-12-17T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000030,
+        "avatarId": 28000045,
+        "name": "Emz",
+        "hash": "Emz",
+        "path": "Emz",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Emz",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Emz.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Emz.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Emz.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 8000,
+        "description": "Emz attacks with blasts of hair spray that deal damage over time, and slows down opponents with her Super.",
+        "starPowers": [{
+            "id": 23000198,
+            "name": "Bad Karma",
+            "path": "Bad-Karma",
+            "version": 2,
+            "description": "Enemies that stay within the cloud of Emzs toxic hair spray suffer increasing damage, 25% per hit.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Bad-Karma.png",
+            "released": true
+        }, {
+            "id": 23000199,
+            "name": "Hype",
+            "path": "Hype",
+            "version": 2,
+            "description": "Emz recovers 420 health per second for each enemy inside her Supers area of effect.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Hype.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000274,
+            "name": "Friendzoner",
+            "path": "Friendzoner",
+            "version": 2,
+            "description": "EMZ pushes back all enemies around her while also dealing 500 damage.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Friendzoner.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Emzs Main Attack",
+            "description": "Check out how Emz attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Emz-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Emz-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Emzs Super Attack",
+            "description": "Check out how Emz uses the Super.",
+            "duration": "PT6S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Emz-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Emz-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000028,
+        "avatarId": 28000044,
+        "name": "Sandy",
+        "hash": "Sandy",
+        "path": "Sandy",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Sandy",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Sandy.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Sandy.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Sandy.png",
+        "class": {
+            "id": 8,
+            "name": "Support"
+        },
+        "rarity": {
+            "id": 6,
+            "name": "Legendary",
+            "color": "#fff11e"
+        },
+        "unlock": null,
+        "description": "Sandy is a sleep-deprived Brawler with powerful control over sand: casting sharp pebbles at enemies, and summoning a sandstorm to hide teammates.",
+        "starPowers": [{
+            "id": 23000186,
+            "name": "Rude Sands",
+            "path": "Rude-Sands",
+            "version": 2,
+            "description": "Sandstorm now also damages enemies for 100 damage per second.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Rude-Sands.png",
+            "released": true
+        }, {
+            "id": 23000187,
+            "name": "Healing Winds",
+            "path": "Healing-Winds",
+            "version": 2,
+            "description": "Sandstorm now also heals friendly Brawlers for 300 health per second.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Healing-Winds.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000270,
+            "name": "Sleep Stimulator",
+            "path": "Sleep-Stimulator",
+            "version": 2,
+            "description": "Sandy falls a sleep for 2 seconds and his health is fully restored.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Sleep-Stimulator.png",
+            "released": true
+        }, {
+            "id": 23000405,
+            "name": "Sweet Dreams",
+            "path": "Sweet-Dreams",
+            "version": 1,
+            "description": "Sandys next attack lulls opponents to sleep for 1.0 seconds. They will however wake up from any damage.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Sweet-Dreams.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Sandys Main Attack",
+            "description": "Check out how Sandy attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Sandy-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Sandy-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Sandys Super Attack",
+            "description": "Check out how Sandy uses the Super.",
+            "duration": "PT10S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Sandy-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Sandy-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000027,
+        "avatarId": 28000043,
+        "name": "8-Bit",
+        "hash": "8-Bit",
+        "path": "8-Bit",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/8-Bit",
+        "imageUrl": "https://cdn.brawlify.com/brawler/8-Bit.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/8-Bit.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/8-Bit.png",
+        "class": {
+            "id": 2,
+            "name": "Sharpshooter"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 6000,
+        "description": "8-Bit lumbers along like an arcade cabinet on legs. He shoots Blaster Beams and his Super boosts friendlies damage!",
+        "starPowers": [{
+            "id": 23000168,
+            "name": "Boosted Booster",
+            "path": "Boosted-Booster",
+            "version": 2,
+            "description": "Increases the Damage Boosters range by 50% and boosts damage by an additional 15%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Boosted-Booster.png",
+            "released": true
+        }, {
+            "id": 23000181,
+            "name": "Plugged In",
+            "path": "Plugged-In",
+            "version": 2,
+            "description": "When 8-Bit is near his Damage Booster, he will plug in and have increased movement speed.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Plugged-In.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000259,
+            "name": "Cheat Cartridge",
+            "path": "Cheat-Cartridge",
+            "version": 2,
+            "description": "8-Bit instantly teleports to his Damage Booster.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Cheat-Cartridge.png",
+            "released": true
+        }, {
+            "id": 23000318,
+            "name": "Extra Credits",
+            "path": "Extra-Credits",
+            "version": 2,
+            "description": "8-BITs next attack has the number of projectiles increased to 18.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Extra-Credits.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "8-Bits Main Attack",
+            "description": "Check out how 8-Bit attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/8-Bit-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/8-Bit-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "8-Bits Super Attack",
+            "description": "Check out how 8-Bit uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/8-Bit-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/8-Bit-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000022,
+        "avatarId": 28000042,
+        "name": "Tick",
+        "hash": "Tick",
+        "path": "Tick",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Tick",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Tick.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Tick.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Tick.png",
+        "class": {
+            "id": 4,
+            "name": "Thrower"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 4000,
+        "description": "Tick is a metal ball of barely controlled excitement and energy - explosive energy! He throws mines, and his Super makes his head detach, seek a target and explode.",
+        "starPowers": [{
+            "id": 23000114,
+            "name": "Well Oiled",
+            "path": "Well-Oiled",
+            "version": 2,
+            "description": "When Tick takes no damage and doesnt attack, he starts recovering health 2 seconds faster than normal.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Well-Oiled.png",
+            "released": true
+        }, {
+            "id": 23000161,
+            "name": "Automa-Tick Reload",
+            "path": "Automa-Tick-Reload",
+            "version": 2,
+            "description": "Ticks reload time is 9% shorter.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Automa-Tick-Reload.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000253,
+            "name": "Mine Mania",
+            "path": "Mine-Mania",
+            "version": 2,
+            "description": "Ticks next attack fires 6 mines.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Mine-Mania.png",
+            "released": true
+        }, {
+            "id": 23000355,
+            "name": "Last Hurrah",
+            "path": "Last-Hurrah",
+            "version": 2,
+            "description": "Tick gains a 50% shield for 1.0 seconds. After that, it bursts out for 1000 damage.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Last-Hurrah.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Ticks Main Attack",
+            "description": "Check out how Tick attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Tick-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Tick-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Ticks Super Attack",
+            "description": "Check out how Tick uses the Super.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Tick-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Tick-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000026,
+        "avatarId": 28000041,
+        "name": "Bibi",
+        "hash": "Bibi",
+        "path": "Bibi",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Bibi",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Bibi.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Bibi.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Bibi.png",
+        "class": {
+            "id": 11,
+            "name": "Batter"
+        },
+        "rarity": {
+            "id": 4,
+            "name": "Epic",
+            "color": "#d850ff"
+        },
+        "unlock": null,
+        "description": "Batter up! Bibis got a sweet swing that can knock back enemies when her Home Run bar is charged. Her Super is a bouncing ball of gum that deals damage.",
+        "starPowers": [{
+            "id": 23000134,
+            "name": "Home Run",
+            "path": "Home-Run",
+            "version": 2,
+            "description": "Bibis movement speed is increased by 12% when her Home Run bar is fully charged.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Home-Run.png",
+            "released": true
+        }, {
+            "id": 23000146,
+            "name": "Batting Stance",
+            "path": "Batting-Stance",
+            "version": 2,
+            "description": "When Bibi’s Homerun bar is fully charged, she shields herself from all damage by 20%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Batting-Stance.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000275,
+            "name": "Vitamin Booster",
+            "path": "Vitamin-Booster",
+            "version": 2,
+            "description": "Bibi heals 600 health per second for 4 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Vitamin-Booster.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Bibis Main Attack",
+            "description": "Check out how Bibi attacks.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Bibi-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Bibi-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Bibis Super Attack",
+            "description": "Check out how Bibi uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Bibi-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Bibi-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000024,
+        "avatarId": 28000040,
+        "name": "Rosa",
+        "hash": "Rosa",
+        "path": "Rosa",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Rosa",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Rosa.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Rosa.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Rosa.png",
+        "class": {
+            "id": 3,
+            "name": "Heavyweight"
+        },
+        "rarity": {
+            "id": 2,
+            "name": "Rare",
+            "color": "#68fd58"
+        },
+        "unlock": null,
+        "description": "This boxing botanist will plant her feet and go toe to toe! Her Super gives her tough, vegan protective gear.",
+        "starPowers": [{
+            "id": 23000124,
+            "name": "Plant Life",
+            "path": "Plant-Life",
+            "version": 2,
+            "description": "Rosa recovers 200 health per second when inside a bush.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Plant-Life.png",
+            "released": true
+        }, {
+            "id": 23000147,
+            "name": "Thorny Gloves",
+            "path": "Thorny-Gloves",
+            "version": 2,
+            "description": "Rosa’s punches gain +220 damage during her Super.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Thorny-Gloves.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000242,
+            "name": "Grow Light",
+            "path": "Grow-Light",
+            "version": 2,
+            "description": "Rosa fertilizes the ground around her and bushes instantly grow to provide great cover.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Grow-Light.png",
+            "released": true
+        }, {
+            "id": 23000348,
+            "name": "Unfriendly Bushes",
+            "path": "Unfriendly-Bushes",
+            "version": 2,
+            "description": "All opponents hiding in bushes take 100 damage and get slowed down for 3 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Unfriendly-Bushes.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Rosas Main Attack",
+            "description": "Check out how Rosa attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Rosa-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Rosa-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Rosas Super Attack",
+            "description": "Check out how Rosa uses the Super.",
+            "duration": "PT5S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Rosa-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Rosa-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000025,
+        "avatarId": 28000039,
+        "name": "Carl",
+        "hash": "Carl",
+        "path": "Carl",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Carl",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Carl.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Carl.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Carl.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 3,
+            "name": "Super Rare",
+            "color": "#5ab3ff"
+        },
+        "unlock": null,
+        "description": "Carl throws his Pickaxe like a boomerang. His Super is a crazy cart spin that clobbers anyone around him.",
+        "starPowers": [{
+            "id": 23000129,
+            "name": "Power Throw",
+            "path": "Power-Throw",
+            "version": 2,
+            "description": "Carl throws his Pickaxe with 12% more speed, allowing it to travel faster and return faster.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Power-Throw.png",
+            "released": true
+        }, {
+            "id": 23000145,
+            "name": "Protective Pirouette",
+            "path": "Protective-Pirouette",
+            "version": 2,
+            "description": "During Carls Super, all damage he receives is reduced by 35%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Protective-Pirouette.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000262,
+            "name": "Heat Ejector",
+            "path": "Heat-Ejector",
+            "version": 2,
+            "description": "Carl drops a trail of hot rocks behind his cart! Opponents that touch them are set on fire, and receive a total of 1200 damage over time each.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Heat-Ejector.png",
+            "released": true
+        }, {
+            "id": 23000317,
+            "name": "Flying Hook",
+            "path": "Flying-Hook",
+            "version": 2,
+            "description": "Carls next attack makes his pickaxe pull him to the farthest point of the attack.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Flying-Hook.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Carls Main Attack",
+            "description": "Check out how Carl attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Carl-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Carl-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Carls Super Attack",
+            "description": "Check out how Carl uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Carl-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Carl-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000023,
+        "avatarId": 28000037,
+        "name": "Leon",
+        "hash": "Leon",
+        "path": "Leon",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Leon",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Leon.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Leon.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Leon.png",
+        "class": {
+            "id": 10,
+            "name": "Stealthy Assassin"
+        },
+        "rarity": {
+            "id": 6,
+            "name": "Legendary",
+            "color": "#fff11e"
+        },
+        "unlock": null,
+        "description": "Leon shoots a quick salvo of blades at his target. His Super trick is a smoke bomb that makes him invisible for a little while!",
+        "starPowers": [{
+            "id": 23000119,
+            "name": "Smoke Trails",
+            "path": "Smoke-Trails",
+            "version": 2,
+            "description": "When Leon uses his Super, he gains 30% boost to his movement speed for the duration of his invisibility.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Smoke-Trails.png",
+            "released": true
+        }, {
+            "id": 23000141,
+            "name": "Invisiheal",
+            "path": "Invisiheal",
+            "version": 2,
+            "description": "Leon recovers 1000 health per second while his Super is active.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Invisiheal.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000276,
+            "name": "Clone Projector",
+            "path": "Clone-Projector",
+            "version": 2,
+            "description": "Leon creates an illusion of himself to confuse his enemies.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Clone-Projector.png",
+            "released": true
+        }, {
+            "id": 23000408,
+            "name": "Lollipop Drop",
+            "path": "Lollipop-Drop",
+            "version": 1,
+            "description": "Leon creates a stealthy area for his team to hide in.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Lollipop-Drop.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Leons Main Attack",
+            "description": "Check out how Leon attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Leon-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Leon-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Leons Super Attack",
+            "description": "Check out how Leon uses the Super.",
+            "duration": "PT7S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Leon-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Leon-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000012,
+        "avatarId": 28000017,
+        "name": "Crow",
+        "hash": "Crow",
+        "path": "Crow",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Crow",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Crow.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Crow.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Crow.png",
+        "class": {
+            "id": 9,
+            "name": "Toxic Assassin"
+        },
+        "rarity": {
+            "id": 6,
+            "name": "Legendary",
+            "color": "#fff11e"
+        },
+        "unlock": null,
+        "description": "Crow fires a trio of poisoned daggers. As a Super move he leaps, firing daggers both on jump and on landing!",
+        "starPowers": [{
+            "id": 23000088,
+            "name": "Extra Toxic",
+            "path": "Extra-Toxic",
+            "version": 2,
+            "description": "Crows poison saps the strength of enemies, who deal 25% less damage while poisoned.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Extra-Toxic.png",
+            "released": true
+        }, {
+            "id": 23000143,
+            "name": "Carrion Crow",
+            "path": "Carrion-Crow",
+            "version": 2,
+            "description": "Crow deals +152 damage with his attack and Super to targets with 50% or less health.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Carrion-Crow.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000243,
+            "name": "Defense Booster",
+            "path": "Defense-Booster",
+            "version": 2,
+            "description": "Crow gets a shield for 40% of incoming damage for 3 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Defense-Booster.png",
+            "released": true
+        }, {
+            "id": 23000286,
+            "name": "Slowing Toxin",
+            "path": "Slowing-Toxin",
+            "version": 2,
+            "description": "All currently poisoned enemies are slowed for 5 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Slowing-Toxin.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Crows Main Attack",
+            "description": "Check out how Crow attacks.",
+            "duration": "PT5S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Crow-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Crow-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Crows Super Attack",
+            "description": "Check out how Crow uses the Super.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Crow-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Crow-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000005,
+        "avatarId": 28000016,
+        "name": "Spike",
+        "hash": "Spike",
+        "path": "Spike",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Spike",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Spike.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Spike.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Spike.png",
+        "class": {
+            "id": 2,
+            "name": "Sharpshooter"
+        },
+        "rarity": {
+            "id": 6,
+            "name": "Legendary",
+            "color": "#fff11e"
+        },
+        "unlock": null,
+        "description": "Spike throws cactus grenades that send needles flying, and a show-stopping Super: a field of cactus spines that slows down and damages enemies!",
+        "starPowers": [{
+            "id": 23000081,
+            "name": "Fertilize",
+            "path": "Fertilize",
+            "version": 2,
+            "description": "After using Super, Spike regenerates 800 health per second by staying in its area of effect.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Fertilize.png",
+            "released": true
+        }, {
+            "id": 23000151,
+            "name": "Curveball",
+            "path": "Curveball",
+            "version": 2,
+            "description": "Spikes from cactus grenade fly in a curving motion, making it easier to hit targets.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Curveball.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000247,
+            "name": "Popping Pincushion",
+            "path": "Popping-Pincushion",
+            "version": 2,
+            "description": "Spike shoots 3 waves of needles in all directions, dealing 520 damage per hit.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Popping-Pincushion.png",
+            "released": true
+        }, {
+            "id": 23000406,
+            "name": "Life Plant",
+            "path": "Life-Plant",
+            "version": 2,
+            "description": "Spike grows a large cactus with 3500 health to give cover to friendlies. If destroyed, the cactus bursts, and all nearby friendlies recover 1000 health.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Life-Plant.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Spikes Main Attack",
+            "description": "Check out how Spike attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Spike-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Spike-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Spikes Super Attack",
+            "description": "Check out how Spike uses the Super.",
+            "duration": "PT7S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Spike-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Spike-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000021,
+        "avatarId": 28000038,
+        "name": "Gene",
+        "hash": "Gene",
+        "path": "Gene",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Gene",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Gene.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Gene.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Gene.png",
+        "class": {
+            "id": 8,
+            "name": "Support"
+        },
+        "rarity": {
+            "id": 5,
+            "name": "Mythic",
+            "color": "#fe5e72"
+        },
+        "unlock": null,
+        "description": "Gene uses his magic lamp to shoot a splitting projectile. His super is a magical hand that grabs and pulls enemies close!",
+        "starPowers": [{
+            "id": 23000109,
+            "name": "Magic Puffs",
+            "path": "Magic-Puffs",
+            "version": 2,
+            "description": "Gene heals all friendly Brawlers around him for 400 health per second.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Magic-Puffs.png",
+            "released": true
+        }, {
+            "id": 23000159,
+            "name": "Spirit Slap",
+            "path": "Spirit-Slap",
+            "version": 2,
+            "description": "When Genes Super is fully charged he does +300 damage with his attack.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Spirit-Slap.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000252,
+            "name": "Lamp Blowout",
+            "path": "Lamp-Blowout",
+            "version": 2,
+            "description": "All enemies close to Gene are instantly pushed back. If at least one enemy Brawler is within range, Gene will also restore 600 health.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Lamp-Blowout.png",
+            "released": true
+        }, {
+            "id": 23000352,
+            "name": "Vengeful Spirits",
+            "path": "Vengeful-Spirits",
+            "version": 2,
+            "description": "Gene shoots a homing missile at all visible enemies within a large area, dealing up to 1000 damage based on distance.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Vengeful-Spirits.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Genes Main Attack",
+            "description": "Check out how Gene attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Gene-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Gene-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Genes Super Attack",
+            "description": "Check out how Gene uses the Super.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Gene-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Gene-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000017,
+        "avatarId": 28000029,
+        "name": "Tara",
+        "hash": "Tara",
+        "path": "Tara",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Tara",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Tara.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Tara.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Tara.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 5,
+            "name": "Mythic",
+            "color": "#fe5e72"
+        },
+        "unlock": null,
+        "description": "Taras triple tarot card attack pierces through enemies. Her Super is a black hole that sucks in all nearby enemies, causing damage!",
+        "starPowers": [{
+            "id": 23000093,
+            "name": "Black Portal",
+            "path": "Black-Portal",
+            "version": 2,
+            "description": "Taras Super cracks open a dimensional portal! A shadowy version of Tara appears and attacks her enemies.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Black-Portal.png",
+            "released": true
+        }, {
+            "id": 23000160,
+            "name": "Healing Shade",
+            "path": "Healing-Shade",
+            "version": 2,
+            "description": "Tara’s Super cracks open a dimensional portal! A shadowy version of Tara’s appears to heal Tara and her teammates.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Healing-Shade.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000266,
+            "name": "Psychic Enhancer",
+            "path": "Psychic-Enhancer",
+            "version": 2,
+            "description": "Tara and her allies are able to see all enemies, even inside bushes, for 4 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Psychic-Enhancer.png",
+            "released": true
+        }, {
+            "id": 23000356,
+            "name": "Support from Beyond",
+            "path": "Support-from-Beyond",
+            "version": 2,
+            "description": "Tara surrounds herself with three weak shadows that attack enemies and disappear after 6 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Support-from-Beyond.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Taras Main Attack",
+            "description": "Check out how Tara attacks.",
+            "duration": "PT1S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Tara-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Tara-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Taras Super Attack",
+            "description": "Check out how Tara uses the Super.",
+            "duration": "PT5S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Tara-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Tara-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000011,
+        "avatarId": 28000014,
+        "name": "Mortis",
+        "hash": "Mortis",
+        "path": "Mortis",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Mortis",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Mortis.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Mortis.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Mortis.png",
+        "class": {
+            "id": 6,
+            "name": "Dashing Assassin"
+        },
+        "rarity": {
+            "id": 5,
+            "name": "Mythic",
+            "color": "#fe5e72"
+        },
+        "unlock": null,
+        "description": "Mortis dashes forward with each swing of his shovel. As his Super attack, he sends a cloud of bats to damage enemies and heal himself!",
+        "starPowers": [{
+            "id": 23000087,
+            "name": "Creepy Harvest",
+            "path": "Creepy-Harvest",
+            "version": 2,
+            "description": "Mortis reaps the life essence of Brawler he defeats, restoring 1800 of his health.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Creepy-Harvest.png",
+            "released": true
+        }, {
+            "id": 23000154,
+            "name": "Coiled Snake",
+            "path": "Coiled-Snake",
+            "version": 2,
+            "description": "Mortis gains his longer dash 1.5 seconds faster.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Coiled-Snake.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000265,
+            "name": "Combo Spinner",
+            "path": "Combo-Spinner",
+            "version": 2,
+            "description": "Mortis spins his shovel, hitting all enemies around himself for 1300 damage.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Combo-Spinner.png",
+            "released": true
+        }, {
+            "id": 23000290,
+            "name": "Survival Shovel",
+            "path": "Survival-Shovel",
+            "version": 2,
+            "description": "Mortis reloads faster for 4 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Survival-Shovel.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Mortis Main Attack",
+            "description": "Check out how Mortis attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Mortis-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Mortis-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Mortis Super Attack",
+            "description": "Check out how Mortis uses the Super.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Mortis-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Mortis-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000020,
+        "avatarId": 28000036,
+        "name": "Frank",
+        "hash": "Frank",
+        "path": "Frank",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Frank",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Frank.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Frank.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Frank.png",
+        "class": {
+            "id": 3,
+            "name": "Heavyweight"
+        },
+        "rarity": {
+            "id": 4,
+            "name": "Epic",
+            "color": "#d850ff"
+        },
+        "unlock": null,
+        "description": "Frank swings his hammer at enemies, sending a shockwave. His Super is an especially powerful blow that stuns enemies!",
+        "starPowers": [{
+            "id": 23000104,
+            "name": "Power Grab",
+            "path": "Power-Grab",
+            "version": 2,
+            "description": "Frank steals the power of a Brawler he defeats, increasing his damage by 50% for 12 seconds!",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Power-Grab.png",
+            "released": true
+        }, {
+            "id": 23000153,
+            "name": "Sponge",
+            "path": "Sponge",
+            "version": 2,
+            "description": "Frank gains +1100 health.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Sponge.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000261,
+            "name": "Active Noise Canceling",
+            "path": "Active-Noise-Canceling",
+            "version": 2,
+            "description": "Frank clears any disabling effect on himself, and momentarily becomes immune to stuns, slows and knockbacks.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Active-Noise-Canceling.png",
+            "released": true
+        }, {
+            "id": 23000351,
+            "name": "Irresistible Attraction",
+            "path": "Irresistible-Attraction",
+            "version": 2,
+            "description": "Franks next attack also pulls opponents towards him.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Irresistible-Attraction.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Franks Main Attack",
+            "description": "Check out how Frank attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Frank-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Frank-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Franks Super Attack",
+            "description": "Check out how Frank uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Frank-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Frank-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000016,
+        "avatarId": 28000028,
+        "name": "Pam",
+        "hash": "Pam",
+        "path": "Pam",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Pam",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Pam.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Pam.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Pam.png",
+        "class": {
+            "id": 8,
+            "name": "Support"
+        },
+        "rarity": {
+            "id": 4,
+            "name": "Epic",
+            "color": "#d850ff"
+        },
+        "unlock": null,
+        "description": "Pam shoots from the hip, peppering targets with shrapnel. Her Super is a healing turret that restores her and teammates health!",
+        "starPowers": [{
+            "id": 23000092,
+            "name": "Mamas Hug",
+            "path": "Mamas-Hug",
+            "version": 2,
+            "description": "Whenever Pam hits enemies with Scrapstorm, she heals herself and nearby friendly Brawlers for 48 health.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Mamas-Hug.png",
+            "released": true
+        }, {
+            "id": 23000139,
+            "name": "Mamas Squeeze",
+            "path": "Mamas-Squeeze",
+            "version": 2,
+            "description": "Healing turret now also damages enemies for 800 damage per second.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Mamas-Squeeze.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000257,
+            "name": "Pulse Modulator",
+            "path": "Pulse-Modulator",
+            "version": 2,
+            "description": "Pam triggers her turret to emit a pulse that heals allies inside the turrets range, including herself, for 1200 health.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Pulse-Modulator.png",
+            "released": true
+        }, {
+            "id": 23000404,
+            "name": "Scrapsucker",
+            "path": "Scrapsucker",
+            "version": 2,
+            "description": "Each hit from Pams next attack removes 25% of opposing Brawlers maximum ammo. Pam reclaims 50% of the ammo for herself.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Scrapsucker.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Pams Main Attack",
+            "description": "Check out how Pam attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Pam-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Pam-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Pams Super Attack",
+            "description": "Check out how Pam uses the Super.",
+            "duration": "PT5S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Pam-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Pam-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000015,
+        "avatarId": 28000018,
+        "name": "Piper",
+        "hash": "Piper",
+        "path": "Piper",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Piper",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Piper.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Piper.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Piper.png",
+        "class": {
+            "id": 2,
+            "name": "Sharpshooter"
+        },
+        "rarity": {
+            "id": 4,
+            "name": "Epic",
+            "color": "#d850ff"
+        },
+        "unlock": null,
+        "description": "Pipers sniper shots do more damage the farther they travel. Her Super drops grenades at her feet, while Piper herself leaps away!",
+        "starPowers": [{
+            "id": 23000091,
+            "name": "Ambush",
+            "path": "Ambush",
+            "version": 2,
+            "description": "Pipers attack deals +800 extra damage (at max range) when shes hidden in a bush.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Ambush.png",
+            "released": true
+        }, {
+            "id": 23000152,
+            "name": "Snappy Sniping",
+            "path": "Snappy-Sniping",
+            "version": 2,
+            "description": "When Piper hits an enemy with her attack, she reloads 0.4 ammo instantly.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Snappy-Sniping.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000268,
+            "name": "Auto Aimer",
+            "path": "Auto-Aimer",
+            "version": 2,
+            "description": "Piper pops a defensive shot at the closest enemy, dealing 100 damage, while also pushing them back and slowing them down.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Auto-Aimer.png",
+            "released": true
+        }, {
+            "id": 23000291,
+            "name": "Homemade Recipe",
+            "path": "Homemade-Recipe",
+            "version": 2,
+            "description": "On activation, Pipers next main attack will home in on enemies.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Homemade-Recipe.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Pipers Main Attack",
+            "description": "Check out how Piper attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Piper-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Piper-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Pipers Super Attack",
+            "description": "Check out how Piper uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Piper-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Piper-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000019,
+        "avatarId": 28000035,
+        "name": "Penny",
+        "hash": "Penny",
+        "path": "Penny",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Penny",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Penny.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Penny.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Penny.png",
+        "class": {
+            "id": 2,
+            "name": "Sharpshooter"
+        },
+        "rarity": {
+            "id": 3,
+            "name": "Super Rare",
+            "color": "#5ab3ff"
+        },
+        "unlock": null,
+        "description": "Penny shoots bags of coins, damaging the target and anyone standing behind. Her Super is a mortar-style cannon turret!",
+        "starPowers": [{
+            "id": 23000099,
+            "name": "Last Blast",
+            "path": "Last-Blast",
+            "version": 2,
+            "description": "When Pennys Cannon is destroyed, it shoots out one last barrage of 4 bombs targeting nearby enemies, each dealing 1680 damage.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Last-Blast.png",
+            "released": true
+        }, {
+            "id": 23000142,
+            "name": "Balls of Fire",
+            "path": "Balls-of-Fire",
+            "version": 2,
+            "description": "Cannonballs from Penny’s turret set the ground on fire for 3 seconds. Enemies in the burning area take 400 damage per second.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Balls-of-Fire.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000248,
+            "name": "Pocket Detonator",
+            "path": "Pocket-Detonator",
+            "version": 2,
+            "description": "Penny blows up her cannon! The explosion destroys walls and deals 1500 damage to nearby enemies.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Pocket-Detonator.png",
+            "released": true
+        }, {
+            "id": 23000287,
+            "name": "Captains Compass",
+            "path": "Captains-Compass",
+            "version": 2,
+            "description": "Penny calls an artillery strike from her Cannon to her current location.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Captains-Compass.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Pennys Main Attack",
+            "description": "Check out how Penny attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Penny-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Penny-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Pennys Super Attack",
+            "description": "Check out how Penny uses the Super.",
+            "duration": "PT7S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Penny-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Penny-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000018,
+        "avatarId": 28000034,
+        "name": "Darryl",
+        "hash": "Darryl",
+        "path": "Darryl",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Darryl",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Darryl.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Darryl.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Darryl.png",
+        "class": {
+            "id": 3,
+            "name": "Heavyweight"
+        },
+        "rarity": {
+            "id": 3,
+            "name": "Super Rare",
+            "color": "#5ab3ff"
+        },
+        "unlock": null,
+        "description": "Darryl has a powerful double-shotgun attack. His Super move is a reckless roll inside his bouncy barrel!",
+        "starPowers": [{
+            "id": 23000094,
+            "name": "Steel Hoops",
+            "path": "Steel-Hoops",
+            "version": 2,
+            "description": "Darryls Super reinforces his barrel, reducing all damage he takes by 90% for 0.9 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Steel-Hoops.png",
+            "released": true
+        }, {
+            "id": 23000157,
+            "name": "Rolling Reload",
+            "path": "Rolling-Reload",
+            "version": 2,
+            "description": "When Darryl uses his Super, he doubles his reload speed for 5 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Rolling-Reload.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000260,
+            "name": "Recoiling Rotator",
+            "path": "Recoiling-Rotator",
+            "version": 2,
+            "description": "Darryl spins around and sprays a barrage of shots in all directions. Each shot deals 400 damage and recharges his Super by 25% if it hits enemies!",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Recoiling-Rotator.png",
+            "released": true
+        }, {
+            "id": 23000313,
+            "name": "Tar Barrel",
+            "path": "Tar-Barrel",
+            "version": 2,
+            "description": "Darryl creates a slowing area around himself for 5 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Tar-Barrel.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Darryls Main Attack",
+            "description": "Check out how Darryl attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Darryl-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Darryl-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Darryls Super Attack",
+            "description": "Check out how Darryl uses the Super.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Darryl-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Darryl-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000004,
+        "avatarId": 28000011,
+        "name": "Rico",
+        "hash": "Rico",
+        "path": "Rico",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Rico",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Rico.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Rico.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Rico.png",
+        "class": {
+            "id": 2,
+            "name": "Sharpshooter"
+        },
+        "rarity": {
+            "id": 3,
+            "name": "Super Rare",
+            "color": "#5ab3ff"
+        },
+        "unlock": null,
+        "description": "Rico fires a burst of bullets that bounce off walls. His Super burst is a long barrage of bouncy bullets that pierce targets!",
+        "starPowers": [{
+            "id": 23000080,
+            "name": "Super Bouncy",
+            "path": "Super-Bouncy",
+            "version": 2,
+            "description": "Ricos bullets, from attack and Super alike, get supercharged by their first bounce and deal +124 damage!",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Super-Bouncy.png",
+            "released": true
+        }, {
+            "id": 23000156,
+            "name": "Robo Retreat",
+            "path": "Robo-Retreat",
+            "version": 2,
+            "description": "When Rico falls below 40% health, he runs 34% faster.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Robo-Retreat.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000246,
+            "name": "Multiball Launcher",
+            "path": "Multiball-Launcher",
+            "version": 2,
+            "description": "Rico blasts waves of bouncy bullets in all directions.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Multiball-Launcher.png",
+            "released": true
+        }, {
+            "id": 23000409,
+            "name": "Bouncy Castle",
+            "path": "Bouncy-Castle",
+            "version": 2,
+            "description": "Ricos next attack will heal him for 250 health from each bounce of a projectile.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Bouncy-Castle.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Ricos Main Attack",
+            "description": "Check out how Rico attacks.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Rico-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Rico-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Ricos Super Attack",
+            "description": "Check out how Rico uses the Super.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Rico-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Rico-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000013,
+        "avatarId": 28000013,
+        "name": "Poco",
+        "hash": "Poco",
+        "path": "Poco",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Poco",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Poco.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Poco.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Poco.png",
+        "class": {
+            "id": 8,
+            "name": "Support"
+        },
+        "rarity": {
+            "id": 2,
+            "name": "Rare",
+            "color": "#68fd58"
+        },
+        "unlock": null,
+        "description": "Poco fires damaging sound waves at enemies. His Super can heal both Poco himself and his teammates!",
+        "starPowers": [{
+            "id": 23000089,
+            "name": "Da Capo!",
+            "path": "Da-Capo",
+            "version": 2,
+            "description": "When Pocos attack hits friendly Brawlers they now heal for 700 health.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Da-Capo.png",
+            "released": true
+        }, {
+            "id": 23000144,
+            "name": "Screeching Solo",
+            "path": "Screeching-Solo",
+            "version": 2,
+            "description": "Poco’s Super now also hits enemies, dealing 1000 damage.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Screeching-Solo.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000267,
+            "name": "Tuning Fork",
+            "path": "Tuning-Fork",
+            "version": 2,
+            "description": "Poco and all nearby allies heal 400 health per second for 5 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Tuning-Fork.png",
+            "released": true
+        }, {
+            "id": 23000350,
+            "name": "Protective Tunes",
+            "path": "Protective-Tunes",
+            "version": 2,
+            "description": "Removes active adverse effects from friendly brawlers in a large area and gives a 2 second immunity.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Protective-Tunes.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Pocos Main Attack",
+            "description": "Check out how Poco attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Poco-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Poco-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Pocos Super Attack",
+            "description": "Check out how Poco uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Poco-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Poco-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000006,
+        "avatarId": 28000012,
+        "name": "Barley",
+        "hash": "Barley",
+        "path": "Barley",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Barley",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Barley.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Barley.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Barley.png",
+        "class": {
+            "id": 4,
+            "name": "Thrower"
+        },
+        "rarity": {
+            "id": 2,
+            "name": "Rare",
+            "color": "#68fd58"
+        },
+        "unlock": null,
+        "description": "Barley attacks by lobbing bottles at enemies, doing splash damage. His Super is a huge barrage of burning bottles!",
+        "starPowers": [{
+            "id": 23000082,
+            "name": "Medical Use",
+            "path": "Medical-Use",
+            "version": 2,
+            "description": "Barley regains 400 health from each atack.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Medical-Use.png",
+            "released": true
+        }, {
+            "id": 23000158,
+            "name": "Extra Noxious",
+            "path": "Extra-Noxious",
+            "version": 2,
+            "description": "Adds +200 damage per second to Barley’s attack.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Extra-Noxious.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000250,
+            "name": "Sticky Syrup Mixer",
+            "path": "Sticky-Syrup-Mixer",
+            "version": 2,
+            "description": "Barley drops a sticky concoction that leaves a puddle, slowing down all enemies that make contact with it.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Sticky-Syrup-Mixer.png",
+            "released": true
+        }, {
+            "id": 23000293,
+            "name": "Herbal Tonic",
+            "path": "Herbal-Tonic",
+            "version": 2,
+            "description": "Barley throws a healing potion at nearby allies that creates an area that heals for 500 health per second.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Herbal-Tonic.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Barleys Main Attack",
+            "description": "Check out how Barley attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Barley-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Barley-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Barleys Super Attack",
+            "description": "Check out how Barley uses the Super.",
+            "duration": "PT7S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Barley-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Barley-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000010,
+        "avatarId": 28000009,
+        "name": "El Primo",
+        "hash": "El-Primo",
+        "path": "El-Primo",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/El-Primo",
+        "imageUrl": "https://cdn.brawlify.com/brawler/El-Primo.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/El-Primo.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/El-Primo.png",
+        "class": {
+            "id": 3,
+            "name": "Heavyweight"
+        },
+        "rarity": {
+            "id": 2,
+            "name": "Rare",
+            "color": "#68fd58"
+        },
+        "unlock": null,
+        "description": "El Primo throws a flurry of punches at his enemies. His Super is a leaping elbow drop that deals damage to all caught underneath!",
+        "starPowers": [{
+            "id": 23000086,
+            "name": "El Fuego",
+            "path": "El-Fuego",
+            "version": 2,
+            "description": "Enemies caught in El Primos Super will burn for 1200 damage over 4 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/El-Fuego.png",
+            "released": true
+        }, {
+            "id": 23000140,
+            "name": "Meteor Rush",
+            "path": "Meteor-Rush",
+            "version": 2,
+            "description": "El Primo gains 25% speed boost for 4 seconds after using his Super.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Meteor-Rush.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000264,
+            "name": "Suplex Supplement",
+            "path": "Suplex-Supplement",
+            "version": 2,
+            "description": "El Primo grabs the closest enemy within his reach and flips them like a pancake over his broad shoulders.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Suplex-Supplement.png",
+            "released": true
+        }, {
+            "id": 23000292,
+            "name": "Asteroid Belt",
+            "path": "Asteroid-Belt",
+            "version": 2,
+            "description": "El Primo summons a small meteor to strike the nearest enemy. It deals 2000 damage and destroys walls.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Asteroid-Belt.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "El Primos Main Attack",
+            "description": "Check out how El Primo attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/El-Primo-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/El-Primo-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "El Primos Super Attack",
+            "description": "Check out how El Primo uses the Super.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/El-Primo-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/El-Primo-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000014,
+        "avatarId": 28000015,
+        "name": "Bo",
+        "hash": "Bo",
+        "path": "Bo",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Bo",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Bo.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Bo.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Bo.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 3000,
+        "description": "Bo fires three explosive arrows toward his targets. His Super ability places a trio of hidden, explosive mines on the ground!",
+        "starPowers": [{
+            "id": 23000090,
+            "name": "Circling Eagle",
+            "path": "Circling-Eagle",
+            "version": 2,
+            "description": "Bo spots enemies hidden in bushes from 150% longer distance than normally.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Circling-Eagle.png",
+            "released": true
+        }, {
+            "id": 23000148,
+            "name": "Snare a Bear",
+            "path": "Snare-a-Bear",
+            "version": 2,
+            "description": "Instead of a knockback, Bo’s traps now stun the enemy for 2 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Snare-a-Bear.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000263,
+            "name": "Super Totem",
+            "path": "Super-Totem",
+            "version": 2,
+            "description": "Bo places a totem that recharges his and any allies Supers within the area of effect. The totem slowly loses its health over time.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Super-Totem.png",
+            "released": true
+        }, {
+            "id": 23000289,
+            "name": "Tripwire",
+            "path": "Tripwire",
+            "version": 2,
+            "description": "Bo triggers all of his mines after 1.5 seconds. During the delay the mines are completely undetectable to opponents.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Tripwire.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Bos Main Attack",
+            "description": "Check out how Bo attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Bo-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Bo-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Bos Super Attack",
+            "description": "Check out how Bo uses the Super.",
+            "duration": "PT5S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Bo-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Bo-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000009,
+        "avatarId": 28000008,
+        "name": "Dynamike",
+        "hash": "Dynamike",
+        "path": "Dynamike",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Dynamike",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Dynamike.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Dynamike.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Dynamike.png",
+        "class": {
+            "id": 4,
+            "name": "Thrower"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 2000,
+        "description": "Dynamike lobs two explosive sticks of dynamite. His Super attack is a whole barrel full of dynamite that blows up cover!",
+        "starPowers": [{
+            "id": 23000085,
+            "name": "Dyna-Jump",
+            "path": "Dyna-Jump",
+            "version": 2,
+            "description": "Dynamike can ride the blast wave of his explosives to jump over obstacles!",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Dyna-Jump.png",
+            "released": true
+        }, {
+            "id": 23000155,
+            "name": "Demolition",
+            "path": "Demolition",
+            "version": 2,
+            "description": "Adds +1000 damage to Mike’s Super.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Demolition.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000258,
+            "name": "Fidget Spinner",
+            "path": "Fidget-Spinner",
+            "version": 2,
+            "description": "Dynamike spins furiously and throws multiple sticks of dynamite around himself. Each dynamite deals 1200 damage to enemies.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Fidget-Spinner.png",
+            "released": true
+        }, {
+            "id": 23000294,
+            "name": "Satchel Charge",
+            "path": "Satchel-Charge",
+            "version": 2,
+            "description": "Once activated, the next main attack also stuns enemies for 1.5 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Satchel-Charge.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Dynamikes Main Attack",
+            "description": "Check out how Dynamike attacks.",
+            "duration": "PT1S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Dynamike-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Dynamike-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Dynamikes Super Attack",
+            "description": "Check out how Dynamike uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Dynamike-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Dynamike-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000003,
+        "avatarId": 28000005,
+        "name": "Brock",
+        "hash": "Brock",
+        "path": "Brock",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Brock",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Brock.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Brock.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Brock.png",
+        "class": {
+            "id": 2,
+            "name": "Sharpshooter"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 1000,
+        "description": "Brock fires a long-range, explosive rocket at enemies. His Super is a ballistic rocket barrage that destroys cover!",
+        "starPowers": [{
+            "id": 23000079,
+            "name": "Incendiary",
+            "path": "Incendiary",
+            "version": 2,
+            "description": "The impact of Brocks attack sets the ground on fire. Enemies in the area take 520 damage per second! Lasts for 2 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Incendiary.png",
+            "released": true
+        }, {
+            "id": 23000150,
+            "name": "Rocket Number Four",
+            "path": "Rocket-Number-Four",
+            "version": 2,
+            "description": "Brock loads a fourth rocket into his launcher, increasing his ammo capacity (and discarding the thermos bottle hes been keeping in his launchers #4 rube).",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Rocket-Number-Four.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000245,
+            "name": "Rocket Laces",
+            "path": "Rocket-Laces",
+            "version": 2,
+            "description": "Brock blasts the ground below him and propels himself into the air. The explosion deals 500 damage to nearby enemies.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Rocket-Laces.png",
+            "released": true
+        }, {
+            "id": 23000316,
+            "name": "Rocket Fuel",
+            "path": "Rocket-Fuel",
+            "version": 2,
+            "description": "Brocks next attack is a mega rocket that is bigger, faster, explodes with a large radius, destroys walls and deals 50% extra damage.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Rocket-Fuel.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Brocks Main Attack",
+            "description": "Check out how Brock attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Brock-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Brock-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Brocks Super Attack",
+            "description": "Check out how Brock uses the Super.",
+            "duration": "PT4S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Brock-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Brock-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000007,
+        "avatarId": 28000006,
+        "name": "Jessie",
+        "hash": "Jessie",
+        "path": "Jessie",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Jessie",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Jessie.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Jessie.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Jessie.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 500,
+        "description": "Jessies Shock Rifle shoots energy orbs that bounce between enemies. Her Super deploys a cute but deadly gun turret!",
+        "starPowers": [{
+            "id": 23000083,
+            "name": "Energize",
+            "path": "Energize",
+            "version": 2,
+            "description": "Jessie can repair her gun turret for 896 of its missing health by zapping it with her attack.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Energize.png",
+            "released": true
+        }, {
+            "id": 23000149,
+            "name": "Shocky",
+            "path": "Shocky",
+            "version": 2,
+            "description": "Scrappy the Turret now shoots energy orbs that bounce between enemies. The orbs range after a bounce is 51% of normal range.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Shocky.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000251,
+            "name": "Spark Plug",
+            "path": "Spark-Plug",
+            "version": 2,
+            "description": "Jessie triggers a shockwave from her turret, slowing down all enemies within its area of effect.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Spark-Plug.png",
+            "released": true
+        }, {
+            "id": 23000295,
+            "name": "Recoil Spring",
+            "path": "Recoil-Spring",
+            "version": 2,
+            "description": "Scrappys attack speed is doubled for 5 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Recoil-Spring.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Jessies Main Attack",
+            "description": "Check out how Jessie attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Jessie-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Jessie-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Jessies Super Attack",
+            "description": "Check out how Jessie uses the Super.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Jessie-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Jessie-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000002,
+        "avatarId": 28000010,
+        "name": "Bull",
+        "hash": "Bull",
+        "path": "Bull",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Bull",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Bull.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Bull.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Bull.png",
+        "class": {
+            "id": 3,
+            "name": "Heavyweight"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 250,
+        "description": "Bull deals massive damage up close with his shotgun. For his Super move, he charges through barriers and knocks back enemies!",
+        "starPowers": [{
+            "id": 23000078,
+            "name": "Berserker",
+            "path": "Berserker",
+            "version": 2,
+            "description": "When Bull falls below 60% health, his reload speed doubles!",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Berserker.png",
+            "released": true
+        }, {
+            "id": 23000137,
+            "name": "Tough Guy",
+            "path": "Tough-Guy",
+            "version": 2,
+            "description": "When Bull falls below 40% health, he gains a shield that reduces all damage taken by 30%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Tough-Guy.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000272,
+            "name": "T-Bone Injector",
+            "path": "T-Bone-Injector",
+            "version": 2,
+            "description": "Bull instantly rejuvenates himself for 1500 health.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/T-Bone-Injector.png",
+            "released": true
+        }, {
+            "id": 23000310,
+            "name": "Stomper",
+            "path": "Stomper",
+            "version": 2,
+            "description": "Bull can interrupt his Super charge and slow all nearby opponents with a massive stomp for 1.5 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Stomper.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Bulls Main Attack",
+            "description": "Check out how Bull attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Bull-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Bull-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Bulls Super Attack",
+            "description": "Check out how Bull uses the Super.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Bull-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Bull-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000001,
+        "avatarId": 28000004,
+        "name": "Colt",
+        "hash": "Colt",
+        "path": "Colt",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Colt",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Colt.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Colt.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Colt.png",
+        "class": {
+            "id": 2,
+            "name": "Sharpshooter"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 60,
+        "description": "Colt fires an accurate burst of bullets from his dual revolvers. His Super shreds cover and extends the bullet barrage!",
+        "starPowers": [{
+            "id": 23000077,
+            "name": "Slick Boots",
+            "path": "Slick-Boots",
+            "version": 2,
+            "description": "Colts movement speed is increased by 13%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Slick-Boots.png",
+            "released": true
+        }, {
+            "id": 23000138,
+            "name": "Magnum Special",
+            "path": "Magnum-Special",
+            "version": 2,
+            "description": "Colt’s main attack range and bullet speed are increased by 11%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Magnum-Special.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000273,
+            "name": "Speedloader",
+            "path": "Speedloader",
+            "version": 2,
+            "description": "Colt instantly reloads 2 ammo.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Speedloader.png",
+            "released": true
+        }, {
+            "id": 23000319,
+            "name": "Silver Bullet",
+            "path": "Silver-Bullet",
+            "version": 2,
+            "description": "Colts next attack is a powerful shot that deals as much damage as 2 of his regular bullets, while going through obstacles and opponents alike.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Silver-Bullet.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Colts Main Attack",
+            "description": "Check out how Colt attacks.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Colt-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Colt-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Colts Super Attack",
+            "description": "Check out how Colt uses the Super.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Colt-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Colt-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000008,
+        "avatarId": 28000007,
+        "name": "Nita",
+        "hash": "Nita",
+        "path": "Nita",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Nita",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Nita.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Nita.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Nita.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 10,
+        "description": "Nita strikes her enemies with a thunderous shockwave. Her Super summons a massive bear to fight by her side!",
+        "starPowers": [{
+            "id": 23000084,
+            "name": "Bear With Me",
+            "path": "Bear-With-Me",
+            "version": 2,
+            "description": "Nita recovers 800 health whenever her bear hits an enemy brawler. When Nita deals damage to an enemy brawler, her bear regains 800 health.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Bear-With-Me.png",
+            "released": true
+        }, {
+            "id": 23000136,
+            "name": "Hyper Bear",
+            "path": "Hyper-Bear",
+            "version": 2,
+            "description": "Nitas bear attacks faster. Time between swipes is reduced by 60%.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Hyper-Bear.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000249,
+            "name": "Bear Paws",
+            "path": "Bear-Paws",
+            "version": 2,
+            "description": "Nita commands her bear to slam the ground, stunning all enemies within its reach.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Bear-Paws.png",
+            "released": true
+        }, {
+            "id": 23000314,
+            "name": "Faux Fur",
+            "path": "Faux-Fur",
+            "version": 2,
+            "description": "For the next 3 seconds, Nitas bear gets a 35% shield against damage.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Faux-Fur.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Nitas Main Attack",
+            "description": "Check out how Nita attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Nita-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Nita-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Nitas Super Attack",
+            "description": "Check out how Nita uses the Super.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Nita-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Nita-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }, {
+        "id": 16000000,
+        "avatarId": 28000003,
+        "name": "Shelly",
+        "hash": "Shelly",
+        "path": "Shelly",
+        "released": true,
+        "version": 1,
+        "link": "https://brawlify.com/brawlers/detail/Shelly",
+        "imageUrl": "https://cdn.brawlify.com/brawler/Shelly.png",
+        "imageUrl2": "https://cdn.brawlify.com/brawler-bs/Shelly.png",
+        "imageUrl3": "https://cdn.brawlify.com/emoji/Shelly.png",
+        "class": {
+            "id": 1,
+            "name": "Fighter"
+        },
+        "rarity": {
+            "id": 1,
+            "name": "Trophy Road",
+            "color": "#b9eaff"
+        },
+        "unlock": 0,
+        "description": "Shellys spread-fire shotgun blasts the other team with buckshot. Her Super destroys cover and keeps her opponents at a distance!",
+        "starPowers": [{
+            "id": 23000076,
+            "name": "Shell Shock",
+            "path": "Shell-Shock",
+            "version": 2,
+            "description": "Shellys Super shells slow down enemies for 4.5 seconds!",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Shell-Shock.png",
+            "released": true
+        }, {
+            "id": 23000135,
+            "name": "Band-Aid",
+            "path": "Band-Aid",
+            "version": 2,
+            "description": "When Shelly falls below 40% health, she instantly heals for 2000 health. Band-Aid recharges in 15 seconds.",
+            "imageUrl": "https://cdn.brawlify.com/star-powers/Band-Aid.png",
+            "released": true
+        }],
+        "gadgets": [{
+            "id": 23000255,
+            "name": "Fast Forward",
+            "path": "Fast-Forward",
+            "version": 2,
+            "description": "Shelly dashes ahead, skipping a few unnecessary steps!",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Fast-Forward.png",
+            "released": true
+        }, {
+            "id": 23000288,
+            "name": "Clay Pigeons",
+            "path": "Clay-Pigeons",
+            "version": 2,
+            "description": "On activation, for the next 5 seconds Shellys main attacks focus the fire to a smaller area with an increased range.",
+            "imageUrl": "https://cdn.brawlify.com/gadgets/Clay-Pigeons.png",
+            "released": true
+        }],
+        "videos": [{
+            "type": 0,
+            "name": "Shellys Main Attack",
+            "description": "Check out how Shelly attacks.",
+            "duration": "PT2S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Shelly-Main-Attack.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Shelly-Main-Attack.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }, {
+            "type": 1,
+            "name": "Shellys Super Attack",
+            "description": "Check out how Shelly uses the Super.",
+            "duration": "PT3S",
+            "videoUrl": "https://cdn.brawlify.com/videos/Shelly-Super.mp4",
+            "previewUrl": "https://cdn.brawlify.com/videos/preview/Shelly-Super.jpg",
+            "uploadDate": "2019-11-04T00:00:00.000Z"
+        }]
+    }]
+}

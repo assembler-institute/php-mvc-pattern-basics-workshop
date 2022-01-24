@@ -1,0 +1,16 @@
+.peperomano{
+    margin: 0% 20% ;
+}
+body{
+    background-image: url("https://i.redd.it/iapqmzd3zu721.jpg");
+}
+.divide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 100px;
+    height: 800px;
+    text-align: center;
+}
+.divide:hover{
+    cursor: pointer;
+}
