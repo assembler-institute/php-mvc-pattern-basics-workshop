@@ -30,7 +30,7 @@ function getTypeOneByName($name){
 
 //Return consult one type by strong
 function getTypesByStrong($id) {
-    $query = conn()->prepare("SELECT types.* FROM types JOIN (SELECT efect_types.typeDefense FROM efect_types WHERE efect_types.typeAttack = ? AND efect_types.effect = 2) AS effects WHERE types.id = effects.typeDefense; ");
+    $query = conn()->prepare("SELECT DISTINCT types.* FROM types JOIN efect_types ON types.id = efect_types.typeDefense WHERE efect_types.typeAttack = ? AND efect_types.effect = 2;");
 
     try {
         $query->execute([$id]);
@@ -43,7 +43,7 @@ function getTypesByStrong($id) {
 
 //Return consult one type by wear
 function getTypesByWeak($id) {
-    $query = conn()->prepare("SELECT types.* FROM types JOIN (SELECT efect_types.typeAttack FROM efect_types WHERE efect_types.typeDefense = ? AND efect_types.effect = 2) AS effects WHERE types.id = effects.typeAttack; ");
+    $query = conn()->prepare("SELECT DISTINCT types.* FROM types JOIN efect_types ON types.id = efect_types.typeAttack WHERE efect_types.typeDefense = ? AND efect_types.effect = 2;");
 
     try {
         $query->execute([$id]);
