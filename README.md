@@ -150,15 +150,19 @@ This is the main view that is loaded only if the user doesn't specify any contro
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=BASE_URL?>/php-mvc-pattern-basics-workshop/assets/css/style.css">
 </head>
 
 <body>
-    <h1>Welcome to MVC Pattern Basics!</h1>
-    <div class="list-group">
-        <a class="list-group-item list-group-item-action" href="?controller=employee&action=getAllEmployees">Employee Controller</a>
+    <main>
+        <?php require_once(BASE_PATH . "/assets/template/navbar.html"); ?>
+        <h2 class="p-5 display-4 text-center"><strong>INFORMACIÓN SOBRE POKEMON</strong></h2>
+        <section class="container">
+            <a class="list-group-item list-group-item-action" href="?controller=pokemon&action=getAllPokemons">Pokemon Controller</a>
+            <a class="list-group-item list-group-item-action" href="?controller=typePokemon&action=getAllTypes">Tipos de pokemon Controller</a>
+        </section>
+    </main>
 </body>
-
-</html>
 ```
 
 ### 3.2. `./views/error/error.php`
@@ -174,9 +178,8 @@ This view will be always loaded when the user specifies a bad parameter. As you 
     <title>Document</title>
 </head>
 <body>
-    <?php
-    echo "<h1>". $errorMsg ."</h1>";
-    ?>
+    <?php require_once(BASE_PATH . "/assets/template/navbar.html"); ?>
+    <h1> <?= $errorMsg ?> </h1>;
 </body>
 </html>
 ```
@@ -185,14 +188,14 @@ This view will be always loaded when the user specifies a bad parameter. As you 
 
 > This are the PHP files that are called in the [index.php](./index.php) file. Here we will implement the functionalities of each controller.
 
-### `./controllers/employeeController.php`
+### `./controllers/pokemonController.php`
 
 Before we start, we need to require the model, that will be responsible of calling the database queries to obtain or modify the information. We will create the model later.
 
 ```php
 <?php
 
-require_once MODELS . "employeeModel.php";
+require_once MODELS . "pokemonModel.php";
 ```
 
 Now, we know that this is the controller that the user wants to load, but we also need to know which function to execute.
@@ -216,13 +219,13 @@ We are going to create the `getAllEmployees` function, as you can see, there is 
 ```php
 /* ~~~ CONTROLLER FUNCTIONS ~~~ */
 
-function getAllEmployees()
-{
-    $employees = get();
-    if (isset($employees)) {
-        require_once VIEWS . "/employee/employeeDashboard.php";
+function getAllPokemons() {
+    $pokemons = getPokemons();
+    $types = getTypes();
+    if(isset($pokemons) && isset($types)) {
+        require_once VIEWS . "pokemon/pokemonDashboard.php";
     } else {
-        error("There is a database error, try again.");
+        error("Error database");
     }
 }
 ```
@@ -271,7 +274,7 @@ function conn()
 }
 ```
 
-### 5.2. `./models/employeeModel.php`
+### 5.2. `./models/pokemonModel.php`
 
 First, we must require the previous database connection file in order to execute the database queries.
 
@@ -282,17 +285,13 @@ require_once("helper/dbConnection.php");
 In this model we will create the `get` function that we are executing in the `employeeController.php`.
 
 ```php
-function get()
-{
-    $query = conn()->prepare("SELECT e.id, e.name, e.email, g.name as 'gender', e.city, e.age, e.phone_number
-    FROM employees e
-    INNER JOIN genders g ON e.gender_id = g.id
-    ORDER BY e.id ASC;");
+function getPokemons() {
+    $query = conn()->prepare("SELECT * FROM pokemon");
 
     try {
         $query->execute();
-        $employees = $query->fetchAll();
-        return $employees;
+        $pokemons = $query->fetchAll();
+        return $pokemons;
     } catch (PDOException $e) {
         return [];
     }
@@ -303,7 +302,7 @@ function get()
 
 > View are the frontend part of the MVC pattern. Inside them we should create all the necessary code to show the information to the user.
 
-### 6.1. `./views/employee/employeeDashboard.php`
+### 6.1. `./views/pokemon/pokemonDashboard.php`
 
 This will be the file that shows all the records of the database.
 
@@ -316,50 +315,26 @@ This will be the file that shows all the records of the database.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=BASE_URL?>/php-mvc-pattern-basics-workshop/assets/css/style.css">
 </head>
 
 <body>
-    <h1>Employee Dashboard page!</h1>
-    <style type="text/css">
+    <main>
+        <?php require_once(BASE_PATH . "/assets/template/navbar.html"); ?>
+        <h2 class="p-5 display-4 text-center">Pokedex Nacional</h2>
 
-    </style>
-    <table class="table">
-        <thead>
-            <tr>
-                <th class="tg-0pky">ID</th>
-                <th class="tg-0pky">Name</th>
-                <th class="tg-0lax">Email</th>
-                <th class="tg-0lax">Gender</th>
-                <th class="tg-0lax">City</th>
-                <th class="tg-0lax">Age</th>
-                <th class="tg-0lax">Phone Number</th>
-                <th class="tg-0lax">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            foreach ($employees as $index => $employee) {
-                echo "<tr>";
-                echo "<td class='tg-0lax'>" . $employee["id"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["name"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["email"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["gender"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["city"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["age"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["phone_number"] . "</td>";
-                echo "<td colspan='2' class='tg-0lax'>
-                <a class='btn btn-secondary' href='?controller=employee&action=getEmployee&id=" . $employee["id"] . "'>Edit</a>
-                <a class='btn btn-danger' href='?controller=employee&action=deleteEmployee&id=" . $employee["id"] . "'>Delete</a>
-                </td>";
-                echo "</tr>";
-            }
-            ?>
-        </tbody>
-    </table>
-    <a id="home" class="btn btn-primary" href="?controller=employee&action=createEmployee">Create</a>
-    <a id="home" class="btn btn-secondary" href="./">Back</a>
+        <select id="types">
+            <option value="all" selected>All Pokemons</option>
+            <?php foreach ($types as $key => $value) { ?>
+                <option value="<?= $types[$key]["name"] ?>"><?= $types[$key]["name"] ?></option>
+            <?php } ?>
+        </select>
+
+        <section class="cards card-pokemons"></section>
+    </main>
+
+    <script src="<?=BASE_URL?>/php-mvc-pattern-basics-workshop/assets/js/utils.js"></script>
 </body>
-</html>
 ```
 
 ## Resources
