@@ -115,7 +115,7 @@ Then we create the logic to manage what controller and action is called in the q
 
 ```php
 if (isset($_GET['controller'])) {
-    $controller = getControllerPath($_GET['controller']);
+    $controller = CONTROLLERS . $_GET['controller'] . "Controller.php";
     $fileExists = file_exists($controller);
     if ($fileExists) {
         require_once $controller;
@@ -127,10 +127,6 @@ if (isset($_GET['controller'])) {
     require_once VIEWS . "main/main.php";
 }
 
-function getControllerPath($controller): string
-{
-    return CONTROLLERS . $controller . "Controller.php";
-}
 ```
 
 ## 3. Main Views
