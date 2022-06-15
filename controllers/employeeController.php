@@ -54,21 +54,68 @@ function getEmployee($request)
         error("This employee doesnt exists");
     }
 }
-
+// name, last_name, email, gender_id, avatar, age, phone_number, city, street_address, state, postal_code
 function setEmployee($request){
     //Get the new data employee
     $newData = array();
     array_push($newData, $request["id"]);
     array_push($newData, $_POST["name"]);
+    array_push($newData, $_POST["last_name"]);
     array_push($newData, $request["email"]);
     array_push($newData, $request["gender_id"]);
-    array_push($newData, $request["city"]);
     array_push($newData, $request["age"]);
     array_push($newData, $request["phone_number"]);
+    array_push($newData, $request["city"]);
+    array_push($newData, $_POST["street_address"]);
+    array_push($newData, $_POST["state"]);    
+    array_push($newData, $_POST["postal_code"]);
     
     //Invoque the function to set the employee data
     $employee = setById($newData);
     $msg ="data setted";
+    getAllEmployees();
+}
+
+function deleteEmployee($request){
+    delete($request["id"]);
+
+    //Set the ID and id gender of each employee to show the in order in dashboard
+    $numOfEmployees = getNumEmployees();
+    setIdEmployees($numOfEmployees);
+    setIdGender($numOfEmployees);
+
+    //Show the dashboard
+    getAllEmployees();
+}
+
+function createEmployee(){
+    require_once VIEWS . "/employee/employee.php";
+}
+
+function create($request){
+    $newData = array();
+    array_push($newData, $request["id"]);
+    array_push($newData, $_POST["name"]);
+    array_push($newData, $_POST["last_name"]);
+    array_push($newData, $request["email"]);
+    array_push($newData, $request["gender_id"]);
+    array_push($newData, $request["age"]);
+    array_push($newData, $request["phone_number"]);
+    array_push($newData, $request["city"]);
+    array_push($newData, $request["street_address"]);
+    array_push($newData, $request["state"]);
+    array_push($newData, $request["postal_code"]);
+
+    //Invoque the function to set the employee data
+    $employee = createNewEmployee($newData);
+    $msg ="data setted";
+
+    //Set the ID and id gender of each employee to show the in order in dashboard
+    $numOfEmployees = getNumEmployees();
+    setIdEmployees($numOfEmployees);
+    setIdGender($numOfEmployees);
+
+    //Show the dashboard
     getAllEmployees();
 }
 

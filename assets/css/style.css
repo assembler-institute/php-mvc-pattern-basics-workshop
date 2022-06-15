@@ -1,0 +1,17 @@
+.tg-0lax .img-size{
+    height: 3rem;
+    width: 3rem;
+}
+.logo{
+    height: 3rem;
+    width: 10rem;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+h4{
+    margin-top: 1rem;
+}
